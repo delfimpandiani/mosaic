@@ -5,7 +5,7 @@ This repo holds all content related to the MOSAIC project, which aims to use str
 
 [Reference to Hypericons for Explainability resources]([url](https://github.com/delfimpandiani/ARTstract_Seeing_abstract_concepts)https://github.com/delfimpandiani/ARTstract_Seeing_abstract_concepts), including baseline detectors (finetuned VGG).
 
-The MOSAIC knowledge graph will have three iterations:
+The MOSAIC knowledge graph is based on the [MOSAIC ontology](MOSAIC/MOSAIC_ontology.ttl), which reuses the Descriptions and Situations (DnS) ontology design pattern to represent data annotated with abstract social concepts. The MOSAIC KG will have four iterations:
 
   1. [Common-sense MOSAIC](MOSAIC/Common-sense_MOSAIC.ttl), which situates 7 novel nodes for the 7 ASC clusters with the most important connections each of these have with ConceptNet concepts.
 
