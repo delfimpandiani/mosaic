@@ -14,3 +14,5 @@ The MOSAIC knowledge graph will have three iterations:
   3. Sensory-Perceptual MOSAIC, which transforms image data focusing on object, action, emotional, and color detection into structured knowledge.
  
   4. Parasitic MOSAIC, the combination of the three previous KGs, mirroring the latest cognitive science research on human ASC representation: a parasitic relationship between distributional and sensory-perceptual data.
+
+![MOSAIC](https://github.com/delfimpandiani/mosaic/assets/44606644/a587b9dc-84ee-448a-aad7-25d17cb013a7)
