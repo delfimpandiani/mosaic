@@ -7,7 +7,7 @@ This repo holds all content related to the MOSAIC project, which aims to use str
 
 The MOSAIC knowledge graph will have three iterations:
 
-  1. Common-sense MOSAIC, which situates 7 novel nodes for the 7 ASC clusters with the most important connections each of these have with ConceptNet concepts.
+  1. [Common-sense MOSAIC](MOSAIC/Common-sense_MOSAIC.ttl), which situates 7 novel nodes for the 7 ASC clusters with the most important connections each of these have with ConceptNet concepts.
 
   2. Distributional Linguistic MOSAIC, which transforms distributional linguistic data from corpora analysis into structured knowledge, based on word collocates.
 
