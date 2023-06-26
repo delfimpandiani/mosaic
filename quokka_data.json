@@ -1,0 +1,1295 @@
+{
+  "comfort_cluster": {
+    "comfort": [
+      {
+        "# DBpedia Entities": [
+          "http://en.wiktionary.org/wiki/comfort",
+          "http://fr.wiktionary.org/wiki/comfort",
+          "http://en.wiktionary.org/wiki/sitting_down",
+          "http://fr.wiktionary.org/wiki/sitting_down",
+          "http://en.wiktionary.org/wiki/cooling_off",
+          "http://en.wiktionary.org/wiki/Child",
+          "http://en.wiktionary.org/wiki/Child.",
+          "http://en.wiktionary.org/wiki/child",
+          "http://fr.wiktionary.org/wiki/child",
+          "http://umbel.org/umbel/sc/HumanChild",
+          "http://dbpedia.org/resource/Couch",
+          "http://en.wiktionary.org/wiki/couch",
+          "http://fr.wiktionary.org/wiki/couch",
+          "http://wikidata.dbpedia.org/resource/Q131514",
+          "http://dbpedia.org/resource/A_House",
+          "http://dbpedia.org/resource/House",
+          "http://en.wiktionary.org/wiki/house",
+          "http://en.wiktionary.org/wiki/House",
+          "http://fr.wiktionary.org/wiki/house",
+          "http://umbel.org/umbel/sc/House_Modern",
+          "http://wikidata.dbpedia.org/resource/Q3947",
+          "http://wikidata.dbpedia.org/resource/Q770384",
+          "http://en.wiktionary.org/wiki/room",
+          "http://fr.wiktionary.org/wiki/room",
+          "http://umbel.org/umbel/sc/RoomInAConstruction",
+          "http://fr.wiktionary.org/wiki/sofa",
+          "http://en.wiktionary.org/wiki/sofa",
+          "http://umbel.org/umbel/sc/Sofa_PieceOfFurniture",
+          "http://dbpedia.org/resource/SEAT",
+          "http://en.wiktionary.org/wiki/SEAT",
+          "http://en.wiktionary.org/wiki/seat",
+          "http://fr.wiktionary.org/wiki/seat",
+          "http://umbel.org/umbel/sc/SeatingDevice",
+          "http://umbel.org/umbel/sc/SeatingDeviceSeat",
+          "http://wikidata.dbpedia.org/resource/Q188217",
+          "http://dbpedia.org/resource/Sock",
+          "http://en.wiktionary.org/wiki/sock",
+          "http://fr.wiktionary.org/wiki/sock",
+          "http://umbel.org/umbel/sc/Sock",
+          "http://wikidata.dbpedia.org/resource/Q43663",
+          "http://en.wiktionary.org/wiki/accommodations",
+          "http://fr.wiktionary.org/wiki/accommodations",
+          "http://en.wiktionary.org/wiki/carpeting",
+          "http://fr.wiktionary.org/wiki/carpeting",
+          "http://umbel.org/umbel/sc/CoolingDevice",
+          "http://en.wiktionary.org/wiki/heater",
+          "http://fr.wiktionary.org/wiki/heater",
+          "http://en.wiktionary.org/wiki/linen",
+          "http://fr.wiktionary.org/wiki/linen",
+          "http://umbel.org/umbel/sc/LinenCloth",
+          "http://en.wiktionary.org/wiki/sofabed",
+          "http://en.wiktionary.org/wiki/stuffed-animal",
+          "http://en.wiktionary.org/wiki/stuffed_animal",
+          "http://umbel.org/umbel/sc/StuffedAnimal",
+          "http://dbpedia.org/resource/Toilet_seat",
+          "http://en.wiktionary.org/wiki/toilet_seat",
+          "http://wikidata.dbpedia.org/resource/Q116191",
+          "http://en.wiktionary.org/wiki/cushion",
+          "http://fr.wiktionary.org/wiki/cushion",
+          "http://umbel.org/umbel/sc/Cushion_PartOfFurniture"
+        ],
+        "# Framester frames": [
+          "https://w3id.org/framester/data/framestercore/Artifact",
+          "https://w3id.org/framester/data/framestercore/Assistance",
+          "https://w3id.org/framester/data/framestercore/Attaching",
+          "https://w3id.org/framester/data/framestercore/CauseChange",
+          "https://w3id.org/framester/data/framestercore/CauseToMakeProgress",
+          "https://w3id.org/framester/data/framestercore/CauseToStart",
+          "https://w3id.org/framester/data/framestercore/ComingUpWith",
+          "https://w3id.org/framester/data/framestercore/Creating",
+          "https://w3id.org/framester/data/framestercore/Cure",
+          "https://w3id.org/framester/data/framestercore/EmotionsOfMentalActivity",
+          "https://w3id.org/framester/data/framestercore/ExperiencerFocus",
+          "https://w3id.org/framester/data/framestercore/Gizmo",
+          "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+          "https://w3id.org/framester/data/framestercore/People",
+          "https://w3id.org/framester/data/framestercore/Building",
+          "https://w3id.org/framester/data/framestercore/IntentionallyCreate",
+          "https://w3id.org/framester/data/framestercore/Manufacturing",
+          "https://w3id.org/framester/data/framestercore/EmotionDirected",
+          "https://w3id.org/framester/data/framestercore/ExperiencerObj",
+          "https://w3id.org/framester/data/framestercore/Feeling",
+          "https://w3id.org/framester/data/framestercore/InherentPurpose"
+        ],
+        "#\u00a0ConceptNet concepts": [
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/comfort"
+        ],
+        "#\u00a0causes": [
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/sitting_down",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/sitting_on_chair",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/cooling_off",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/sating_hunger",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/satisfying_appetites_with_minimum_effort",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/staying_in_bed"
+        ],
+        "#\u00a0derivedFrom": [],
+        "#\u00a0formsOf": [],
+        "#\u00a0hasSubEvent": [],
+        "#\u00a0usedFor": [
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/child",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/couch",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/house",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/room",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/sofa",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/seat",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/sock",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/accommodations",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/carpeting",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/cooling_device",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/ergonomic_chair",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/first_class_airline_seat",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/heated_towel_rack",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/heater",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/hide_bed_sofa",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/linen",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/sofabed",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/stuffed_animal",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/toilet_seat",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_violin",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/starting_fire",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/cleaning_room",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/competing_against",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/eating_ice_cream",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/flying_in_airplane",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_warm",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/loving_another",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/tying_shoelace",
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/cushion"
+        ]
+      }
+    ],
+    "cozy": [
+      {
+        "# DBpedia Entities": [
+          "http://en.wiktionary.org/wiki/cozy",
+          "http://fr.wiktionary.org/wiki/cozy"
+        ],
+        "# Framester frames": [
+          "https://w3id.org/framester/data/framestercore/Artifact",
+          "https://w3id.org/framester/data/framestercore/Sociability",
+          "https://w3id.org/framester/data/framestercore/SocialInteractionEvaluation",
+          "https://w3id.org/framester/data/framestercore/SocialConnection"
+        ],
+        "#\u00a0ConceptNet concepts": [
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/cozy"
+        ],
+        "#\u00a0causes": [],
+        "#\u00a0derivedFrom": [],
+        "#\u00a0formsOf": [],
+        "#\u00a0hasSubEvent": [],
+        "#\u00a0usedFor": []
+      }
+    ],
+    "soft": [
+      {
+        "# DBpedia Entities": [
+          "http://en.wiktionary.org/wiki/soft",
+          "http://en.wiktionary.org/wiki/-soft",
+          "http://fr.wiktionary.org/wiki/soft",
+          "http://umbel.org/umbel/sc/Soft"
+        ],
+        "# Framester frames": [
+          "https://w3id.org/framester/data/framestercore/BodyDescriptionHolistic",
+          "https://w3id.org/framester/data/framestercore/ColorQualities",
+          "https://w3id.org/framester/data/framestercore/Difficulty",
+          "https://w3id.org/framester/data/framestercore/SoundLevel",
+          "https://w3id.org/framester/data/framestercore/Strictness"
+        ],
+        "#\u00a0ConceptNet concepts": [
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/soft"
+        ],
+        "#\u00a0causes": [],
+        "#\u00a0derivedFrom": [],
+        "#\u00a0formsOf": [],
+        "#\u00a0hasSubEvent": [],
+        "#\u00a0usedFor": []
+      }
+    ],
+    "softness": [
+      {
+        "# DBpedia Entities": [
+          "http://en.wiktionary.org/wiki/softness",
+          "http://fr.wiktionary.org/wiki/softness"
+        ],
+        "# Framester frames": [
+          "https://w3id.org/framester/data/framestercore/Conduct",
+          "https://w3id.org/framester/data/framestercore/MentalProperty",
+          "https://w3id.org/framester/data/framestercore/Weather",
+          "https://w3id.org/framester/data/framestercore/StateOfEntity",
+          "https://w3id.org/framester/data/framestercore/Differentiation"
+        ],
+        "#\u00a0ConceptNet concepts": [
+          "https://w3id.org/framester/conceptnet/5.7.0/c/en/softness"
+        ],
+        "#\u00a0causes": [],
+        "#\u00a0derivedFrom": [],
+        "#\u00a0formsOf": [],
+        "#\u00a0hasSubEvent": [],
+        "#\u00a0usedFor": []
+      }
+    ]
+  },
+  "danger_cluster": {
+    "danger":[
+    {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/danger",
+        "http://fr.wiktionary.org/wiki/danger"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/BeingAtRisk",
+        "https://w3id.org/framester/data/framestercore/BeingEmployed",
+        "https://w3id.org/framester/data/framestercore/Commitment",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/Locale",
+        "https://w3id.org/framester/data/framestercore/RiskySituation",
+        "https://w3id.org/framester/data/framestercore/RunRisk",
+        "https://w3id.org/framester/data/framestercore/Daring"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/danger"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/having_epileptic_fit",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/starting_flame_or_fire"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/climbing_mountain"
+      ]
+    }
+  ] ,
+    "data": [{
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/peril",
+        "http://fr.wiktionary.org/wiki/peril"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Attempt",
+        "https://w3id.org/framester/data/framestercore/BeingAtRisk",
+        "https://w3id.org/framester/data/framestercore/BeingEmployed",
+        "https://w3id.org/framester/data/framestercore/CauseChange",
+        "https://w3id.org/framester/data/framestercore/Commitment",
+        "https://w3id.org/framester/data/framestercore/Endangering",
+        "https://w3id.org/framester/data/framestercore/Existence",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/ObjectiveInfluence",
+        "https://w3id.org/framester/data/framestercore/RiskySituation",
+        "https://w3id.org/framester/data/framestercore/RunRisk",
+        "https://w3id.org/framester/data/framestercore/AttemptMeans",
+        "https://w3id.org/framester/data/framestercore/Daring"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/peril"
+      ],
+      "#\u00a0causes": [],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }],
+    "risk": [
+    {
+      "# DBpedia Entities": [
+        "http://dbpedia.org/resource/Risk",
+        "http://en.wiktionary.org/wiki/risk",
+        "http://fr.wiktionary.org/wiki/risk",
+        "http://wikidata.dbpedia.org/resource/Q104493"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Attempt",
+        "https://w3id.org/framester/data/framestercore/BeingAtRisk",
+        "https://w3id.org/framester/data/framestercore/BeingEmployed",
+        "https://w3id.org/framester/data/framestercore/CauseChange",
+        "https://w3id.org/framester/data/framestercore/Commitment",
+        "https://w3id.org/framester/data/framestercore/Endangering",
+        "https://w3id.org/framester/data/framestercore/Existence",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/Likelihood",
+        "https://w3id.org/framester/data/framestercore/ObjectiveInfluence",
+        "https://w3id.org/framester/data/framestercore/People",
+        "https://w3id.org/framester/data/framestercore/Probability",
+        "https://w3id.org/framester/data/framestercore/RiskySituation",
+        "https://w3id.org/framester/data/framestercore/RunRisk",
+        "https://w3id.org/framester/data/framestercore/Statement",
+        "https://w3id.org/framester/data/framestercore/AttemptMeans",
+        "https://w3id.org/framester/data/framestercore/Daring",
+        "https://w3id.org/framester/data/framestercore/Quantity"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/risk"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/investing_money_or_energy"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }
+  ]
+  },
+  "death_cluster": {
+    "death": [
+    {
+      "# DBpedia Entities": [
+        "http://dbpedia.org/resource/Death",
+        "http://en.wiktionary.org/wiki/Death",
+        "http://en.wiktionary.org/wiki/death",
+        "http://en.wiktionary.org/wiki/to_death",
+        "http://en.wiktionary.org/wiki/to_the_death",
+        "http://fr.wiktionary.org/wiki/Death",
+        "http://fr.wiktionary.org/wiki/death",
+        "http://wikidata.dbpedia.org/resource/Q4",
+        "http://dbpedia.org/resource/Cancer",
+        "http://en.wiktionary.org/wiki/cancer",
+        "http://en.wiktionary.org/wiki/Cancer",
+        "http://fr.wiktionary.org/wiki/Cancer",
+        "http://fr.wiktionary.org/wiki/cancer",
+        "http://umbel.org/umbel/sc/Cancer",
+        "http://wikidata.dbpedia.org/resource/Q12078",
+        "http://en.wiktionary.org/wiki/dying",
+        "http://fr.wiktionary.org/wiki/dying",
+        "http://en.wiktionary.org/wiki/eating",
+        "http://fr.wiktionary.org/wiki/eating",
+        "http://dbpedia.org/resource/Explosion",
+        "http://dbpedia.org/resource/The_Explosion",
+        "http://en.wiktionary.org/wiki/explosion",
+        "http://fr.wiktionary.org/wiki/explosion",
+        "http://umbel.org/umbel/sc/Explosion",
+        "http://wikidata.dbpedia.org/resource/Q179057",
+        "http://wikidata.dbpedia.org/resource/Q385980",
+        "http://en.wiktionary.org/wiki/getting",
+        "http://fr.wiktionary.org/wiki/getting",
+        "http://en.wiktionary.org/wiki/living",
+        "http://fr.wiktionary.org/wiki/living",
+        "http://en.wiktionary.org/wiki/sleeping",
+        "http://fr.wiktionary.org/wiki/sleeping",
+        "http://wordnet-rdf.princeton.edu/wn31/let+sleeping+dogs+lie-p#Component-2",
+        "http://dbpedia.org/resource/Drowning",
+        "http://en.wiktionary.org/wiki/drowning",
+        "http://fr.wiktionary.org/wiki/drowning",
+        "http://wikidata.dbpedia.org/resource/Q506616",
+        "http://en.wiktionary.org/wiki/killing",
+        "http://fr.wiktionary.org/wiki/killing",
+        "http://wordnet-rdf.princeton.edu/wn31/make+a+killing-p#Component-3",
+        "http://dbpedia.org/resource/The_Poison",
+        "http://dbpedia.org/resource/Poison",
+        "http://en.wiktionary.org/wiki/poison",
+        "http://fr.wiktionary.org/wiki/poison",
+        "http://wikidata.dbpedia.org/resource/Q40867",
+        "http://wikidata.dbpedia.org/resource/Q598888",
+        "http://dbpedia.org/resource/Sin",
+        "http://fr.wiktionary.org/wiki/sin",
+        "http://en.wiktionary.org/wiki/sin",
+        "http://en.wiktionary.org/wiki/SIN",
+        "http://en.wiktionary.org/wiki/Sin",
+        "http://wikidata.dbpedia.org/resource/Q60227",
+        "http://dbpedia.org/resource/Violence",
+        "http://en.wiktionary.org/wiki/violence",
+        "http://fr.wiktionary.org/wiki/violence",
+        "http://wikidata.dbpedia.org/resource/Q124490",
+        "http://dbpedia.org/resource/War",
+        "http://en.wiktionary.org/wiki/war",
+        "http://fr.wiktionary.org/wiki/war",
+        "http://en.wiktionary.org/wiki/WAR",
+        "http://en.wiktionary.org/wiki/War",
+        "http://en.wiktionary.org/wiki/War.",
+        "http://en.wiktionary.org/wiki/war-",
+        "http://umbel.org/umbel/sc/War",
+        "http://wikidata.dbpedia.org/resource/Q198",
+        "http://dbpedia.org/resource/Smoking",
+        "http://en.wiktionary.org/wiki/smoking",
+        "http://fr.wiktionary.org/wiki/smoking",
+        "http://wikidata.dbpedia.org/resource/Q662860",
+        "http://en.wiktionary.org/wiki/commit_suicide",
+        "http://fr.wiktionary.org/wiki/commit_suicide",
+        "http://dbpedia.org/resource/Diving",
+        "http://en.wiktionary.org/wiki/diving",
+        "http://fr.wiktionary.org/wiki/diving",
+        "http://umbel.org/umbel/sc/Diving",
+        "http://wikidata.dbpedia.org/resource/Q7735",
+        "http://en.wiktionary.org/wiki/getting_drunk",
+        "http://fr.wiktionary.org/wiki/getting_drunk",
+        "http://en.wiktionary.org/wiki/committing_suicide",
+        "http://en.wiktionary.org/wiki/competing",
+        "http://fr.wiktionary.org/wiki/competing",
+        "http://dbpedia.org/resource/Dehydration",
+        "http://en.wiktionary.org/wiki/dehydration",
+        "http://umbel.org/umbel/sc/Dehydration",
+        "http://wikidata.dbpedia.org/resource/Q194290",
+        "http://en.wiktionary.org/wiki/driving_car",
+        "http://en.wiktionary.org/wiki/drug_addiction",
+        "http://en.wiktionary.org/wiki/drunk_driving",
+        "http://umbel.org/umbel/sc/DrunkDriving",
+        "http://dbpedia.org/resource/Fasting",
+        "http://en.wiktionary.org/wiki/fasting",
+        "http://fr.wiktionary.org/wiki/fasting",
+        "http://wikidata.dbpedia.org/resource/Q44602",
+        "http://en.wiktionary.org/wiki/impalement",
+        "http://fr.wiktionary.org/wiki/impalement",
+        "http://dbpedia.org/resource/Infection",
+        "http://en.wiktionary.org/wiki/infection",
+        "http://umbel.org/umbel/sc/Infection",
+        "http://wikidata.dbpedia.org/resource/Q166231",
+        "http://dbpedia.org/resource/Snoring",
+        "http://en.wiktionary.org/wiki/snoring",
+        "http://fr.wiktionary.org/wiki/snoring",
+        "http://wikidata.dbpedia.org/resource/Q205835",
+        "http://dbpedia.org/resource/Starvation",
+        "http://en.wiktionary.org/wiki/starvation",
+        "http://fr.wiktionary.org/wiki/starvation",
+        "http://wikidata.dbpedia.org/resource/Q853930",
+        "http://en.wiktionary.org/wiki/nuclear_war",
+        "http://en.wiktionary.org/wiki/suffocation",
+        "http://fr.wiktionary.org/wiki/suffocation",
+        "http://dbpedia.org/resource/Terrorism",
+        "http://en.wiktionary.org/wiki/terrorism",
+        "http://fr.wiktionary.org/wiki/terrorism",
+        "http://wikidata.dbpedia.org/resource/Q7283",
+        "http://dbpedia.org/resource/Suicide",
+        "http://en.wiktionary.org/wiki/suicide",
+        "http://fr.wiktionary.org/wiki/suicide",
+        "http://umbel.org/umbel/sc/Suicide",
+        "http://wikidata.dbpedia.org/resource/Q10737"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Birth",
+        "https://w3id.org/framester/data/framestercore/CauseChange",
+        "https://w3id.org/framester/data/framestercore/Death",
+        "https://w3id.org/framester/data/framestercore/Event",
+        "https://w3id.org/framester/data/framestercore/LocationInTime",
+        "https://w3id.org/framester/data/framestercore/ProcessEnd",
+        "https://w3id.org/framester/data/framestercore/UndergoChange",
+        "https://w3id.org/framester/data/framestercore/Quantity",
+        "https://w3id.org/framester/data/framestercore/Timespan"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/death"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/cancer",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/dying",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/eating",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/explosion",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/living",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/sleeping",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/drowning",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/killing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/poison",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/sin",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/violence",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/war",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/smoking",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/commit_suicide",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/destroying_enemy",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/diving",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/drinking_alcohol",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fighting_war",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_drunk",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_old",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/not_eating",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running_marathon",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/starting_fire",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/advancing_into_battle",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/bear_attack",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/cancerous_tumor",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/catching_mumps",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/commiting_genocide",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/committing_murder",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/committing_suicide",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/competing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/conquering_nation",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/convicting_suspect_for_crime",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/deciding_criminal_s_fate",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/dehydration",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/drinking_liquid_pipe_cleaner",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/driving_car",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/drug_addiction",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/drunk_driving",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/eating_hamburger",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/eating_head",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/excessive_bleeding",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/falling_from_wimdow",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fasting",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fighting_enemy",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_physical_activity",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/giving_assistance",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/giving_clue",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/going_for_swim",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/going_into_coma",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/going_to_doctor",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/having_asthma_attack",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/having_heart_attack",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/having_pneumonia",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/hurting_else",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/impalement",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/infection",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/injesting_poison",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_out_window",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/killing_people",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/losing_weight",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/maintaining_good_health",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/snoring",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/starvation",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/joining_army",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_down_from_airplane",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_off_cliff",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_out_of_window",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/living_life",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/losing_consciousness",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/nuclear_war",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/passing_sentence",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_football",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_frisbee",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/proving_physical_endurance",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running_out_of_steam",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running_twenty_six_miles",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/shooting_guns",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/sleighing_ride",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/stabbing_to_death",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/starting_flame_or_fire",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/stopping_car",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/suffocation",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/taking_car_for_drive",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/terrorism"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/suicide"
+      ]
+    }
+  ],
+    "lethal":[
+    {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/lethal",
+        "http://fr.wiktionary.org/wiki/lethal"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Killing"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/lethal"
+      ],
+      "#\u00a0causes": [],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }
+  ] ,
+    "suicide": [
+    {
+      "# DBpedia Entities": [
+        "http://dbpedia.org/resource/Suicide",
+        "http://en.wiktionary.org/wiki/suicide",
+        "http://fr.wiktionary.org/wiki/suicide",
+        "http://umbel.org/umbel/sc/Suicide",
+        "http://wikidata.dbpedia.org/resource/Q10737",
+        "http://en.wiktionary.org/wiki/boring",
+        "http://fr.wiktionary.org/wiki/boring",
+        "http://en.wiktionary.org/wiki/Depression",
+        "http://en.wiktionary.org/wiki/depression",
+        "http://fr.wiktionary.org/wiki/depression",
+        "http://umbel.org/umbel/sc/Depression_Topographical",
+        "http://en.wiktionary.org/wiki/killing",
+        "http://fr.wiktionary.org/wiki/killing",
+        "http://wordnet-rdf.princeton.edu/wn31/make+a+killing-p#Component-3"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/CauseChange",
+        "https://w3id.org/framester/data/framestercore/Killing",
+        "https://w3id.org/framester/data/framestercore/People"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/suicide"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/boring",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/depression",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/killing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/finding_truth",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/knowing_how_stock_market_performed",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/viewing_video",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/working_box_office"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/double_edged_razor",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_out_of_window"
+      ]
+    }
+  ] ,
+    "funeral": [
+    {
+      "# DBpedia Entities": [
+        "http://dbpedia.org/resource/Funeral",
+        "http://en.wiktionary.org/wiki/funeral",
+        "http://fr.wiktionary.org/wiki/funeral",
+        "http://wikidata.dbpedia.org/resource/Q201676",
+        "http://en.wiktionary.org/wiki/dying",
+        "http://fr.wiktionary.org/wiki/dying",
+        "http://en.wiktionary.org/wiki/killing",
+        "http://fr.wiktionary.org/wiki/killing",
+        "http://wordnet-rdf.princeton.edu/wn31/make+a+killing-p#Component-3"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Event"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/funeral"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/dying",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/killing"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }
+  ]
+  },
+  "fitness_cluster": {
+    "exercise":[
+    {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/exercise",
+        "http://fr.wiktionary.org/wiki/exercise",
+        "http://en.wiktionary.org/wiki/walking",
+        "http://fr.wiktionary.org/wiki/walking",
+        "http://wordnet-rdf.princeton.edu/wn31/walking+on+air-p#Component-1",
+        "http://wordnet-rdf.princeton.edu/wn31/dancing+on+someone's+grave-p#Component-1",
+        "http://en.wiktionary.org/wiki/dancing",
+        "http://fr.wiktionary.org/wiki/dancing",
+        "http://en.wiktionary.org/wiki/hiking",
+        "http://fr.wiktionary.org/wiki/hiking",
+        "http://umbel.org/umbel/sc/HikingEvent",
+        "http://en.wiktionary.org/wiki/jumping_rope",
+        "http://dbpedia.org/resource/Fencing",
+        "http://en.wiktionary.org/wiki/fencing",
+        "http://fr.wiktionary.org/wiki/fencing",
+        "http://wikidata.dbpedia.org/resource/Q12100",
+        "http://en.wiktionary.org/wiki/walking",
+        "http://fr.wiktionary.org/wiki/walking",
+        "http://wordnet-rdf.princeton.edu/wn31/walking+on+air-p#Component-1",
+        "http://dbpedia.org/resource/Climbing",
+        "http://en.wiktionary.org/wiki/climbing",
+        "http://fr.wiktionary.org/wiki/climbing",
+        "http://wikidata.dbpedia.org/resource/Q22857",
+        "http://en.wiktionary.org/wiki/playing",
+        "http://fr.wiktionary.org/wiki/playing",
+        "http://wordnet-rdf.princeton.edu/wn31/playing+to+the+gallery-p#Component-1",
+        "http://en.wiktionary.org/wiki/running",
+        "http://fr.wiktionary.org/wiki/running",
+        "http://wordnet-rdf.princeton.edu/wn31/running+on+empty-p#Component-1",
+        "http://wordnet-rdf.princeton.edu/wn31/hit+the+ground+running-p#Component-4",
+        "http://en.wiktionary.org/wiki/basketball_court",
+        "http://umbel.org/umbel/sc/BasketballCourt",
+        "http://en.wiktionary.org/wiki/gymnasium",
+        "http://fr.wiktionary.org/wiki/gymnasium",
+        "http://umbel.org/umbel/sc/GymnasiumRoom",
+        "http://umbel.org/umbel/sc/Gymnasium_Facility",
+        "http://wordnet-rdf.princeton.edu/wn31/dancing+on+someone's+grave-p#Component-1",
+        "http://en.wiktionary.org/wiki/dancing",
+        "http://fr.wiktionary.org/wiki/dancing",
+        "http://fr.wiktionary.org/wiki/mat",
+        "http://en.wiktionary.org/wiki/mat",
+        "http://en.wiktionary.org/wiki/Mat",
+        "http://en.wiktionary.org/wiki/Mat.",
+        "http://en.wiktionary.org/wiki/mat.",
+        "http://umbel.org/umbel/sc/Mat",
+        "http://en.wiktionary.org/wiki/squash_court",
+        "http://en.wiktionary.org/wiki/staircase",
+        "http://fr.wiktionary.org/wiki/staircase",
+        "http://en.wiktionary.org/wiki/swimming",
+        "http://fr.wiktionary.org/wiki/swimming",
+        "http://umbel.org/umbel/sc/Swimming_Generic",
+        "http://dbpedia.org/resource/Trampoline",
+        "http://en.wiktionary.org/wiki/trampoline",
+        "http://fr.wiktionary.org/wiki/trampoline",
+        "http://wikidata.dbpedia.org/resource/Q327911",
+        "http://en.wiktionary.org/wiki/Weights",
+        "http://en.wiktionary.org/wiki/weights",
+        "http://fr.wiktionary.org/wiki/weights",
+        "http://en.wiktionary.org/wiki/cleaning_house",
+        "http://dbpedia.org/resource/Diving",
+        "http://en.wiktionary.org/wiki/diving",
+        "http://fr.wiktionary.org/wiki/diving",
+        "http://umbel.org/umbel/sc/Diving",
+        "http://wikidata.dbpedia.org/resource/Q7735",
+        "http://en.wiktionary.org/wiki/hiking",
+        "http://fr.wiktionary.org/wiki/hiking",
+        "http://umbel.org/umbel/sc/HikingEvent",
+        "http://en.wiktionary.org/wiki/jumping_rope",
+        "http://dbpedia.org/resource/Skiing",
+        "http://en.wiktionary.org/wiki/skiing",
+        "http://fr.wiktionary.org/wiki/skiing",
+        "http://wikidata.dbpedia.org/resource/Q130949",
+        "http://dbpedia.org/resource/Fencing",
+        "http://en.wiktionary.org/wiki/fencing",
+        "http://fr.wiktionary.org/wiki/fencing",
+        "http://wikidata.dbpedia.org/resource/Q12100",
+        "http://dbpedia.org/resource/Jogging",
+        "http://en.wiktionary.org/wiki/jogging",
+        "http://fr.wiktionary.org/wiki/jogging",
+        "http://wikidata.dbpedia.org/resource/Q816261",
+        "http://en.wiktionary.org/wiki/playing_ball",
+        "http://en.wiktionary.org/wiki/playing_the_ball",
+        "http://en.wiktionary.org/wiki/skating",
+        "http://fr.wiktionary.org/wiki/skating",
+        "http://dbpedia.org/resource/Surfing",
+        "http://en.wiktionary.org/wiki/surfing",
+        "http://fr.wiktionary.org/wiki/surfing",
+        "http://umbel.org/umbel/sc/Surfing",
+        "http://wikidata.dbpedia.org/resource/Q159992",
+        "http://dbpedia.org/resource/Wrestling",
+        "http://en.wiktionary.org/wiki/wrestling",
+        "http://fr.wiktionary.org/wiki/wrestling",
+        "http://umbel.org/umbel/sc/WrestlingSportsEvent",
+        "http://wikidata.dbpedia.org/resource/Q42486",
+        "http://en.wiktionary.org/wiki/jump_rope",
+        "http://fr.wiktionary.org/wiki/jump_rope",
+        "http://en.wiktionary.org/wiki/skipping",
+        "http://fr.wiktionary.org/wiki/skipping",
+        "http://en.wiktionary.org/wiki/jump_ropes",
+        "http://fr.wiktionary.org/wiki/jump_ropes"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/BeingEmployed",
+        "https://w3id.org/framester/data/framestercore/Commitment",
+        "https://w3id.org/framester/data/framestercore/EducationTeaching",
+        "https://w3id.org/framester/data/framestercore/Event",
+        "https://w3id.org/framester/data/framestercore/Gizmo",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/Possibilities",
+        "https://w3id.org/framester/data/framestercore/Purpose",
+        "https://w3id.org/framester/data/framestercore/Rite",
+        "https://w3id.org/framester/data/framestercore/TransitiveAction",
+        "https://w3id.org/framester/data/framestercore/Using",
+        "https://w3id.org/framester/data/framestercore/Practice",
+        "https://w3id.org/framester/data/framestercore/Supply",
+        "https://w3id.org/framester/data/framestercore/Exercising",
+        "https://w3id.org/framester/data/framestercore/InherentPurpose"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/exercise"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/walking",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/dancing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_up_and_down",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/hiking",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_rope",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fencing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_in_shape",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/going_for_run",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/going_for_walk",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/maintaining_good_health",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/taking_walk",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_basketball",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_frisbee",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_lacrosse",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_tennis",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running_in_marathon",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/walking_around_lake",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/walking_dog"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/walking",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/climbing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/baseball_stadium",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/basketball_court",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/gymnasium",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/dancing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/mat",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/squash_court",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/staircase",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/swimming",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/tennis_game",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/trampoline",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/weights",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/flying_kite",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_up_and_down",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/cleaning_house",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/diving",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/hiking",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jumping_rope",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_hockey",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_sports",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/riding_bicycle",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/riding_bike",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running_marathon",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/skiing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/becoming_scuba_diver",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/chopping_firewood",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/climbing_mountain",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/doing_housework",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fencing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_physical_activity",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jogging",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_ball",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_baseball",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_basketball",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_football",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_frisbee",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_game",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_game_with_friends",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_lacrosse",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_soccer",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_sport",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/releasing_energy",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running_in_marathon",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running_twenty_six_miles",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/skating",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/surfing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/waiting_tables",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/walking_around_lake",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/weeding_garden",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/wrestling",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jump_rope",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/skipping",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jump_ropes",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/mdicine_ball"
+      ]
+    }
+  ] ,
+    "fitness": [
+    {
+      "# DBpedia Entities": [
+        "http://fr.wiktionary.org/wiki/fitness",
+        "http://en.wiktionary.org/wiki/fitness",
+        "http://en.wiktionary.org/wiki/exercise",
+        "http://fr.wiktionary.org/wiki/exercise",
+        "http://en.wiktionary.org/wiki/playing",
+        "http://fr.wiktionary.org/wiki/playing",
+        "http://wordnet-rdf.princeton.edu/wn31/playing+to+the+gallery-p#Component-1",
+        "http://en.wiktionary.org/wiki/exercising",
+        "http://fr.wiktionary.org/wiki/exercising",
+        "http://dbpedia.org/resource/Jogging",
+        "http://en.wiktionary.org/wiki/jogging",
+        "http://fr.wiktionary.org/wiki/jogging",
+        "http://wikidata.dbpedia.org/resource/Q816261"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Capability",
+        "https://w3id.org/framester/data/framestercore/StateOfEntity",
+        "https://w3id.org/framester/data/framestercore/Differentiation",
+        "https://w3id.org/framester/data/framestercore/Expertise",
+        "https://w3id.org/framester/data/framestercore/Suitability"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fitness"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/exercise",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/doing_exercises",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/exercising",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_physical_activity",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/jogging"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_fit",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/maintaining_muscle_strength",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_sport"
+      ]
+    }
+  ],
+    "running": [
+      {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/running",
+        "http://fr.wiktionary.org/wiki/running",
+        "http://wordnet-rdf.princeton.edu/wn31/running+on+empty-p#Component-1",
+        "http://wordnet-rdf.princeton.edu/wn31/hit+the+ground+running-p#Component-4",
+        "http://dbpedia.org/resource/Foot",
+        "http://wordnet-rdf.princeton.edu/wn31/shoot+yourself+in+the+foot-p#Component-5",
+        "http://en.wiktionary.org/wiki/foot",
+        "http://fr.wiktionary.org/wiki/foot",
+        "http://umbel.org/umbel/sc/Foot_AnimalBodyPart",
+        "http://wikidata.dbpedia.org/resource/Q15807",
+        "http://wordnet-rdf.princeton.edu/wn31/put+your+foot+down-p#Component-3",
+        "http://en.wiktionary.org/wiki/legs",
+        "http://fr.wiktionary.org/wiki/legs",
+        "http://en.wiktionary.org/wiki/track",
+        "http://fr.wiktionary.org/wiki/track",
+        "http://dbpedia.org/resource/Stadium",
+        "http://en.wiktionary.org/wiki/stadium",
+        "http://fr.wiktionary.org/wiki/stadium",
+        "http://umbel.org/umbel/sc/Stadium",
+        "http://wikidata.dbpedia.org/resource/Q483110",
+        "http://en.wiktionary.org/wiki/spike",
+        "http://fr.wiktionary.org/wiki/Spike",
+        "http://fr.wiktionary.org/wiki/spike"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/BeingInOperation",
+        "https://w3id.org/framester/data/framestercore/BeingOperational",
+        "https://w3id.org/framester/data/framestercore/CauseChange",
+        "https://w3id.org/framester/data/framestercore/Event",
+        "https://w3id.org/framester/data/framestercore/Impact",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/Manipulation",
+        "https://w3id.org/framester/data/framestercore/Project",
+        "https://w3id.org/framester/data/framestercore/Purpose",
+        "https://w3id.org/framester/data/framestercore/Usefulness",
+        "https://w3id.org/framester/data/framestercore/Commonality"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/running"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/playing_frisbee",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/proving_physical_endurance"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/foot",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/legs",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/track",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/stadium",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_up_early",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/going_for_run",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/spike"
+      ]
+    }
+  ]
+  },
+  "freedom_cluster": {
+     "america":[
+    {
+      "# DBpedia Entities": [
+        "http://fr.wiktionary.org/wiki/America",
+        "http://en.wiktionary.org/wiki/America"
+      ],
+      "# Framester frames": [],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/america"
+      ],
+      "#\u00a0causes": [],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }
+  ],
+    "freedom": [
+    {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/freedom",
+        "http://fr.wiktionary.org/wiki/freedom",
+        "http://en.wiktionary.org/wiki/killing",
+        "http://fr.wiktionary.org/wiki/killing",
+        "http://wordnet-rdf.princeton.edu/wn31/make+a+killing-p#Component-3"
+      ],
+      "# Framester frames": [],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/freedom"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/killing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/getting_divorce",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/purchasing_cellular_phone"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fighting_war",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/discovering_truth"
+      ]
+    }
+  ],
+    "liberty":[
+    {
+      "# DBpedia Entities": [
+        "http://dbpedia.org/resource/Liberty",
+        "http://en.wiktionary.org/wiki/Liberty",
+        "http://en.wiktionary.org/wiki/liberty",
+        "http://fr.wiktionary.org/wiki/liberty",
+        "http://wikidata.dbpedia.org/resource/Q2979"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/ChangeOfLeadership",
+        "https://w3id.org/framester/data/framestercore/Conduct",
+        "https://w3id.org/framester/data/framestercore/Contingency",
+        "https://w3id.org/framester/data/framestercore/LocationInTime",
+        "https://w3id.org/framester/data/framestercore/Misdeed",
+        "https://w3id.org/framester/data/framestercore/Timespan"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/liberty"
+      ],
+      "#\u00a0causes": [],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }
+  ]
+  },
+  "power_cluster": {
+    "force":[
+    {
+      "# DBpedia Entities": [
+        "http://dbpedia.org/resource/Force",
+        "http://en.wiktionary.org/wiki/Force",
+        "http://en.wiktionary.org/wiki/force",
+        "http://fr.wiktionary.org/wiki/Force",
+        "http://fr.wiktionary.org/wiki/force",
+        "http://umbel.org/umbel/sc/Force",
+        "http://wikidata.dbpedia.org/resource/Q11402"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Arriving",
+        "https://w3id.org/framester/data/framestercore/AttemptSuasion",
+        "https://w3id.org/framester/data/framestercore/BeingInEffect",
+        "https://w3id.org/framester/data/framestercore/Building",
+        "https://w3id.org/framester/data/framestercore/Causation",
+        "https://w3id.org/framester/data/framestercore/CauseChangeOfPositionOnAScale",
+        "https://w3id.org/framester/data/framestercore/CauseImpact",
+        "https://w3id.org/framester/data/framestercore/CauseMotion",
+        "https://w3id.org/framester/data/framestercore/CauseToStart",
+        "https://w3id.org/framester/data/framestercore/ComingUpWith",
+        "https://w3id.org/framester/data/framestercore/Containers",
+        "https://w3id.org/framester/data/framestercore/Creating",
+        "https://w3id.org/framester/data/framestercore/Differentiation",
+        "https://w3id.org/framester/data/framestercore/Employing",
+        "https://w3id.org/framester/data/framestercore/Event",
+        "https://w3id.org/framester/data/framestercore/ExecutePlan",
+        "https://w3id.org/framester/data/framestercore/Gizmo",
+        "https://w3id.org/framester/data/framestercore/IngestSubstance",
+        "https://w3id.org/framester/data/framestercore/InherentPurpose",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/IntentionallyCreate",
+        "https://w3id.org/framester/data/framestercore/Manipulation",
+        "https://w3id.org/framester/data/framestercore/Military",
+        "https://w3id.org/framester/data/framestercore/Needing",
+        "https://w3id.org/framester/data/framestercore/ObjectiveInfluence",
+        "https://w3id.org/framester/data/framestercore/Organization",
+        "https://w3id.org/framester/data/framestercore/People",
+        "https://w3id.org/framester/data/framestercore/Rank",
+        "https://w3id.org/framester/data/framestercore/Quantity",
+        "https://w3id.org/framester/data/framestercore/Shapes",
+        "https://w3id.org/framester/data/framestercore/Statement",
+        "https://w3id.org/framester/data/framestercore/SubjectiveInfluence",
+        "https://w3id.org/framester/data/framestercore/SuccessOrFailure",
+        "https://w3id.org/framester/data/framestercore/TalkingInto",
+        "https://w3id.org/framester/data/framestercore/Vehicle"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/force"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/muscular_contraction"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }
+  ],
+    "power": [
+    {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/Power",
+        "http://en.wiktionary.org/wiki/power",
+        "http://fr.wiktionary.org/wiki/power",
+        "http://umbel.org/umbel/sc/Power",
+        "http://dbpedia.org/resource/Disease",
+        "http://en.wiktionary.org/wiki/disease",
+        "http://fr.wiktionary.org/wiki/disease",
+        "http://wikidata.dbpedia.org/resource/Q12136",
+        "http://fr.wiktionary.org/wiki/battery",
+        "http://en.wiktionary.org/wiki/A_battery",
+        "http://en.wiktionary.org/wiki/battery",
+        "http://umbel.org/umbel/sc/Battery"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Assistance",
+        "https://w3id.org/framester/data/framestercore/AttemptSuasion",
+        "https://w3id.org/framester/data/framestercore/Causation",
+        "https://w3id.org/framester/data/framestercore/Event",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/Leadership",
+        "https://w3id.org/framester/data/framestercore/MentalProperty",
+        "https://w3id.org/framester/data/framestercore/Organization",
+        "https://w3id.org/framester/data/framestercore/People",
+        "https://w3id.org/framester/data/framestercore/PoliticalLocales",
+        "https://w3id.org/framester/data/framestercore/TalkingInto",
+        "https://w3id.org/framester/data/framestercore/Text",
+        "https://w3id.org/framester/data/framestercore/Differentiation",
+        "https://w3id.org/framester/data/framestercore/Electricity"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/power"
+      ],
+      "#\u00a0causes": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/finding_information",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/improving_image"
+      ],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/disease",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/battery",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fighting_war",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/conquering_nation",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/waging_war"
+      ]
+    }
+  ],
+    "powerful":[
+    {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/powerful",
+        "http://fr.wiktionary.org/wiki/powerful"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/BeingStrong",
+        "https://w3id.org/framester/data/framestercore/InfluenceOfEventOnCognizer",
+        "https://w3id.org/framester/data/framestercore/SubjectiveInfluence",
+        "https://w3id.org/framester/data/framestercore/BodyDescriptionHolistic",
+        "https://w3id.org/framester/data/framestercore/ExertiveForce"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/powerful"
+      ],
+      "#\u00a0causes": [],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": []
+    }
+  ]
+  },
+  "safety_cluster": {
+    "safety": [
+    {
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/safety",
+        "http://fr.wiktionary.org/wiki/safety",
+        "http://en.wiktionary.org/wiki/skill",
+        "http://fr.wiktionary.org/wiki/skill",
+        "http://en.wiktionary.org/wiki/bridge_railing",
+        "http://en.wiktionary.org/wiki/doorway",
+        "http://fr.wiktionary.org/wiki/doorway",
+        "http://umbel.org/umbel/sc/Doorway",
+        "http://en.wiktionary.org/wiki/fire_extinguisher",
+        "http://fr.wiktionary.org/wiki/fire_extinguisher",
+        "http://umbel.org/umbel/sc/FireExtinguisher",
+        "http://en.wiktionary.org/wiki/seatbelt",
+        "http://dbpedia.org/resource/Airbag",
+        "http://en.wiktionary.org/wiki/airbag",
+        "http://fr.wiktionary.org/wiki/airbag",
+        "http://umbel.org/umbel/sc/AutoAirbag",
+        "http://wikidata.dbpedia.org/resource/Q99905",
+        "http://en.wiktionary.org/wiki/ESC",
+        "http://fr.wiktionary.org/wiki/Esc"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/Accomplishment",
+        "https://w3id.org/framester/data/framestercore/BeingAtRisk",
+        "https://w3id.org/framester/data/framestercore/Containers",
+        "https://w3id.org/framester/data/framestercore/Gizmo",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/Locale",
+        "https://w3id.org/framester/data/framestercore/InherentPurpose"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/safety"
+      ],
+      "#\u00a0causes": [],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/skill",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/bridge_railing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/doorway",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/door_with_lock",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/faucet_overflow",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/fire_extinguisher",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/master_control",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/place_to_stay",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/platform_railing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/seatbelt",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/separate_shower",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/keeping_things_orderly_and_tidy",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/making_sure_re_healthy",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/stopping_bicycle",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/stopping_car",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/telling_many_people_about",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/tying_shoelace",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/airbag",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/esc",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/reflectors_on_bicycles"
+      ]
+    }
+  ],
+    "saftey": [],
+    "security":[{
+      "# DBpedia Entities": [
+        "http://en.wiktionary.org/wiki/security",
+        "http://fr.wiktionary.org/wiki/security",
+        "http://en.wiktionary.org/wiki/apartment_building",
+        "http://fr.wiktionary.org/wiki/apartment_building",
+        "http://umbel.org/umbel/sc/ApartmentBuilding",
+        "http://en.wiktionary.org/wiki/chain",
+        "http://fr.wiktionary.org/wiki/chain",
+        "http://umbel.org/umbel/sc/Chain",
+        "http://umbel.org/umbel/sc/ChainOrganization",
+        "http://wordnet-rdf.princeton.edu/wn31/a+chain+is+no+stronger+than+its+weakest+link-p#Component-2",
+        "http://en.wiktionary.org/wiki/lock",
+        "http://en.wiktionary.org/wiki/-lock",
+        "http://en.wiktionary.org/wiki/Lock",
+        "http://fr.wiktionary.org/wiki/lock",
+        "http://umbel.org/umbel/sc/Lock",
+        "http://umbel.org/umbel/sc/WaterwayLock",
+        "http://dbpedia.org/resource/Revolver",
+        "http://en.wiktionary.org/wiki/revolver",
+        "http://fr.wiktionary.org/wiki/revolver",
+        "http://umbel.org/umbel/sc/Revolver",
+        "http://wikidata.dbpedia.org/resource/Q170382"
+      ],
+      "# Framester frames": [
+        "https://w3id.org/framester/data/framestercore/BeingAtRisk",
+        "https://w3id.org/framester/data/framestercore/Choosing",
+        "https://w3id.org/framester/data/framestercore/Commitment",
+        "https://w3id.org/framester/data/framestercore/Communication",
+        "https://w3id.org/framester/data/framestercore/Documents",
+        "https://w3id.org/framester/data/framestercore/Gizmo",
+        "https://w3id.org/framester/data/framestercore/GrantPermission",
+        "https://w3id.org/framester/data/framestercore/IntentionallyAct",
+        "https://w3id.org/framester/data/framestercore/Organization",
+        "https://w3id.org/framester/data/framestercore/Possession",
+        "https://w3id.org/framester/data/framestercore/Protecting",
+        "https://w3id.org/framester/data/framestercore/Response",
+        "https://w3id.org/framester/data/framestercore/Statement",
+        "https://w3id.org/framester/data/framestercore/Text",
+        "https://w3id.org/framester/data/framestercore/TextCreation",
+        "https://w3id.org/framester/data/framestercore/Permitting",
+        "https://w3id.org/framester/data/framestercore/Feeling",
+        "https://w3id.org/framester/data/framestercore/InherentPurpose",
+        "https://w3id.org/framester/data/framestercore/MakePossibleToDo"
+      ],
+      "#\u00a0ConceptNet concepts": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/security"
+      ],
+      "#\u00a0causes": [],
+      "#\u00a0derivedFrom": [],
+      "#\u00a0formsOf": [],
+      "#\u00a0hasSubEvent": [],
+      "#\u00a0usedFor": [
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/buying_house",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/apartment_building",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/chain",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/door_with_lock",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/lock",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/platform_railing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/revolver",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/terrace_railing",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/buying_food",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/telling_many_people_about",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/door_superviser",
+        "https://w3id.org/framester/conceptnet/5.7.0/c/en/triggerlock"
+      ]
+    }]
+  }
+}
