@@ -1,0 +1,701 @@
+@prefix : <https://w3id.org/musco#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix DUL: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix musco: <https://w3id.org/musco#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@base <https://w3id.org/musco#> .
+
+<https://w3id.org/musco> rdf:type owl:Ontology ;
+                          owl:versionIRI <https://w3id.org/musco/musco_annotation_situations> ;
+                          dc:creator "Delfina Sol Martinez Pandiani, Valentina Presutti." ;
+                          rdfs:comment "This is the ontological module underlying the Multimodal Descriptions of Social Concepts (MUSCO) project, which aims to investigate, model, and experiment with how and why social concepts (such as violence, power, peace, or destruction) are modeled and detected by humans and machines in images. It specifically focuses on the detection of social concepts referring to non-physical objects in (visual) art images. It implements some Ontology Design Patterns such as Descriptions and Situations (DnS) in a modular way. It is furthermore aligned to DUL - Dolce Ultralight foundational Ontology and imports synset and frame evocation classes from the Framester hub." ;
+                          owl:versionInfo "This is the annotation situation module that describes annotation situations specifically related to abstract social concepts." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith
+DUL:associatedWith rdf:type owl:ObjectProperty ;
+                   owl:equivalentProperty musco:associatedWith .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
+DUL:classifies rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty musco:classifies .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines
+DUL:defines rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty musco:defines .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole
+DUL:hasRole rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty musco:hasRole .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
+DUL:hasSetting rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty musco:hasSetting .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy
+DUL:isClassifiedBy rdf:type owl:ObjectProperty ;
+                   owl:equivalentProperty musco:isClassifiedBy ;
+                   rdfs:subPropertyOf DUL:associatedWith ;
+                   rdfs:domain musco:Entity ;
+                   rdfs:comment "Equivalent to dul:isClassifiedBy." ;
+                   rdfs:isDefinedBy <https://w3id.org/musco> .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn
+DUL:isConceptUsedIn rdf:type owl:ObjectProperty ;
+                    owl:equivalentProperty musco:isConceptUsedIn .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn
+DUL:isDefinedIn rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty musco:isDefinedIn .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf
+DUL:isRoleOf rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty musco:isRoleOf .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+DUL:isSettingFor rdf:type owl:ObjectProperty ;
+                 owl:equivalentProperty musco:isSettingFor .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+DUL:satisfies rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty musco:satisfies .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept
+DUL:usesConcept rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty musco:usesConcept .
+
+
+###  https://w3id.org/musco#aboutAnnotatedEntity
+musco:aboutAnnotatedEntity rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf musco:associatedWith ;
+                           owl:inverseOf musco:hasAnnotation ;
+                           rdfs:domain musco:Annotation ;
+                           rdfs:range musco:Entity .
+
+
+###  https://w3id.org/musco#annotationTypedBy
+musco:annotationTypedBy rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith ;
+                        owl:inverseOf musco:typesAnnotation ;
+                        rdfs:domain musco:Annotation ;
+                        rdfs:range musco:Concept .
+
+
+###  https://w3id.org/musco#associatedWith
+musco:associatedWith rdf:type owl:ObjectProperty ;
+                     owl:inverseOf musco:associatedWith ;
+                     rdf:type owl:SymmetricProperty ,
+                              owl:TransitiveProperty ;
+                     rdfs:domain musco:Entity ;
+                     rdfs:range musco:Entity ;
+                     rdfs:comment "Equivalent to dul:associatedWith." ;
+                     rdfs:label "associated with" .
+
+
+###  https://w3id.org/musco#classifies
+musco:classifies rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf musco:associatedWith ;
+                 owl:inverseOf musco:isClassifiedBy ;
+                 rdfs:domain musco:Entity ;
+                 rdfs:range musco:Entity ;
+                 rdfs:comment "Equivalent to dul:classifies" ;
+                 rdfs:isDefinedBy <https://w3id.org/musco> .
+
+
+###  https://w3id.org/musco#defines
+musco:defines rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf musco:usesConcept .
+
+
+###  https://w3id.org/musco#hasAffiliation
+musco:hasAffiliation rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf musco:associatedWith ;
+                     owl:inverseOf musco:isAffiliationOf ;
+                     rdfs:domain musco:Agent ;
+                     rdfs:range musco:Affiliation .
+
+
+###  https://w3id.org/musco#hasAnnotation
+musco:hasAnnotation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#hasAnnotationPlace
+musco:hasAnnotationPlace rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf musco:associatedWith ;
+                         owl:inverseOf musco:isAnnotationPlaceOfSituation ;
+                         rdfs:domain musco:Situation ;
+                         rdfs:range musco:Place .
+
+
+###  https://w3id.org/musco#hasAnnotationSituation
+musco:hasAnnotationSituation rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf musco:hasSetting ;
+                             owl:inverseOf musco:isAnnotationSituationOf ;
+                             rdfs:range musco:AnnotationSituation .
+
+
+###  https://w3id.org/musco#hasAnnotationTime
+musco:hasAnnotationTime rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith ;
+                        owl:inverseOf musco:isAnnotationTimeOfSituation ;
+                        rdfs:domain musco:Situation ;
+                        rdfs:range musco:TimeInterval .
+
+
+###  https://w3id.org/musco#hasAnnotationTypedBy
+musco:hasAnnotationTypedBy rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf musco:associatedWith ;
+                           owl:inverseOf musco:typesAnnotationOf ;
+                           rdfs:domain musco:Entity ;
+                           rdfs:range musco:Concept .
+
+
+###  https://w3id.org/musco#hasClusterConcept
+musco:hasClusterConcept rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith ;
+                        rdfs:domain musco:AbstractConceptCluster ;
+                        rdfs:range musco:AbstractSocialConcept .
+
+
+###  https://w3id.org/musco#hasCollocateTypedBy
+musco:hasCollocateTypedBy rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf musco:hasAnnotationTypedBy ;
+                          owl:inverseOf musco:typesCollocateOf .
+
+
+###  https://w3id.org/musco#hasIndigenousAffiliation
+musco:hasIndigenousAffiliation rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf musco:hasAffiliation ;
+                               owl:inverseOf musco:isIndigenousAffiliationOf .
+
+
+###  https://w3id.org/musco#hasLabelTypedBy
+musco:hasLabelTypedBy rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:hasAnnotationTypedBy ;
+                      owl:inverseOf musco:typesLabelOf ;
+                      rdfs:domain musco:Image ;
+                      rdfs:range musco:Concept .
+
+
+###  https://w3id.org/musco#hasPoliticalAffiliation
+musco:hasPoliticalAffiliation rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:hasAffiliation ;
+                              owl:inverseOf musco:isPoliticalAffiliationOf .
+
+
+###  https://w3id.org/musco#hasReligiousAffiliation
+musco:hasReligiousAffiliation rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:hasAffiliation ;
+                              owl:inverseOf musco:isReligiousAffiliationOf .
+
+
+###  https://w3id.org/musco#hasRole
+musco:hasRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf musco:isClassifiedBy ;
+              owl:inverseOf musco:isRoleOf .
+
+
+###  https://w3id.org/musco#hasSetting
+musco:hasSetting rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf musco:associatedWith ;
+                 rdfs:comment "Equivalent to dul:hasSetting." ;
+                 rdfs:label "has setting" .
+
+
+###  https://w3id.org/musco#involves
+musco:involves rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#involvesAnnotatedEntity
+musco:involvesAnnotatedEntity rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:involves ;
+                              owl:inverseOf musco:isInvolvedInAnnotationSituation ;
+                              rdfs:domain musco:AnnotationSituation ;
+                              rdfs:range musco:Entity .
+
+
+###  https://w3id.org/musco#involvesAnnotator
+musco:involvesAnnotator rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:involves ;
+                        owl:inverseOf musco:isAnnotatorInvolvedInSituation ;
+                        rdfs:domain musco:Situation ;
+                        rdfs:range musco:Annotator .
+
+
+###  https://w3id.org/musco#involvesDataset
+musco:involvesDataset rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:involves ;
+                      owl:inverseOf musco:isDatasetInvolvedInSituation ;
+                      rdfs:domain musco:Situation ;
+                      rdfs:range musco:Entity .
+
+
+###  https://w3id.org/musco#involvesRemunerationScheme
+musco:involvesRemunerationScheme rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf musco:involves ;
+                                 owl:inverseOf musco:isRemunerationSchemeOfSituation ;
+                                 rdfs:domain musco:Situation ;
+                                 rdfs:range musco:RemunerationScheme .
+
+
+###  https://w3id.org/musco#isAffiliationOf
+musco:isAffiliationOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#isAnnotationPlaceOfSituation
+musco:isAnnotationPlaceOfSituation rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#isAnnotationSituationOf
+musco:isAnnotationSituationOf rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:isSettingFor .
+
+
+###  https://w3id.org/musco#isAnnotationTimeOfSituation
+musco:isAnnotationTimeOfSituation rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#isAnnotatorInvolvedInSituation
+musco:isAnnotatorInvolvedInSituation rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf musco:involves .
+
+
+###  https://w3id.org/musco#isClassifiedBy
+musco:isClassifiedBy rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf musco:associatedWith ;
+                     rdfs:comment "Equivalent to DUL:isClassifiedBy" .
+
+
+###  https://w3id.org/musco#isConceptUsedIn
+musco:isConceptUsedIn rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#isDatasetInvolvedInSituation
+musco:isDatasetInvolvedInSituation rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf musco:involves .
+
+
+###  https://w3id.org/musco#isDefinedIn
+musco:isDefinedIn rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf musco:isConceptUsedIn ;
+                  rdfs:domain musco:Role ;
+                  rdfs:range musco:Description .
+
+
+###  https://w3id.org/musco#isIndigenousAffiliationOf
+musco:isIndigenousAffiliationOf rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf musco:isAffiliationOf .
+
+
+###  https://w3id.org/musco#isInvolvedInAnnotationSituation
+musco:isInvolvedInAnnotationSituation rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf musco:involves .
+
+
+###  https://w3id.org/musco#isPoliticalAffiliationOf
+musco:isPoliticalAffiliationOf rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf musco:isAffiliationOf ;
+                               rdfs:domain musco:PoliticalAffiliation ;
+                               rdfs:range musco:Annotator .
+
+
+###  https://w3id.org/musco#isReligiousAffiliationOf
+musco:isReligiousAffiliationOf rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf musco:isAffiliationOf .
+
+
+###  https://w3id.org/musco#isRemunerationSchemeOfSituation
+musco:isRemunerationSchemeOfSituation rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf musco:involves .
+
+
+###  https://w3id.org/musco#isRoleOf
+musco:isRoleOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:classifies ;
+               rdfs:domain musco:Role ;
+               rdfs:range musco:Annotation .
+
+
+###  https://w3id.org/musco#isSatisfiedBy
+musco:isSatisfiedBy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf musco:associatedWith ;
+                    owl:inverseOf musco:satisfies ;
+                    rdfs:domain musco:Description ;
+                    rdfs:range musco:Situation .
+
+
+###  https://w3id.org/musco#isSettingFor
+musco:isSettingFor rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf musco:associatedWith ;
+                   rdfs:comment "Equivalent to dul:isSettingFor." .
+
+
+###  https://w3id.org/musco#realizes
+musco:realizes rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#satisfies
+musco:satisfies rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#typesAnnotation
+musco:typesAnnotation rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#typesAnnotationOf
+musco:typesAnnotationOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith .
+
+
+###  https://w3id.org/musco#typesCollocateOf
+musco:typesCollocateOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf musco:typesAnnotationOf ;
+                       rdfs:domain musco:Concept ;
+                       rdfs:range musco:Concept .
+
+
+###  https://w3id.org/musco#typesLabelOf
+musco:typesLabelOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf musco:typesAnnotationOf ;
+                   rdfs:domain musco:Concept ;
+                   rdfs:range musco:Image .
+
+
+###  https://w3id.org/musco#usesConcept
+musco:usesConcept rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf musco:associatedWith .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue
+DUL:hasDataValue rdf:type owl:DatatypeProperty ;
+                 owl:equivalentProperty musco:hasDataValue .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue
+DUL:hasRegionDataValue rdf:type owl:DatatypeProperty ;
+                       owl:equivalentProperty musco:hasRegionDataValue .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty musco:notation .
+
+
+###  https://w3id.org/musco#hasCoverage
+musco:hasCoverage rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf musco:hasDataValue ;
+                  rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/musco#hasDataValue
+musco:hasDataValue rdf:type owl:DatatypeProperty ;
+                   rdfs:label "has data value" .
+
+
+###  https://w3id.org/musco#hasHeight
+musco:hasHeight rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf musco:hasRegionDataValue ;
+                rdfs:range xsd:decimal ;
+                rdfs:label "has height" .
+
+
+###  https://w3id.org/musco#hasRegionDataValue
+musco:hasRegionDataValue rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf musco:hasDataValue ;
+                         rdfs:comment "A datatype property that encodes values for a Region, e.g. a float for the Region Height." ;
+                         rdfs:isDefinedBy <https://w3id.org/musco> ;
+                         rdfs:label "has region data value"@en ,
+                                    "regione ha valore"@it .
+
+
+###  https://w3id.org/musco#hasWidth
+musco:hasWidth rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf musco:hasRegionDataValue ;
+               rdfs:range xsd:decimal ;
+               rdfs:label "has width" .
+
+
+###  https://w3id.org/musco#hasXCoordinate
+musco:hasXCoordinate rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf musco:hasRegionDataValue ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:label "has x coordinate" .
+
+
+###  https://w3id.org/musco#hasYCoordinate
+musco:hasYCoordinate rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf musco:hasRegionDataValue ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:label "has y coordinate" .
+
+
+###  https://w3id.org/musco#notation
+musco:notation rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/musco#rgbCoordinateBlue
+musco:rgbCoordinateBlue rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf musco:hasDataValue ;
+                        rdfs:range xsd:nonNegativeInteger .
+
+
+###  https://w3id.org/musco#rgbCoordinateGreen
+musco:rgbCoordinateGreen rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf musco:hasDataValue ;
+                         rdfs:range xsd:nonNegativeInteger .
+
+
+###  https://w3id.org/musco#rgbCoordinateRed
+musco:rgbCoordinateRed rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf musco:hasDataValue ;
+                       rdfs:range xsd:nonNegativeInteger .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/musco#AbstractConceptCluster
+musco:AbstractConceptCluster rdf:type owl:Class ;
+                             rdfs:subClassOf musco:Entity .
+
+
+###  https://w3id.org/musco#AbstractSocialConcept
+musco:AbstractSocialConcept rdf:type owl:Class ;
+                            rdfs:subClassOf musco:SocialConcept .
+
+
+###  https://w3id.org/musco#Affiliation
+musco:Affiliation rdf:type owl:Class ;
+                  rdfs:subClassOf musco:SocialObject .
+
+
+###  https://w3id.org/musco#Agent
+musco:Agent rdf:type owl:Class ;
+            rdfs:subClassOf musco:Object .
+
+
+###  https://w3id.org/musco#Annotation
+musco:Annotation rdf:type owl:Class ;
+                 rdfs:subClassOf musco:SocialObject .
+
+
+###  https://w3id.org/musco#AnnotationDescription
+musco:AnnotationDescription rdf:type owl:Class ;
+                            rdfs:subClassOf musco:Description .
+
+
+###  https://w3id.org/musco#AnnotationRole
+musco:AnnotationRole rdf:type owl:Class ;
+                     rdfs:subClassOf musco:Role .
+
+
+###  https://w3id.org/musco#AnnotationSituation
+musco:AnnotationSituation rdf:type owl:Class ;
+                          rdfs:subClassOf musco:Situation .
+
+
+###  https://w3id.org/musco#Annotator
+musco:Annotator rdf:type owl:Class ;
+                rdfs:subClassOf musco:Agent .
+
+
+###  https://w3id.org/musco#AnnotatorCommunity
+musco:AnnotatorCommunity rdf:type owl:Class ;
+                         rdfs:subClassOf musco:Annotator ,
+                                         musco:CollectiveAgent .
+
+
+###  https://w3id.org/musco#CollectiveAgent
+musco:CollectiveAgent rdf:type owl:Class ;
+                      rdfs:subClassOf musco:Agent .
+
+
+###  https://w3id.org/musco#CollocationAnnotation
+musco:CollocationAnnotation rdf:type owl:Class ;
+                            rdfs:subClassOf musco:Annotation .
+
+
+###  https://w3id.org/musco#CollocationAnnotationDescription
+musco:CollocationAnnotationDescription rdf:type owl:Class ;
+                                       rdfs:subClassOf musco:AnnotationDescription .
+
+
+###  https://w3id.org/musco#CollocationRole
+musco:CollocationRole rdf:type owl:Class ;
+                      rdfs:subClassOf musco:AnnotationRole .
+
+
+###  https://w3id.org/musco#CollocationSituation
+musco:CollocationSituation rdf:type owl:Class ;
+                           rdfs:subClassOf musco:AnnotationSituation .
+
+
+###  https://w3id.org/musco#Concept
+musco:Concept rdf:type owl:Class ;
+              rdfs:subClassOf musco:SocialObject ;
+              rdfs:label "Concept" .
+
+
+###  https://w3id.org/musco#Country
+musco:Country rdf:type owl:Class ;
+              rdfs:subClassOf musco:Place .
+
+
+###  https://w3id.org/musco#Dataset
+musco:Dataset rdf:type owl:Class ;
+              rdfs:subClassOf musco:SocialObject .
+
+
+###  https://w3id.org/musco#Description
+musco:Description rdf:type owl:Class ;
+                  rdfs:subClassOf musco:Entity .
+
+
+###  https://w3id.org/musco#Entity
+musco:Entity rdf:type owl:Class ;
+             rdfs:label "Entity" .
+
+
+###  https://w3id.org/musco#Image
+musco:Image rdf:type owl:Class ;
+            rdfs:subClassOf musco:InformationObject .
+
+
+###  https://w3id.org/musco#ImageAnnotation
+musco:ImageAnnotation rdf:type owl:Class ;
+                      rdfs:subClassOf musco:Annotation .
+
+
+###  https://w3id.org/musco#ImageAnnotationDescription
+musco:ImageAnnotationDescription rdf:type owl:Class ;
+                                 rdfs:subClassOf musco:AnnotationDescription .
+
+
+###  https://w3id.org/musco#ImageAnnotationRole
+musco:ImageAnnotationRole rdf:type owl:Class ;
+                          rdfs:subClassOf musco:AnnotationRole .
+
+
+###  https://w3id.org/musco#ImageAnnotationSituation
+musco:ImageAnnotationSituation rdf:type owl:Class ;
+                               rdfs:subClassOf musco:AnnotationSituation .
+
+
+###  https://w3id.org/musco#IndigenousAffiliation
+musco:IndigenousAffiliation rdf:type owl:Class ;
+                            rdfs:subClassOf musco:Affiliation .
+
+
+###  https://w3id.org/musco#IndividualAnnotator
+musco:IndividualAnnotator rdf:type owl:Class ;
+                          rdfs:subClassOf musco:Annotator .
+
+
+###  https://w3id.org/musco#InformationEntity
+musco:InformationEntity rdf:type owl:Class ;
+                        rdfs:subClassOf musco:Entity .
+
+
+###  https://w3id.org/musco#InformationObject
+musco:InformationObject rdf:type owl:Class ;
+                        rdfs:subClassOf musco:InformationEntity ;
+                        rdfs:label "Information Object" .
+
+
+###  https://w3id.org/musco#Object
+musco:Object rdf:type owl:Class ;
+             rdfs:subClassOf musco:Entity ;
+             rdfs:label "Object" .
+
+
+###  https://w3id.org/musco#Place
+musco:Place rdf:type owl:Class ;
+            rdfs:subClassOf musco:SocialObject .
+
+
+###  https://w3id.org/musco#PoliticalAffiliation
+musco:PoliticalAffiliation rdf:type owl:Class ;
+                           rdfs:subClassOf musco:Affiliation .
+
+
+###  https://w3id.org/musco#ReligiousAffiliation
+musco:ReligiousAffiliation rdf:type owl:Class ;
+                           rdfs:subClassOf musco:Affiliation .
+
+
+###  https://w3id.org/musco#RemunerationScheme
+musco:RemunerationScheme rdf:type owl:Class ;
+                         rdfs:subClassOf musco:SocialObject .
+
+
+###  https://w3id.org/musco#Role
+musco:Role rdf:type owl:Class ;
+           rdfs:subClassOf musco:Concept .
+
+
+###  https://w3id.org/musco#Situation
+musco:Situation rdf:type owl:Class ;
+                rdfs:subClassOf musco:Entity ;
+                rdfs:label "Situation" .
+
+
+###  https://w3id.org/musco#SocialConcept
+musco:SocialConcept rdf:type owl:Class ;
+                    rdfs:subClassOf musco:Concept .
+
+
+###  https://w3id.org/musco#SocialObject
+musco:SocialObject rdf:type owl:Class ;
+                   rdfs:subClassOf musco:Object ;
+                   rdfs:label "Social Object" .
+
+
+###  https://w3id.org/musco#TimeInterval
+musco:TimeInterval rdf:type owl:Class ;
+                   rdfs:subClassOf musco:Entity .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

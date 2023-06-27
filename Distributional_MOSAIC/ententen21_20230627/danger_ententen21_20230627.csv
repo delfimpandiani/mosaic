@@ -1,0 +1,1459 @@
+﻿"corpus","preloaded/ententen21_tt31"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+danger,"modifiers of X",,547205,25.980
+,,"imminent",22275,9.940
+,,"grave",19064,9.520
+,,"mortal",8031,8.350
+,,"inherent",8535,8.240
+,,"immediate",16947,7.810
+,,"impending",4923,7.720
+,,"potential",30399,7.590
+,,"present",14262,7.020
+,,"stranger",2285,6.970
+,,"avalanche",2067,6.800
+,,"serious",14535,6.790
+,,"hidden",4913,6.790
+,,"real",42102,6.780
+,,"fire",7901,6.660
+,,"ever-present",1709,6.580
+,,"extreme",6415,6.540
+,,"constant",5770,6.490
+,,"terrible",2975,6.060
+,,"obvious",3732,6.050
+,,"possible",8941,5.950
+,,"life-threatening",1027,5.660
+,,"great",45094,5.640
+,,"deadly",1771,5.580
+,,"danger",847,5.430
+,,"existential",888,5.370
+,,"physical",6369,5.160
+,,"unseen",717,5.120
+,,"unknown",1494,5.020
+,,"wildfire",617,5.010
+,,"unnecessary",1028,5.010
+danger,"nouns modified by X",,93299,4.430
+,,"zone",16008,7.620
+,,"toil",246,6.160
+,,"sign",5154,5.920
+,,"intrigue",291,5.870
+,,"loom",241,5.720
+,,"signal",3313,5.560
+,,"danger",847,5.430
+danger,"verbs with X as object",,618945,29.390
+,,"pose",44928,9.830
+,,"sense",5553,7.380
+,,"face",18451,6.760
+,,"avert",2475,6.760
+,,"realize",4965,6.510
+,,"perceive",4064,6.470
+,,"highlight",6987,6.430
+,,"avoid",11741,6.420
+,,"brave",1659,6.280
+,,"escape",3305,6.230
+,,"lurk",1350,6.100
+,,"associate",8765,6.000
+,,"recognize",6402,5.960
+,,"minimize",2808,5.940
+,,"loom",1349,5.920
+,,"present",11606,5.810
+,,"constitute",2771,5.750
+,,"realise",1515,5.730
+,,"illustrate",2621,5.600
+,,"exaggerate",1048,5.590
+,,"underestimate",1135,5.570
+,,"apprehend",994,5.570
+,,"lessen",1180,5.550
+,,"foresee",1050,5.550
+,,"downplay",985,5.530
+,,"encounter",2091,5.480
+,,"mitigate",1421,5.450
+,,"lie",1534,5.370
+,,"understand",7317,5.270
+,,"recognise",1660,5.270
+,,"underscore",920,5.240
+,,"eliminate",2809,5.230
+,,"confront",1338,5.210
+,,"risk",1087,5.150
+,,"fear",1154,5.140
+,,"ignore",2364,5.090
+,,"clear",1813,5.060
+danger,"verbs with X as subject",,168038,7.980
+,,"lurk",6878,9.720
+,,"threaten",3769,7.110
+,,"loom",988,6.670
+,,"outweigh",723,6.370
+,,"await",1197,6.200
+,,"lie",4500,6.150
+,,"confront",663,5.790
+,,"pose",1231,5.720
+,,"arise",2360,5.700
+,,"face",4070,5.390
+,,"beset",246,5.370
+,,"exist",2824,5.220
+,,"stalk",246,5.220
+,,"menace",186,5.110
+,,"emanate",266,5.030
+danger,"X and/or ...",,242282,11.500
+,,"difficulty",4911,8.050
+,,"hardship",2679,7.930
+,,"threat",4838,7.640
+,,"risk",8662,7.620
+,,"harm",1889,7.350
+,,"danger",2372,7.320
+,,"intrigue",1515,7.240
+,,"excitement",2077,7.050
+,,"hazard",1615,7.030
+,,"peril",1078,7.000
+,,"mystery",1624,6.730
+,,"adventure",2069,6.680
+,,"trouble",1292,6.610
+,,"pitfall",824,6.570
+,,"toil",752,6.530
+,,"evil",952,6.420
+,,"temptation",761,6.390
+,,"suspense",769,6.360
+,,"fear",2732,6.250
+,,"inconvenience",648,6.230
+,,"obstacle",859,6.210
+,,"distress",810,6.160
+,,"uncertainty",1215,6.140
+,,"romance",864,6.000
+,,"consequence",1163,5.940
+,,"privation",458,5.890
+,,"discomfort",654,5.880
+,,"thrill",474,5.730
+,,"possibility",885,5.680
+,,"darkness",619,5.570
+,,"menace",373,5.550
+,,"nuisance",368,5.530
+,,"tension",716,5.440
+,,"enemy",722,5.410
+,,"suffering",705,5.370
+,,"wonder",515,5.340
+,,"warning",584,5.280
+,,"chaos",521,5.280
+,,"death",2504,5.260
+,,"challenge",1695,5.250
+,,"traps",377,5.240
+,,"persecution",404,5.230
+,,"opportunity",2214,5.200
+,,"urgency",339,5.190
+,,"disaster",583,5.180
+,,"annoyance",292,5.150
+,,"violence",1474,5.090
+,,"adversity",277,5.070
+,,"damage",1119,5.010
+,,"horror",438,5.010
+danger,"prepositional phrases",,1221575,0.000
+,,"... in ""%w""",316627,15.030
+,,"""%w"" of ...",301177,14.300
+,,"... of ""%w""",188973,8.970
+,,"""%w"" to ...",107277,5.090
+,,"... about ""%w""",54665,2.600
+,,"... to ""%w""",45164,2.140
+,,"""%w"" in ...",31395,1.490
+,,"... with ""%w""",24552,1.170
+,,"... from ""%w""",23762,1.130
+,,"""%w"" from ...",18290,0.870
+,,"... on ""%w""",16744,0.790
+,,"""%w"" for ...",16648,0.790
+,,"... for ""%w""",9277,0.440
+,,"... against ""%w""",8806,0.420
+,,"... into ""%w""",7826,0.370
+,,"""%w"" on ...",5932,0.280
+,,"""%w"" at ...",4978,0.240
+,,"... without ""%w""",4820,0.230
+,,"... as ""%w""",4801,0.230
+,,"... by ""%w""",4042,0.190
+,,"... at ""%w""",3544,0.170
+,,"""%w"" with ...",2988,0.140
+,,"""%w"" as ...",2138,0.100
+,,"... than ""%w""",962,0.050
+,,"... over ""%w""",895,0.040
+,,"... after ""%w""",892,0.040
+,,"""%w"" during ...",890,0.040
+,,"""%w"" by ...",869,0.040
+,,"... through ""%w""",852,0.040
+,,"""%w"" than ...",805,0.040
+,,"""%w"" if ...",740,0.040
+,,"... out ""%w""",684,0.030
+,,"""%w"" around ...",545,0.030
+,,"... until ""%w""",539,0.030
+,,"""%w"" along ...",515,0.020
+,,"... under ""%w""",502,0.020
+,,"... like ""%w""",497,0.020
+,,"... toward ""%w""",455,0.020
+,,"... towards ""%w""",435,0.020
+,,"... between ""%w""",431,0.020
+,,"... despite ""%w""",342,0.020
+,,"... if ""%w""",338,0.020
+,,"... upon ""%w""",287,0.010
+,,"""%w"" like ...",258,0.010
+,,"""%w"" within ...",255,0.010
+,,"""%w"" into ...",253,0.010
+,,"""%w"" because ...",240,0.010
+,,"""%w"" without ...",231,0.010
+,,"""%w"" after ...",207,0.010
+,,"... beyond ""%w""",184,0.010
+,,"... around ""%w""",181,0.010
+,,"""%w"" under ...",180,0.010
+,,"... whether ""%w""",150,0.010
+,,"""%w"" through ...",139,0.010
+,,"... among ""%w""",118,0.010
+,,"... before ""%w""",116,0.010
+,,"""%w"" over ...",111,0.010
+,,"""%w"" throughout ...",102,0.000
+,,"""%w"" before ...",101,0.000
+,,"""%w"" across ...",98,0.000
+,,"... because ""%w""",93,0.000
+,,"... en ""%w""",88,0.000
+,,"... across ""%w""",84,0.000
+,,"""%w"" behind ...",74,0.000
+,,"... up ""%w""",67,0.000
+,,"... behind ""%w""",66,0.000
+,,"""%w"" until ...",62,0.000
+,,"""%w"" upon ...",62,0.000
+,,"""%w"" against ...",60,0.000
+,,"... past ""%w""",60,0.000
+,,"""%w"" so ...",59,0.000
+,,"""%w"" while ...",59,0.000
+,,"... off ""%w""",57,0.000
+,,"""%w"" beyond ...",56,0.000
+,,"... near ""%w""",56,0.000
+,,"""%w"" since ...",50,0.000
+,,"""%w"" down ...",47,0.000
+,,"... within ""%w""",44,0.000
+,,"... so ""%w""",42,0.000
+,,"... once ""%w""",42,0.000
+,,"""%w"" among ...",41,0.000
+,,"""%w"" outside ...",41,0.000
+,,"""%w"" inside ...",36,0.000
+,,"""%w"" about ...",35,0.000
+,,"... above ""%w""",35,0.000
+,,"""%w"" unless ...",29,0.000
+,,"... during ""%w""",28,0.000
+,,"""%w"" up ...",21,0.000
+,,"""%w"" despite ...",20,0.000
+,,"... till ""%w""",20,0.000
+,,"""%w"" beneath ...",19,0.000
+,,"""%w"" en ...",19,0.000
+,,"... amid ""%w""",17,0.000
+,,"""%w"" unlike ...",17,0.000
+,,"""%w"" near ...",16,0.000
+,,"""%w"" save ...",16,0.000
+,,"... amidst ""%w""",13,0.000
+,,"... though ""%w""",12,0.000
+,,"""%w"" aboard ...",12,0.000
+,,"... amongst ""%w""",11,0.000
+danger,"adjective predicates of X",,30733,1.460
+,,"inherent",5254,9.720
+,,"imminent",798,8.270
+,,"real",1924,7.300
+,,"past",1032,7.090
+,,"implicit",210,6.930
+,,"near",585,6.760
+,,"greatest",123,6.510
+,,"ever-present",87,6.420
+,,"acute",173,6.380
+,,"immediate",147,6.190
+,,"attendant",72,6.110
+,,"untold",74,6.080
+,,"grave",81,6.030
+,,"incidental",88,5.970
+,,"impending",59,5.920
+,,"imaginary",66,5.860
+,,"obvious",478,5.770
+,,"extreme",113,5.670
+,,"afoot",59,5.500
+,,"apparent",274,5.490
+,,"palpable",80,5.380
+,,"minimal",167,5.370
+,,"considerable",56,5.100
+,,"nigh",40,5.100
+,,"latent",36,5.070
+danger,"X is a ...",,6177,0.290
+,,"danger",115,7.330
+,,"complacency",31,7.290
+,,"temptation",25,6.680
+,,"corner",51,6.440
+,,"panic",18,6.350
+,,"deflation",16,6.330
+,,"tendency",33,6.200
+,,"inflation",21,6.170
+,,"collapse",18,6.100
+,,"fire",41,5.870
+,,"potential",25,5.750
+,,"fear",46,5.710
+,,"damage",26,5.670
+,,"aphrodisiac",11,5.640
+,,"apathy",10,5.620
+,,"proliferation",11,5.590
+,,"exposure",20,5.570
+,,"Iran",13,5.560
+,,"radiation",12,5.510
+,,"terrorism",13,5.480
+,,"possibility",81,5.400
+,,"risk",81,5.360
+,,"explosion",12,5.240
+,,"two-fold",22,5.210
+,,"ignorance",12,5.210
+,,"Islam",11,5.080
+danger,"X''s ...",,322,0.020
+,,"hour",48,5.150
+danger,"possessors of X",,2333,0.110
+,,"tobacco",36,8.550
+,,"smoking",22,8.030
+,,"ephedra",18,7.920
+,,"chemical",31,7.880
+,,"marijuana",41,7.840
+,,"radiation",16,7.580
+,,"drug",144,7.470
+,,"Vioxx",13,7.430
+,,"fracking",14,7.400
+,,"fluoride",13,7.180
+,,"mercury",11,7.100
+,,"lead",18,6.740
+,,"warming",11,6.690
+,,"Democracy",12,6.660
+,,"alcohol",12,6.440
+,,"virus",35,5.930
+,,"wave",10,5.920
+,,"COVID-19",14,5.450
+,,"job",14,5.380
+,,"vaccine",13,5.340
+,,"product",86,5.070
+danger,"... in X",,316627,15.030
+,,"be",245645,8.030
+,,"life",9875,7.560
+,,"seem",1214,6.760
+,,"feel",1340,6.490
+,,"put",3910,6.260
+,,"child",2291,6.000
+,,"other",1350,5.880
+,,"family",1497,5.830
+,,"look",944,5.560
+,,"place",1216,5.190
+,,"health",438,5.070
+danger,"X of ...",,301177,14.300
+,,"extinction",5149,8.850
+,,"smoking",2920,8.060
+,,"frost",2592,8.050
+,,"collapse",3131,8.020
+,,"driving",1421,7.030
+,,"fire",2948,6.880
+,,"harm",1309,6.680
+,,"drug",2953,6.670
+,,"exposure",1803,6.670
+,,"war",5261,6.570
+,,"warming",1156,6.550
+,,"attack",2958,6.540
+,,"prejudice",1002,6.530
+,,"death",4644,6.520
+,,"injury",1945,6.460
+,,"collision",958,6.440
+,,"abuse",2086,6.430
+,,"explosion",1017,6.420
+,,"asbestos",830,6.380
+,,"radiation",1087,6.300
+,,"drinking",812,6.260
+,,"poisoning",791,6.210
+,,"contamination",876,6.190
+,,"pollution",999,6.190
+,,"invasion",886,6.160
+,,"addiction",793,6.060
+,,"smoke",923,6.050
+,,"flooding",699,6.050
+,,"closing",629,5.990
+,,"infection",1478,5.980
+,,"sinking",584,5.940
+,,"tobacco",647,5.880
+,,"alcohol",907,5.840
+,,"terrorism",833,5.800
+,,"destruction",923,5.740
+,,"misuse",519,5.730
+,,"use",2360,5.700
+,,"starvation",527,5.700
+,,"relegation",480,5.680
+,,"vaccine",926,5.660
+,,"fascism",521,5.640
+,,"pesticide",542,5.540
+,,"damage",1132,5.530
+,,"Internet",864,5.530
+,,"proliferation",458,5.530
+,,"situation",1294,5.470
+,,"loss",1069,5.460
+,,"virus",884,5.450
+,,"accident",740,5.420
+,,"sea",706,5.420
+,,"extremism",423,5.410
+,,"conflict",1011,5.370
+,,"weapon",920,5.360
+,,"concussion",396,5.350
+,,"failure",839,5.270
+,,"escalation",369,5.260
+,,"chemical",617,5.230
+,,"vaping",346,5.210
+,,"inflation",454,5.180
+,,"communism",408,5.150
+,,"trafficking",413,5.150
+,,"flood",386,5.150
+,,"change",2218,5.130
+,,"default",391,5.130
+,,"avalanche",332,5.130
+,,"violence",1215,5.120
+,,"complacency",324,5.100
+,,"disease",1490,5.070
+,,"travel",595,5.030
+,,"judgment",537,5.030
+,,"Islam",576,5.010
+danger,"... of X",,188973,8.970
+,,"warn",12050,10.420
+,,"warning",3818,8.980
+,,"aware",16453,8.470
+,,"unaware",2751,8.020
+,,"awareness",4760,7.780
+,,"face",6047,7.390
+,,"reminder",1519,7.230
+,,"apprehension",733,6.850
+,,"public",660,6.680
+,,"sense",7185,6.240
+,,"conscious",631,6.220
+,,"hint",1122,6.190
+,,"sign",3263,6.170
+,,"clear",661,6.110
+,,"threat",1350,6.110
+,,"disregard",432,6.050
+,,"situation",765,5.990
+,,"know",1403,5.940
+,,"spite",1138,5.910
+,,"fear",1446,5.850
+,,"other",467,5.850
+,,"heedless",336,5.830
+,,"ignorant",436,5.810
+,,"moment",1590,5.790
+,,"mindful",421,5.700
+,,"inform",481,5.640
+,,"perception",964,5.630
+,,"wary",391,5.620
+,,"element",2238,5.580
+,,"zone",463,5.580
+,,"beware",357,5.550
+,,"signal",346,5.530
+,,"midst",771,5.460
+,,"full",3089,5.400
+,,"extent",771,5.340
+,,"source",3407,5.320
+,,"approach",370,5.300
+,,"thrill",276,5.270
+,,"cognizant",246,5.260
+,,"time",4269,5.210
+,,"aura",248,5.140
+,,"feeling",981,5.120
+,,"imminence",204,5.120
+,,"unconscious",198,5.070
+,,"speak",1055,5.040
+,,"remind",312,5.040
+,,"tell",364,5.040
+,,"air",315,5.030
+danger,"X to ...",,107277,5.090
+,,"health",6849,8.650
+,,"society",4522,8.650
+,,"democracy",1343,7.920
+,,"security",2075,7.880
+,,"safety",2013,7.810
+,,"peace",1103,7.500
+,,"liberty",719,7.450
+,,"human",1443,7.440
+,,"self",980,7.280
+,,"life",6301,7.140
+,,"pedestrian",527,7.140
+,,"public",4111,7.110
+,,"child",3304,6.900
+,,"humanity",604,6.850
+,,"other",2420,6.750
+,,"community",3463,6.710
+,,"navigation",345,6.510
+,,"freedom",675,6.500
+,,"stability",388,6.400
+,,"worker",704,6.270
+,,"pet",316,6.260
+,,"wildlife",304,6.250
+,,"cyclist",263,6.220
+,,"existence",382,6.140
+,,"civilian",266,6.130
+,,"republic",245,6.130
+,,"civilization",287,6.120
+,,"nation",608,6.110
+,,"motorist",248,6.110
+,,"environment",925,6.060
+,,"survival",335,6.020
+,,"anyone",1357,6.000
+,,"shipping",205,5.830
+,,"citizen",453,5.780
+,,"planet",315,5.780
+,,"driver",359,5.780
+,,"ship",329,5.780
+,,"animal",412,5.770
+,,"Israel",484,5.740
+,,"mankind",237,5.710
+,,"person",1167,5.700
+,,"aircraft",229,5.700
+,,"Republic",239,5.680
+,,"crew",230,5.680
+,,"soul",285,5.670
+,,"resident",546,5.670
+,,"troop",228,5.670
+,,"occupant",179,5.640
+,,"integrity",202,5.640
+,,"baby",263,5.610
+,,"bird",245,5.610
+,,"population",431,5.590
+,,"officer",364,5.590
+,,"personnel",223,5.560
+,,"interest",476,5.550
+,,"user",968,5.540
+,,"passenger",221,5.530
+,,"country",1189,5.490
+,,"Americans",260,5.480
+,,"economy",448,5.400
+,,"victim",321,5.380
+,,"America",567,5.370
+,,"woman",738,5.330
+,,"people",2748,5.320
+,,"States",655,5.280
+,,"patient",619,5.240
+,,"well-being",166,5.230
+,,"kid",301,5.220
+,,"welfare",162,5.220
+,,"world",1085,5.210
+,,"vessel",164,5.180
+,,"faith",222,5.160
+,,"future",327,5.120
+,,"everyone",640,5.120
+,,"unity",134,5.100
+,,"U.S.",293,5.070
+,,"order",338,5.010
+danger,"... about X",,54665,2.600
+,,"warn",3613,10.450
+,,"warning",2779,9.890
+,,"public",1525,8.890
+,,"people",1681,8.630
+,,"child",1021,8.490
+,,"awareness",1655,8.410
+,,"parent",394,7.520
+,,"tale",461,7.510
+,,"kid",376,7.420
+,,"student",533,7.310
+,,"educate",323,7.190
+,,"consumer",291,7.190
+,,"community",369,7.180
+,,"message",445,7.090
+,,"other",325,7.070
+,,"alarm",222,6.910
+,,"youth",215,6.910
+,,"campaign",203,6.830
+,,"teen",193,6.790
+,,"lesson",268,6.780
+,,"world",206,6.670
+,,"education",234,6.660
+,,"year",209,6.490
+,,"driver",153,6.460
+,,"inform",344,6.330
+,,"citizen",138,6.270
+,,"resident",141,6.190
+,,"Americans",128,6.190
+,,"caution",123,6.170
+,,"concern",1062,6.160
+,,"user",144,6.160
+,,"employee",134,6.100
+,,"reader",135,6.090
+,,"teach",193,6.070
+,,"fear",165,6.060
+,,"woman",133,6.060
+,,"concern",1143,6.050
+,,"patient",130,5.920
+,,"evidence",138,5.840
+,,"claim",203,5.830
+,,"speak",797,5.800
+,,"reminder",102,5.750
+,,"word",229,5.740
+,,"point",250,5.700
+,,"everyone",94,5.690
+,,"lecture",97,5.680
+,,"time",129,5.660
+,,"family",105,5.660
+,,"speech",107,5.650
+,,"member",109,5.620
+,,"know",1785,5.610
+,,"argument",153,5.600
+,,"aware",94,5.590
+,,"truth",315,5.570
+,,"teenager",80,5.560
+,,"worry",1160,5.530
+,,"preach",85,5.510
+,,"population",75,5.440
+,,"tell",185,5.420
+,,"worker",77,5.420
+,,"audience",81,5.390
+,,"right",103,5.370
+,,"country",77,5.370
+,,"lie",174,5.360
+,,"parable",73,5.360
+,,"customer",82,5.300
+,,"government",74,5.290
+,,"adult",67,5.260
+,,"worry",130,5.250
+,,"write",786,5.220
+,,"owner",66,5.210
+,,"anxiety",87,5.190
+,,"medium",75,5.180
+,,"school",67,5.170
+,,"statement",184,5.140
+,,"film",159,5.120
+,,"report",135,5.100
+,,"article",367,5.100
+,,"player",59,5.070
+,,"scream",60,5.060
+,,"learn",1265,5.010
+,,"talk",613,5.010
+danger,"... to X",,45164,2.140
+,,"alert",1200,9.270
+,,"oblivious",1265,8.720
+,,"alert",623,8.170
+,,"expose",4344,7.760
+,,"public",393,7.660
+,,"alive",349,7.630
+,,"blind",461,7.580
+,,"awaken",275,7.040
+,,"awareness",220,6.510
+,,"alert",138,6.250
+,,"indifference",142,6.050
+,,"eye",397,6.030
+,,"other",166,5.880
+,,"react",678,5.860
+,,"world",228,5.820
+,,"immune",219,5.780
+,,"people",597,5.750
+,,"indifferent",128,5.750
+,,"worker",131,5.720
+,,"awake",76,5.710
+,,"vulnerable",505,5.700
+,,"driver",101,5.670
+,,"country",232,5.610
+,,"awake",85,5.590
+,,"stranger",173,5.580
+,,"citizen",87,5.550
+,,"point",1022,5.460
+,,"inure",69,5.440
+,,"proportion",157,5.420
+,,"Americans",72,5.410
+,,"vigilant",59,5.380
+,,"susceptible",292,5.330
+,,"community",117,5.290
+,,"attention",1666,5.280
+,,"child",284,5.270
+,,"attune",89,5.230
+,,"prey",93,5.160
+,,"wise",53,5.100
+,,"insensible",49,5.090
+,,"sensitive",295,5.030
+,,"exposure",705,5.010
+,,"employee",79,5.010
+danger,"X in ...",,31395,1.490
+,,"use",2441,6.640
+,,"approach",281,5.560
+,,"delay",76,5.520
+,,"Manger",36,5.200
+danger,"... with X",,24552,1.170
+,,"fraught",6905,11.470
+,,"fraught",1102,10.130
+,,"attend",495,8.480
+,,"flirt",556,7.940
+,,"beset",222,7.780
+,,"rife",276,7.140
+,,"wrought",105,6.920
+,,"brush",202,6.900
+,,"face",1414,6.670
+,,"confront",381,6.480
+,,"threaten",237,6.380
+,,"unattended",61,6.320
+,,"flirt",62,6.140
+,,"frought",35,5.530
+,,"dice",35,5.510
+,,"commensurate",82,5.410
+,,"pregnant",103,5.390
+,,"flirtation",37,5.370
+,,"surround",57,5.340
+,,"riddle",96,5.320
+,,"contend",94,5.310
+,,"fill",1620,5.120
+,,"lace",72,5.120
+danger,"... from X",,23762,1.130
+,,"safe",1482,8.680
+,,"public",347,8.050
+,,"flee",625,7.720
+,,"deliverance",211,7.530
+,,"safety",165,7.340
+,,"secure",132,7.180
+,,"shrink",163,7.160
+,,"free",1573,7.070
+,,"save",346,7.050
+,,"deliver",216,6.980
+,,"citizen",198,6.960
+,,"rescue",250,6.960
+,,"child",933,6.930
+,,"escape",800,6.900
+,,"protect",880,6.770
+,,"preserve",97,6.740
+,,"protection",619,6.690
+,,"community",177,6.630
+,,"family",327,6.630
+,,"escape",369,6.550
+,,"refuge",111,6.520
+,,"immune",156,6.480
+,,"world",218,6.340
+,,"rescue",68,6.330
+,,"shield",95,6.240
+,,"kid",174,6.210
+,,"other",155,6.160
+,,"security",78,6.150
+,,"society",77,6.100
+,,"guard",51,6.060
+,,"secure",67,6.050
+,,"property",144,6.010
+,,"environment",81,6.000
+,,"consumer",69,5.980
+,,"youth",86,5.970
+,,"run",927,5.940
+,,"worker",165,5.920
+,,"shelter",71,5.890
+,,"freedom",216,5.830
+,,"humanity",56,5.830
+,,"shy",118,5.820
+,,"employee",98,5.780
+,,"free",134,5.760
+,,"Americans",60,5.730
+,,"wearer",41,5.710
+,,"country",139,5.700
+,,"resident",72,5.640
+,,"son",61,5.640
+,,"retreat",74,5.600
+,,"nation",55,5.540
+,,"keep",100,5.530
+,,"shelter",62,5.520
+,,"hide",202,5.510
+,,"pet",40,5.510
+,,"animal",75,5.500
+,,"person",125,5.480
+,,"one",75,5.460
+,,"baby",48,5.400
+,,"daughter",49,5.400
+,,"civilian",37,5.340
+,,"health",43,5.340
+,,"life",123,5.310
+,,"haven",32,5.310
+,,"human",42,5.290
+,,"planet",42,5.240
+,,"user",70,5.210
+,,"shield",30,5.210
+,,"relieve",39,5.190
+,,"preservation",27,5.180
+,,"clear",39,5.150
+,,"population",49,5.150
+,,"people",645,5.120
+,,"stay",136,5.100
+,,"earth",50,5.090
+,,"mankind",28,5.030
+danger,"X from ...",,18290,0.870
+,,"Indians",197,7.870
+,,"fire",528,7.540
+,,"enemy",305,7.530
+,,"radiation",163,7.370
+,,"terrorist",116,7.180
+,,"predator",160,7.090
+,,"weapon",133,7.010
+,,"robber",69,6.890
+,,"warming",77,6.710
+,,"terrorism",82,6.660
+,,"traffic",108,6.630
+,,"killer",64,6.620
+,,"frost",61,6.460
+,,"flooding",76,6.410
+,,"submarine",54,6.270
+,,"lightning",48,6.270
+,,"mob",54,6.260
+,,"exposure",176,6.250
+,,"bandit",45,6.240
+,,"flood",69,6.230
+,,"foe",51,6.210
+,,"explosion",74,6.190
+,,"attack",282,6.160
+,,"force",158,6.080
+,,"beast",48,6.080
+,,"Gentile",39,6.050
+,,"storm",97,6.040
+,,"threat",109,5.940
+,,"animal",154,5.940
+,,"smoke",51,5.940
+,,"virus",116,5.910
+,,"wildfire",47,5.900
+,,"pollution",63,5.830
+,,"chemical",56,5.820
+,,"extremist",36,5.810
+,,"bomb",43,5.810
+,,"Islam",46,5.790
+,,"wolf",40,5.770
+,,"thief",36,5.740
+,,"gang",41,5.730
+,,"snake",34,5.710
+,,"earthquake",49,5.660
+,,"human",64,5.640
+,,"criminal",37,5.630
+,,"avalanche",28,5.590
+,,"raid",37,5.570
+,,"native",34,5.570
+,,"asteroid",32,5.570
+,,"wildlife",30,5.570
+,,"poacher",29,5.570
+,,"fallout",32,5.560
+,,"asbestos",28,5.550
+,,"pirate",33,5.510
+,,"bear",31,5.500
+,,"missile",30,5.500
+,,"tsunami",28,5.460
+,,"mine",89,5.450
+,,"Taliban",29,5.450
+,,"vaccine",42,5.420
+,,"invasion",42,5.420
+,,"Iran",79,5.370
+,,"dog",48,5.360
+,,"hazard",38,5.360
+,,"bullet",30,5.360
+,,"erosion",33,5.350
+,,"quarter",95,5.340
+,,"gas",58,5.330
+,,"contamination",36,5.330
+,,"creature",35,5.310
+,,"strike",33,5.310
+,,"Right",26,5.310
+,,"volcano",33,5.290
+,,"fume",24,5.290
+,,"weather",47,5.290
+,,"shark",26,5.290
+,,"hurricane",30,5.260
+,,"proliferation",23,5.260
+,,"man",194,5.260
+,,"change",109,5.250
+,,"assassin",22,5.220
+,,"coronavirus",40,5.180
+,,"river",80,5.170
+,,"flame",29,5.140
+,,"trafficker",21,5.120
+,,"ice",29,5.100
+,,"violence",56,5.080
+,,"freezing",26,5.080
+,,"accident",59,5.070
+,,"landslide",20,5.070
+,,"poisoning",30,5.060
+,,"rise",29,5.060
+,,"drug",45,5.040
+,,"monster",27,5.020
+,,"Turks",20,5.010
+danger,"... is a X",,17219,0.820
+,,"danger",115,7.330
+,,"fire",220,7.170
+,,"Iran",135,6.680
+,,"hypothermia",51,6.540
+,,"Iraq",110,6.310
+,,"Hussein",50,6.310
+,,"terrorism",77,6.270
+,,"Saddam",48,6.250
+,,"warming",77,6.240
+,,"smoke",48,6.160
+,,"flooding",45,6.140
+,,"opportunism",37,6.120
+,,"threat",69,6.100
+,,"poisoning",41,6.070
+,,"defendant",78,6.030
+,,"person",313,6.020
+,,"revisionism",32,5.900
+,,"hazard",36,5.880
+,,"complacency",33,5.880
+,,"Islam",100,5.850
+,,"Trump",126,5.840
+,,"offender",39,5.830
+,,"dehydration",33,5.810
+,,"Isis",34,5.680
+,,"risk",77,5.660
+,,"driving",41,5.650
+,,"individual",117,5.630
+,,"infection",53,5.600
+,,"lightning",29,5.600
+,,"virus",54,5.560
+,,"avalanche",26,5.560
+,,"driver",77,5.540
+,,"inflation",43,5.520
+,,"fascism",31,5.520
+,,"someone",139,5.510
+,,"dog",108,5.480
+,,"radiation",33,5.470
+,,"extremism",25,5.460
+,,"shark",31,5.420
+,,"pollution",38,5.410
+,,"asbestos",25,5.400
+,,"gas",48,5.390
+,,"ice",34,5.390
+,,"communism",31,5.370
+,,"frostbite",22,5.360
+,,"weapon",65,5.330
+,,"patient",89,5.230
+,,"wildfire",22,5.230
+,,"presence",38,5.220
+,,"wolf",30,5.210
+,,"animal",69,5.190
+,,"imperialism",22,5.180
+,,"predator",23,5.140
+,,"flood",23,5.140
+,,"Muslims",31,5.130
+,,"explosion",23,5.120
+,,"COVID-19",32,5.100
+,,"nationalism",23,5.060
+,,"concern",102,5.050
+,,"gun",44,5.040
+,,"frost",18,5.040
+,,"alien",24,5.010
+,,"drug",49,5.010
+danger,"... on X",,16744,0.790
+,,"educate",219,7.780
+,,"awareness",327,7.720
+,,"warning",239,7.630
+,,"public",419,7.400
+,,"youth",129,7.150
+,,"warn",79,6.670
+,,"education",156,6.360
+,,"parent",101,6.250
+,,"tale",44,6.250
+,,"lesson",140,6.150
+,,"campaign",158,6.080
+,,"alarm",50,6.000
+,,"teen",37,5.860
+,,"harp",37,5.610
+,,"expound",42,5.590
+,,"sermon",49,5.550
+,,"lecture",144,5.490
+,,"community",139,5.450
+,,"thrive",99,5.370
+,,"child",149,5.370
+,,"dwell",76,5.290
+,,"brief",40,5.230
+,,"lecture",61,5.230
+,,"consumer",32,5.150
+,,"adult",31,5.120
+,,"attention",135,5.040
+,,"PSA",17,5.010
+,,"spotlight",68,5.010
+,,"caution",17,5.010
+danger,"X for ...",,16648,0.790
+,,"cyclist",84,5.910
+,,"pedestrian",87,5.870
+,,"democracy",156,5.810
+,,"motorist",41,5.530
+,,"civilian",37,5.520
+,,"journalist",77,5.480
+,,"society",181,5.430
+,,"Jews",62,5.390
+,,"Christian",84,5.260
+,,"mankind",58,5.260
+,,"Russia",52,5.220
+,,"Republicans",38,5.180
+,,"Israel",99,5.100
+,,"pet",100,5.040
+danger,"... for X",,9277,0.440
+,,"alert",162,8.490
+,,"alert",211,7.620
+,,"surroundings",48,7.060
+,,"scan",160,7.010
+,,"disregard",260,6.840
+,,"watch",339,6.620
+,,"lookout",232,6.580
+,,"red",44,6.540
+,,"Red",26,6.480
+,,"vigilant",29,6.360
+,,"instinct",45,6.280
+,,"nose",46,6.270
+,,"alert",28,6.210
+,,"contempt",132,6.200
+,,"look-out",26,6.140
+,,"warn",32,6.130
+,,"scout",51,6.050
+,,"watchful",20,6.030
+,,"warning",77,5.970
+,,"red",30,5.940
+,,"unprepared",49,5.790
+,,"watch",113,5.530
+,,"horizon",30,5.530
+,,"potential",688,5.450
+,,"regard",106,5.310
+,,"taste",83,5.310
+,,"potential",94,5.190
+,,"listen",85,5.120
+,,"allegory",13,5.100
+,,"alarm",18,5.020
+danger,"... against X",,8806,0.420
+,,"warn",1717,10.620
+,,"warning",428,9.660
+,,"guard",815,9.040
+,,"Coalition",267,8.860
+,,"guard",215,8.320
+,,"caution",154,8.220
+,,"provide",90,8.100
+,,"public",85,7.950
+,,"precaution",120,7.880
+,,"safeguard",76,7.300
+,,"security",80,7.290
+,,"people",135,7.280
+,,"safeguard",97,7.280
+,,"child",72,7.200
+,,"provision",41,6.990
+,,"family",39,6.710
+,,"caution",29,6.620
+,,"secure",40,6.610
+,,"other",29,6.550
+,,"vigilance",28,6.550
+,,"protect",558,6.460
+,,"protection",488,6.460
+,,"bulwark",41,6.370
+,,"citizen",33,6.330
+,,"safety",24,6.300
+,,"vigilant",26,6.290
+,,"weigh",50,6.230
+,,"property",28,6.230
+,,"shield",32,6.200
+,,"defence",64,6.160
+,,"country",35,6.120
+,,"defense",156,6.110
+,,"guarantee",29,6.070
+,,"balance",34,6.000
+,,"safe",19,5.950
+,,"defend",112,5.940
+,,"mitigate",29,5.910
+,,"unite",33,5.900
+,,"protector",17,5.880
+,,"rail",39,5.870
+,,"nation",22,5.850
+,,"world",21,5.790
+,,"coordination",15,5.790
+,,"user",17,5.720
+,,"reader",14,5.690
+,,"alert",14,5.660
+,,"life",20,5.640
+,,"prepare",15,5.640
+,,"preach",20,5.620
+,,"measure",54,5.610
+,,"insurance",28,5.600
+,,"wearer",13,5.560
+,,"talisman",13,5.560
+,,"youth",14,5.540
+,,"population",15,5.450
+,,"watch",12,5.450
+,,"arm",12,5.440
+,,"church",13,5.420
+,,"worker",17,5.400
+,,"rail",15,5.370
+,,"secure",15,5.370
+,,"system",20,5.290
+,,"defenseless",12,5.280
+,,"Protection",12,5.280
+,,"society",12,5.270
+,,"class",13,5.240
+,,"coalition",15,5.220
+,,"mind",11,5.220
+,,"tale",10,5.200
+,,"inveigh",11,5.190
+,,"preparation",10,5.150
+,,"victim",10,5.150
+,,"individual",13,5.140
+,,"community",14,5.130
+,,"proof",11,5.120
+,,"remedy",14,5.100
+,,"awareness",10,5.080
+,,"States",13,5.040
+danger,"... into X",,7826,0.370
+,,"rush",357,7.680
+,,"stand",42,7.370
+,,"charge",90,7.140
+,,"friend",44,6.640
+,,"other",59,6.620
+,,"first",53,6.320
+,,"lure",34,6.170
+,,"crew",20,6.080
+,,"love",18,6.080
+,,"family",46,6.020
+,,"thrust",75,5.970
+,,"head-first",18,5.940
+,,"run",990,5.920
+,,"ship",29,5.860
+,,"straight",37,5.850
+,,"rush",17,5.660
+,,"wander",63,5.630
+,,"plunge",117,5.620
+,,"hero",14,5.610
+,,"man",59,5.570
+,,"sail",30,5.530
+,,"daughter",16,5.400
+,,"son",16,5.360
+,,"headfirst",10,5.350
+,,"stumble",42,5.290
+,,"vessel",12,5.210
+,,"sleepwalk",10,5.210
+,,"brother",11,5.200
+,,"send",54,5.180
+,,"charge",14,5.170
+,,"soldier",13,5.160
+,,"leap",37,5.010
+danger,"X on ...",,5932,0.280
+,,"sea",97,5.700
+,,"roadway",41,5.570
+,,"horizon",186,5.150
+danger,"X at ...",,4978,0.240
+,,"turn",470,7.170
+,,"Dunwater",12,6.290
+,,"sea",312,5.670
+,,"crossing",42,5.470
+,,"step",110,5.450
+,,"Fukushima",10,5.100
+danger,"... without X",,4820,0.230
+,,"candlelight",24,7.340
+,,"cross",23,7.030
+,,"sea",24,6.980
+,,"approach",18,6.830
+,,"adventure",17,6.760
+,,"glow",16,6.720
+,,"fire",22,6.660
+,,"handle",22,6.660
+,,"experience",30,6.620
+,,"be",1502,6.410
+,,"water",30,6.380
+,,"land",17,6.360
+,,"wall",16,6.290
+,,"limit",12,6.290
+,,"remove",29,6.190
+,,"surface",16,6.160
+,,"apply",19,6.090
+,,"candle",10,6.050
+,,"effect",11,6.010
+,,"speed",14,6.000
+,,"fun",12,5.920
+,,"situation",16,5.910
+,,"battery",10,5.910
+,,"ground",15,5.900
+,,"like",11,5.870
+,,"use",69,5.860
+,,"operation",18,5.860
+,,"heat",10,5.860
+,,"stay",11,5.810
+,,"river",10,5.770
+,,"discharge",10,5.760
+,,"come",65,5.750
+,,"achieve",27,5.750
+,,"other",18,5.720
+,,"purpose",16,5.720
+,,"benefit",12,5.710
+,,"hand",13,5.700
+,,"accomplish",16,5.670
+,,"escape",14,5.670
+,,"battle",10,5.670
+,,"environment",16,5.660
+,,"do",198,5.640
+,,"move",28,5.630
+,,"enjoy",10,5.620
+,,"want",17,5.590
+,,"effect",12,5.530
+,,"space",16,5.530
+,,"way",19,5.510
+,,"night",21,5.490
+,,"place",38,5.450
+,,"road",12,5.450
+,,"need",12,5.450
+,,"free",10,5.450
+,,"pass",39,5.370
+,,"travel",16,5.310
+,,"get",13,5.310
+,,"condition",12,5.230
+,,"release",17,5.200
+,,"read",10,5.180
+,,"area",24,5.150
+,,"play",28,5.120
+,,"thing",19,5.120
+,,"continue",20,5.090
+,,"level",10,5.090
+,,"take",17,5.050
+,,"proceed",15,5.050
+,,"building",10,5.010
+,,"line",10,5.010
+danger,"... as X",,4801,0.230
+,,"loom",35,7.150
+,,"dogmatism",13,6.460
+,,"opportunism",13,6.460
+,,"perceive",265,6.430
+,,"danger",18,6.410
+,,"Iran",33,6.310
+,,"imperialism",12,6.110
+,,"Trump",32,5.890
+,,"fear",11,5.860
+,,"wolf",11,5.780
+,,"Islam",28,5.700
+,,"detain",11,5.680
+,,"communism",11,5.640
+,,"threat",16,5.550
+,,"immigrant",11,5.500
+,,"warming",10,5.480
+,,"pose",101,5.180
+,,"proportion",11,5.130
+danger,"... by X",,4042,0.190
+,,"outweigh",569,9.890
+,,"menace",59,8.300
+,,"undaunted",41,7.500
+,,"beset",140,7.460
+,,"unattended",23,7.340
+,,"undeterred",33,6.900
+,,"alarm",62,6.830
+,,"deter",38,6.710
+,,"terrify",29,6.570
+,,"arouse",37,6.520
+,,"threaten",330,6.460
+,,"undismayed",11,6.450
+,,"confront",142,6.310
+,,"frighten",37,6.300
+,,"unfaze",19,6.210
+,,"daunt",17,6.050
+,,"worry",19,5.940
+,,"preoccupy",10,5.700
+,,"assail",11,5.530
+,,"heighten",18,5.490
+,,"concern",34,5.420
+,,"unmoved",10,5.420
+,,"scare",13,5.340
+,,"necessitate",17,5.170
+,,"stalk",11,5.070
+danger,"verbs with particle ""out"" and X as object",,3907,0.190
+,,"snuff",228,9.390
+,,"sniff",97,7.730
+,,"point",2450,7.390
+,,"spell",175,6.690
+,,"design",10,6.090
+,,"hammer",20,5.130
+danger,"... at X",,3544,0.170
+,,"signal",357,8.550
+,,"alarm",78,7.860
+,,"tremble",37,7.070
+,,"pass",244,6.690
+,,"alarm",25,6.380
+,,"hint",210,6.350
+,,"hint",71,6.110
+,,"frighten",10,5.960
+,,"terrify",12,5.860
+,,"terror",12,5.810
+,,"concern",23,5.640
+,,"fear",13,5.470
+,,"scoff",32,5.450
+,,"appall",16,5.360
+danger,"X with ...",,2988,0.140
+,,"firmness",12,6.280
+,,"courage",42,5.750
+danger,"X as ...",,2138,0.100
+,,"danger",18,6.410
+,,"tooth",10,5.310
+danger,"verbs with particle ""off"" and X as object",,1333,0.060
+,,"ward",731,8.710
+,,"head",82,6.960
+,,"see",47,6.750
+,,"fend",160,6.550
+,,"shrug",53,6.100
+,,"stave",94,6.090
+danger,"... than X",,962,0.050
+,,"nuisance",52,9.830
+,,"annoyance",21,8.710
+,,"inconvenience",13,8.460
+,,"danger",13,7.910
+,,"opportunity",12,6.600
+,,"serious",14,5.770
+,,"dangerous",23,5.210
+danger,"verbs with particle ""up"" and X as object",,956,0.050
+,,"point",57,8.320
+,,"flag",29,7.740
+,,"sweep",36,6.920
+,,"play",80,6.780
+,,"talk",44,6.720
+,,"mop",32,6.290
+,,"ratchete",17,5.810
+,,"size",15,5.620
+,,"weigh",21,5.400
+,,"cover",154,5.370
+danger,"... over X",,895,0.040
+,,"warning",37,9.200
+,,"warn",17,8.440
+,,"alarm",34,8.000
+,,"hysteria",12,7.610
+,,"concern",31,6.760
+,,"fear",27,6.590
+,,"worry",17,6.430
+,,"worry",17,6.380
+,,"anxiety",18,6.250
+,,"gloss",41,6.080
+,,"concern",287,5.920
+,,"triumph",28,5.780
+danger,"... after X",,892,0.040
+,,"garden",119,10.830
+,,"spring",186,10.620
+,,"plant",80,10.130
+,,"danger",37,10.100
+,,"transplant",24,9.410
+,,"seed",36,9.280
+,,"transplant",16,9.010
+,,"outside",21,8.810
+,,"soil",30,8.670
+,,"plant",39,8.550
+,,"sow",13,8.460
+,,"outside",10,8.290
+,,"May",12,6.710
+,,"ground",18,6.670
+,,"persist",10,5.380
+,,"move",11,5.110
+danger,"X during ...",,890,0.040
+,,"fire",14,5.800
+,,"birth",10,5.420
+,,"incident",21,5.300
+,,"journey",23,5.090
+danger,"... through X",,852,0.040
+,,"alive",32,7.780
+,,"safe",16,7.780
+danger,"X than ...",,805,0.040
+,,"danger",13,7.910
+,,"terrorism",15,7.700
+,,"help",18,6.730
+,,"threat",15,6.510
+,,"benefit",27,6.290
+,,"enemy",12,5.970
+,,"opportunity",12,5.860
+,,"attack",15,5.640
+,,"star",16,5.240
+,,"war",13,5.220
+danger,"X if ...",,740,0.040
+,,"identity",24,9.030
+,,"precaution",11,7.890
+,,"Iran",11,6.550
+danger,"... out X",,684,0.030
+,,"point",513,7.640
+,,"spell",15,7.570
+,,"point",64,6.990
+,,"spell",16,6.630
+,,"seek",17,5.280
+danger,"X around ...",,545,0.030
+,,"turn",31,6.360
+,,"bend",18,5.930
+,,"water",11,5.920
+,,"corner",315,5.890
+danger,"... until X",,539,0.030
+,,"plant",21,9.350
+,,"shelter",10,8.660
+,,"hide",21,8.090
+,,"area",14,5.680
+,,"wait",12,5.310
+,,"home",15,5.120
+,,"stay",29,5.040
+danger,"verbs with particle ""down"" and X as object",,513,0.020
+,,"play",224,8.300
+,,"face",99,7.920
+,,"stare",20,5.670
+danger,"... like X",,497,0.020
+,,"pose",12,8.010
+danger,"... toward X",,455,0.020
+,,"run",277,9.420
+,,"rush",31,8.390
+danger,"... towards X",,435,0.020
+,,"run",204,8.280
+,,"rush",19,6.880
+danger,"... between X",,431,0.020
+,,"steer",12,9.350
+,,"course",11,7.540
+danger,"... despite X",,342,0.020
+,,"stay",16,9.640
+,,"home",17,9.090
+,,"work",18,8.770
+,,"work",24,8.300
+,,"people",10,7.990
+,,"do",22,7.440
+,,"go",13,7.180
+,,"life",11,7.090
+,,"continue",16,6.500
+danger,"... if X",,338,0.020
+,,"alarm",11,7.910
+,,"little",18,5.500
+danger,"... upon X",,287,0.010
+,,"danger",13,10.250
+,,"expound",13,7.520
+,,"dwell",18,6.740
+,,"reflection",10,6.080
+danger,"X like ...",,258,0.010
+,,"predator",13,7.590
+,,"fire",39,5.860
+danger,"X within ...",,255,0.010
+,,"movement",27,5.350
+danger,"X into ...",,253,0.010
+,,"safety",21,6.960
+danger,"X without ...",,231,0.010
+,,"protection",21,5.690
+,,"thought",24,5.230
+danger,"X after ...",,207,0.010
+,,"danger",37,10.100
+danger,"... beyond X",,184,0.010
+,,"place",11,8.050
+danger,"... around X",,181,0.010
+,,"awareness",53,7.820
+danger,"verbs with particle ""away"" and X as object",,163,0.010
+,,"head",13,10.630
+,,"keep",15,6.350
+,,"clear",18,5.220
+,,"drive",19,5.070
+danger,"X through ...",,139,0.010
+,,"fault",14,5.560
+danger,"X before ...",,101,0.000
+,,"sense",14,10.140
+danger,"... en X",,88,0.000
+,,"espèce",40,13.320
+danger,"verbs with particle ""aside"" and X as object",,77,0.000
+,,"leave",23,5.180
+danger,"X behind ...",,74,0.000
+,,"corner",10,7.410
+danger,"... up X",,67,0.000
+,,"point",13,7.830
+,,"ratchet",16,5.770
+,,"amp",12,5.490
+danger,"X upon ...",,62,0.000
+,,"danger",13,10.250
+danger,"X against ...",,60,0.000
+,,"product",15,6.440
+,,"life",11,5.510
+danger,"... past X",,60,0.000
+,,"be",18,6.150
+,,"way",17,5.250
+danger,"... off X",,57,0.000
+,,"ward",10,10.010
+,,"ward",11,8.440
+,,"mind",27,5.920
+danger,"X beyond ...",,56,0.000
+,,"imagination",18,5.620
+danger,"... so X",,42,0.000
+,,"escape",14,12.280
+,,"face",10,8.360
+danger,"... once X",,42,0.000
+,,"garden",15,11.330
+,,"spring",17,11.230
+danger,"... during X",,28,0.000
+,,"p.m.",10,6.600
+danger,"X save ...",,16,0.000
+,,"percentage",16,9.580
+danger,"usage patterns",,0,0.000
+,,"it''s ""%w"" to ...",148,0.010

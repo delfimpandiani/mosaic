@@ -1,0 +1,1095 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/musco#"
+     xml:base="https://w3id.org/musco"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:musco="https://w3id.org/musco#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:fschema="https://w3id.org/framester/schema/">
+    <owl:Ontology rdf:about="https://w3id.org/musco">
+        <owl:versionIRI rdf:resource="https://w3id.org/musco/artstract"/>
+        <dc:creator>Delfina Sol Martinez Pandiani, Valentina Presutti.</dc:creator>
+        <rdfs:comment>This is the ontological module underlying the Multimodal Descriptions of Social Concepts (MUSCO) project, which aims to investigate, model, and experiment with how and why social concepts (such as violence, power, peace, or destruction) are modeled and detected by humans and machines in images. It specifically focuses on the detection of social concepts referring to non-physical objects in (visual) art images. It implements some Ontology Design Patterns such as Descriptions and Situations (DnS) in a modular way. It is furthermore aligned to DUL - Dolce Ultralight foundational Ontology and imports synset and frame evocation classes from the Framester hub.</rdfs:comment>
+        <owl:versionInfo>This is a lightweight version for use in the ARTstract project, containing classes and properties to represent distributional and commonsense linguistic knowledge related to Abstract social concepts.</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#classifies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#defines"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasComponent">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#hasComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasProperPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasProperPart">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#hasProperPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#hasRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#hasSetting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isClassifiedBy"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:comment>Equivalent to dul:isClassifiedBy.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/musco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isComponentOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isComponentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isConceptUsedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isDefinedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPartOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPropertPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isPropertPartOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isProperPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRealizedBy">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isRealizedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isRoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#isSettingFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#realizes">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#realizes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#satisfies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#usesConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#broaderTransitive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#inScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#narrower"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrowerTransitive"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#semanticRelation">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/framester/schema/evokedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/framester/schema/evokedBy">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#evokedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/framester/schema/evokes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/framester/schema/evokes">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#evokes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/framester/schema/subsumedUnder -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/framester/schema/subsumedUnder">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#subsumedUnder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/framester/schema/subsumes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/framester/schema/subsumes">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#subsumes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#aboutActionType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#aboutActionType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isActionTypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#aboutColor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#aboutColor">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isColorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#aboutPOType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#aboutPOType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isPOTypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#associatedWith -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#associatedWith">
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:comment>Equivalent to dul:associatedWith.</rdfs:comment>
+        <rdfs:label>associated with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#broader -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#broader">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#broaderTransitive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#broaderTransitive -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#broaderTransitive">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#classifies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#classifies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isClassifiedBy"/>
+        <rdfs:comment>Equivalent to dul:classifies</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/musco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#defines -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#defines">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#usesConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#evokedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#evokedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#evokes"/>
+        <rdfs:comment>Some ConceptualFrame or WordNet 3.0 synset or SocialConcept is evoked by an Entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">evoked by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#evokes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#evokes">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <rdfs:comment>Some Entity evokes some ConceptualFrame or WordNet 3.0 synset or SocialConcept.</rdfs:comment>
+        <rdfs:label xml:lang="en">evokes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#evokesConceptualFrame -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#evokesConceptualFrame">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokes"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isConceptualFrameEvokedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#ConceptualFrame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#evokesMultimodalFrame -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#evokesMultimodalFrame">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokes"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isMultimodalFrameEvokedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#SCMultimodalFrame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#evokesSocialConcept -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#evokesSocialConcept">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokes"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isSocialConceptEvokedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#InformationObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#SocialConcept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#evokesWnSynsetFrame -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#evokesWnSynsetFrame">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokes"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isWnSynsetFrameEvokedBy"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#WnSynsetFrame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasAnnotationSituation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#hasAnnotationSituation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasSetting"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isAnnotationSituationOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#ImageObject"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#ImageAnnotationSituation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#hasComponent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasProperPart"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isComponentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasPart -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#hasPart">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:comment>Equivalent to dul:hasPart.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/musco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasProperPart -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#hasProperPart">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasPart"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isProperPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#hasRole">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#isClassifiedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isRoleOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasSetting -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#hasSetting">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <rdfs:comment>Equivalent to dul:hasSetting.</rdfs:comment>
+        <rdfs:label>has setting</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasSubDescription -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#hasSubDescription">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasComponent"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#isSubDescriptionOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#ImageAnnotationDescription"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#ImageAnnotationDescription"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#inScheme -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#inScheme">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isActionTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isActionTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isAnnotationSituationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isAnnotationSituationOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#isSettingFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isClassifiedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <rdfs:comment>Equivalent to DUL:isClassifiedBy</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isColorOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isColorOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isComponentOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#isProperPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isConceptUsedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isConceptUsedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isConceptualFrameEvokedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isConceptualFrameEvokedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isDefinedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isDefinedIn">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#isConceptUsedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isMultimodalFrameEvokedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isMultimodalFrameEvokedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isMultimodalFrameUsedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isMultimodalFrameUsedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#isSatisfiedBy"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#usesMultimodalFrame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isPOTypeOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isPOTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isPartOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:comment>Equivalent to dul:isPartOf.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/musco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isProperPartOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isProperPartOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isRealizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isRealizedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#realizes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isRoleOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#classifies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isSatisfiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isSatisfiedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#satisfies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isSettingFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isSettingFor">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <rdfs:comment>Equivalent to dul:isSettingFor.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isSocialConceptEvokedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isSocialConceptEvokedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isSubDescriptionOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isSubDescriptionOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#isComponentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#isWnSynsetFrameEvokedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#isWnSynsetFrameEvokedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#evokedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#narrower -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#narrower">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#narrowerTransitive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#narrowerTransitive -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#narrowerTransitive">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#realizes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#realizes">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#satisfies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#satisfies">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#semanticRelation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#semanticRelation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#subsumedUnder -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#subsumedUnder">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/musco#subsumes"/>
+        <rdfs:comment>Some WordNet 3.0 synset is subsumed under a ConceptualFrame.</rdfs:comment>
+        <rdfs:label xml:lang="en">subsumed under</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#subsumes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#subsumes">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+        <rdfs:comment>Some ConceptualFrame subsumes some WordNet 3.0 synset.</rdfs:comment>
+        <rdfs:label xml:lang="en">subsumes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#usesConcept -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#usesConcept">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/musco#usesMultimodalFrame -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/musco#usesMultimodalFrame">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#satisfies"/>
+        <rdfs:domain rdf:resource="https://w3id.org/musco#Situation"/>
+        <rdfs:range rdf:resource="https://w3id.org/musco#SCMultimodalFrame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#hasDataValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#hasRegionDataValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/musco#notation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasCoverage -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#hasCoverage">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasDataValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#hasDataValue">
+        <rdfs:label>has data value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#hasHeight">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasRegionDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has height</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasRegionDataValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#hasRegionDataValue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasDataValue"/>
+        <rdfs:comment>A datatype property that encodes values for a Region, e.g. a float for the Region Height.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/musco"/>
+        <rdfs:label xml:lang="en">has region data value</rdfs:label>
+        <rdfs:label xml:lang="it">regione ha valore</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasWidth -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#hasWidth">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasRegionDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has width</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasXCoordinate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#hasXCoordinate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasRegionDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has x coordinate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#hasYCoordinate -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#hasYCoordinate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasRegionDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label>has y coordinate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#notation -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#notation"/>
+    
+
+
+    <!-- https://w3id.org/musco#rgbCoordinateBlue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#rgbCoordinateBlue">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#rgbCoordinateGreen -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#rgbCoordinateGreen">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/musco#rgbCoordinateRed -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/musco#rgbCoordinateRed">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/musco#hasDataValue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://w3id.org/framester/schema/Frame -->
+
+    <owl:Class rdf:about="https://w3id.org/framester/schema/Frame"/>
+    
+
+
+    <!-- https://w3id.org/musco#CollocationSituation -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#CollocationSituation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#Concept">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#SocialObject"/>
+        <rdfs:label>Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#ConceptualFrame -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#ConceptualFrame">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Object"/>
+        <rdfs:label>Conceptual Frame</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#Description -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#Description">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#Entity -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#Entity">
+        <rdfs:label>Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#ImageAnnotation -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#ImageAnnotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#ImageAnnotationDescription -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#ImageAnnotationDescription">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#ImageAnnotationRole -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#ImageAnnotationRole">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#ImageAnnotationSituation -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#ImageAnnotationSituation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Situation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#ImageObject -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#ImageObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#InformationObject"/>
+        <rdfs:comment>An image is a type of information object which has a location in a box of pixels (a VSImageBox). It may depict DepictedObjects and DepictedRegions, and evoke ConceptualFrames.</rdfs:comment>
+        <rdfs:label>Image Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#InformationEntity -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#InformationEntity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#InformationObject -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#InformationObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#InformationEntity"/>
+        <rdfs:label>Information Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#Object -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#Object">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:label>Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#Role -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#Role">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#SCMultimodalFrame -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#SCMultimodalFrame">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Description"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#Situation -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#Situation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Entity"/>
+        <rdfs:label>Situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#SocialConcept -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#SocialConcept">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#SocialObject -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#SocialObject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Object"/>
+        <rdfs:label>Social Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/musco#WnSynsetFrame -->
+
+    <owl:Class rdf:about="https://w3id.org/musco#WnSynsetFrame">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/musco#Object"/>
+        <rdfs:label>WN Synset Frame</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

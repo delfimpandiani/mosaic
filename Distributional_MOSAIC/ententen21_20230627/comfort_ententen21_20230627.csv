@@ -1,0 +1,1258 @@
+﻿"corpus","preloaded/ententen21_tt31"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+comfort,"modifiers of X",,536055,26.820
+,,"creature",15325,9.580
+,,"ride",7742,8.220
+,,"maximum",15927,7.590
+,,"thermal",8016,7.560
+,,"all-day",2930,7.340
+,,"occupant",2574,7.220
+,,"utmost",3045,7.010
+,,"added",8171,6.930
+,,"passenger",4938,6.900
+,,"operator",2776,6.810
+,,"luxurious",2780,6.750
+,,"ultimate",5695,6.630
+,,"optimum",2448,6.610
+,,"superior",3954,6.570
+,,"patient",4951,6.520
+,,"air-conditioned",1567,6.410
+,,"relative",4155,6.330
+,,"optimal",2942,6.290
+,,"supreme",1726,6.080
+,,"enhanced",2663,6.050
+,,"warmth",1157,6.050
+,,"extra",8693,5.940
+,,"exceptional",2709,5.930
+,,"rider",1197,5.900
+,,"offer",2237,5.890
+,,"modern",10600,5.840
+,,"cold",4634,5.780
+,,"unparalleled",1133,5.750
+,,"material",3947,5.690
+,,"cozy",1136,5.680
+,,"unmatched",889,5.560
+,,"increase",1635,5.550
+,,"ergonomic",893,5.530
+,,"convenience",1017,5.500
+,,"luxury",1923,5.440
+,,"seat",1459,5.430
+,,"driver",1610,5.340
+,,"plush",760,5.300
+,,"style",2151,5.260
+,,"durability",655,5.210
+,,"indoor",1463,5.210
+,,"safety",3834,5.200
+,,"long-lasting",738,5.200
+,,"seating",828,5.160
+,,"year-round",712,5.150
+,,"lasting",1137,5.120
+,,"homely",577,5.070
+,,"offering",867,5.030
+comfort,"nouns modified by X",,396744,19.850
+,,"zone",119709,10.370
+,,"food",50899,8.250
+,,"convenience",2989,7.380
+,,"blanket",1605,6.230
+,,"level",38885,6.220
+,,"durability",1126,6.150
+,,"luxury",1063,5.940
+,,"safety",3370,5.820
+,,"eating",929,5.700
+,,"grip",1324,5.660
+,,"fit",1998,5.510
+,,"warmth",706,5.450
+,,"woman",8042,5.100
+comfort,"verbs with X as object",,488478,24.440
+,,"sacrifice",4551,7.420
+,,"ensure",12827,6.320
+,,"maximize",2805,6.280
+,,"seek",9329,6.040
+,,"offer",29956,5.910
+,,"enjoy",12486,5.880
+,,"enhance",5633,5.880
+,,"compromise",1640,5.830
+,,"provide",53798,5.750
+,,"improve",14497,5.660
+,,"combine",4157,5.490
+,,"find",37395,5.450
+,,"bring",15161,5.390
+,,"maximise",895,5.370
+,,"guarantee",1953,5.210
+,,"prefer",1660,5.120
+,,"ride",1644,5.090
+,,"condition",685,5.080
+comfort,"verbs with X as subject",,74551,3.730
+,,"zone",263,6.460
+comfort,"X and/or ...",,648160,32.430
+,,"convenience",24953,9.850
+,,"luxury",14878,9.260
+,,"safety",36417,8.920
+,,"warmth",11840,8.800
+,,"style",22061,8.380
+,,"ease",6753,8.160
+,,"durability",7333,8.130
+,,"fit",5711,7.810
+,,"aid",7018,7.780
+,,"peace",11098,7.740
+,,"privacy",6418,7.590
+,,"relaxation",4462,7.510
+,,"joy",6446,7.440
+,,"pleasure",4907,7.410
+,,"support",18269,7.360
+,,"elegance",3546,7.230
+,,"security",11456,7.200
+,,"stability",5488,7.200
+,,"protection",6928,7.040
+,,"familiarity",2664,6.960
+,,"efficiency",5953,6.960
+,,"performance",10980,6.940
+,,"amenity",3273,6.930
+,,"solace",2482,6.930
+,,"hope",4527,6.850
+,,"happiness",3509,6.820
+,,"reassurance",2205,6.740
+,,"quality",10148,6.730
+,,"enjoyment",2486,6.720
+,,"confidence",3738,6.710
+,,"relief",2796,6.660
+,,"practicality",2106,6.630
+,,"handling",2764,6.620
+,,"functionality",2669,6.540
+,,"flexibility",3126,6.530
+,,"encouragement",2363,6.520
+,,"breathability",1852,6.520
+,,"strength",5132,6.380
+,,"satisfaction",2395,6.370
+,,"grip",1805,6.270
+,,"consolation",1544,6.250
+,,"well-being",2270,6.240
+,,"versatility",1576,6.140
+,,"refinement",1525,6.100
+,,"cleanliness",1475,6.090
+,,"space",5804,6.080
+,,"healing",1895,6.060
+,,"reliability",2267,6.050
+,,"beauty",2692,6.000
+,,"hospitality",1654,5.970
+,,"care",5109,5.960
+,,"companionship",1227,5.870
+,,"productivity",1869,5.840
+,,"control",4977,5.760
+,,"mobility",1521,5.750
+,,"health",6683,5.740
+,,"dignity",1534,5.730
+,,"love",3976,5.680
+,,"cushioning",1029,5.670
+,,"wealth",1704,5.660
+,,"ergonomics",1036,5.640
+,,"help",1756,5.640
+,,"softness",1026,5.630
+,,"charm",1280,5.610
+,,"speed",2686,5.590
+,,"inspiration",1418,5.590
+,,"feature",3179,5.590
+,,"assurance",1096,5.550
+,,"feel",1010,5.400
+,,"freedom",1895,5.340
+,,"tranquility",850,5.320
+,,"availability",1334,5.270
+,,"simplicity",975,5.270
+,,"traction",811,5.260
+,,"saving",1149,5.260
+,,"look",1542,5.250
+,,"aesthetics",869,5.190
+,,"guidance",1429,5.180
+,,"sophistication",789,5.180
+,,"styling",793,5.170
+,,"calm",762,5.130
+,,"welfare",947,5.080
+,,"comfort",1334,5.070
+comfort,"prepositional phrases",,846996,0.000
+,,"""%w"" of ...",200535,10.030
+,,"... of ""%w""",143119,7.160
+,,"... for ""%w""",120190,6.010
+,,"... in ""%w""",75854,3.790
+,,"""%w"" in ...",61124,3.060
+,,"... from ""%w""",42641,2.130
+,,"""%w"" to ...",33344,1.670
+,,"... with ""%w""",32455,1.620
+,,"... to ""%w""",24904,1.250
+,,"""%w"" for ...",23727,1.190
+,,"""%w"" with ...",17687,0.880
+,,"... on ""%w""",9552,0.480
+,,"""%w"" from ...",9045,0.450
+,,"""%w"" on ...",6451,0.320
+,,"""%w"" at ...",6291,0.310
+,,"""%w"" during ...",6137,0.310
+,,"... about ""%w""",4303,0.220
+,,"... between ""%w""",3023,0.150
+,,"... at ""%w""",2602,0.130
+,,"... as ""%w""",2467,0.120
+,,"... into ""%w""",1913,0.100
+,,"... by ""%w""",1696,0.080
+,,"""%w"" over ...",1571,0.080
+,,"... than ""%w""",1415,0.070
+,,"""%w"" as ...",1360,0.070
+,,"""%w"" throughout ...",970,0.050
+,,"""%w"" through ...",936,0.050
+,,"... like ""%w""",914,0.050
+,,"... without ""%w""",841,0.040
+,,"""%w"" like ...",698,0.030
+,,"""%w"" than ...",689,0.030
+,,"""%w"" while ...",618,0.030
+,,"""%w"" within ...",569,0.030
+,,"... within ""%w""",533,0.030
+,,"""%w"" after ...",489,0.020
+,,"... over ""%w""",448,0.020
+,,"""%w"" into ...",433,0.020
+,,"... beyond ""%w""",423,0.020
+,,"... after ""%w""",393,0.020
+,,"""%w"" without ...",373,0.020
+,,"... towards ""%w""",333,0.020
+,,"""%w"" under ...",324,0.020
+,,"""%w"" by ...",315,0.020
+,,"... behind ""%w""",311,0.020
+,,"""%w"" around ...",249,0.010
+,,"""%w"" inside ...",226,0.010
+,,"... around ""%w""",211,0.010
+,,"""%w"" against ...",204,0.010
+,,"... toward ""%w""",195,0.010
+,,"""%w"" above ...",143,0.010
+,,"""%w"" among ...",141,0.010
+,,"... outside ""%w""",122,0.010
+,,"... upon ""%w""",103,0.010
+,,"""%w"" beyond ...",87,0.000
+,,"""%w"" along ...",82,0.000
+,,"... inside ""%w""",77,0.000
+,,"... before ""%w""",71,0.000
+,,"""%w"" across ...",67,0.000
+,,"""%w"" if ...",65,0.000
+,,"""%w"" until ...",62,0.000
+,,"""%w"" behind ...",60,0.000
+,,"""%w"" before ...",59,0.000
+,,"... if ""%w""",53,0.000
+,,"... out ""%w""",49,0.000
+,,"... through ""%w""",47,0.000
+,,"""%w"" about ...",42,0.000
+,,"""%w"" up ...",37,0.000
+,,"""%w"" aboard ...",37,0.000
+,,"... among ""%w""",35,0.000
+,,"""%w"" because ...",35,0.000
+,,"... along ""%w""",32,0.000
+,,"... because ""%w""",32,0.000
+,,"""%w"" between ...",31,0.000
+,,"... against ""%w""",28,0.000
+,,"""%w"" upon ...",26,0.000
+,,"""%w"" amid ...",20,0.000
+,,"""%w"" below ...",20,0.000
+,,"... onto ""%w""",19,0.000
+,,"""%w"" amidst ...",18,0.000
+,,"... though ""%w""",17,0.000
+,,"... so ""%w""",16,0.000
+,,"""%w"" so ...",14,0.000
+,,"""%w"" off ...",14,0.000
+,,"... except ""%w""",14,0.000
+,,"""%w"" despite ...",13,0.000
+,,"... past ""%w""",13,0.000
+,,"... up ""%w""",12,0.000
+comfort,"adjective predicates of X",,15096,0.760
+,,"paramount",324,6.880
+,,"key",839,6.140
+,,"subjective",105,5.970
+,,"sucking",27,5.580
+,,"unmatched",54,5.490
+,,"onboard",104,5.320
+,,"year-round",74,5.300
+,,"unparalleled",34,5.030
+,,"prioritized",23,5.010
+comfort,"X is a ...",,7474,0.370
+,,"priority",1057,7.530
+,,"comfort",66,7.280
+,,"consideration",185,6.610
+,,"king",167,6.150
+,,"hallmark",60,6.040
+,,"keyword",22,6.000
+,,"concern",308,5.810
+,,"criterion",40,5.680
+,,"luxury",40,5.640
+,,"aim",28,5.530
+,,"everything",183,5.500
+,,"goal",164,5.420
+,,"thought",28,5.120
+,,"assurance",11,5.120
+,,"thanks",56,5.080
+comfort,"X''s ...",,223,0.010
+,,"sake",201,5.100
+comfort,"possessors of X",,13713,0.690
+,,"guest",1264,9.530
+,,"occupant",220,8.590
+,,"passenger",265,7.630
+,,"pet",300,7.200
+,,"wearer",116,6.940
+,,"home",288,6.710
+,,"rider",110,6.520
+,,"horse",185,5.850
+,,"shoe",29,5.800
+,,"patient",902,5.720
+,,"dog",262,5.610
+,,"baby",302,5.480
+,,"bed",21,5.370
+,,"operator",86,5.360
+,,"chair",33,5.230
+,,"traveler",51,5.170
+,,"Lover",25,5.060
+,,"seat",17,5.040
+,,"resident",111,5.030
+comfort,"X of ...",,200535,10.030
+,,"home",81065,11.150
+,,"couch",2760,8.650
+,,"bed",2804,7.720
+,,"room",6480,7.700
+,,"sofa",1341,7.640
+,,"chair",1832,7.400
+,,"armchair",1036,7.370
+,,"hotel",2233,7.290
+,,"guest",1665,7.250
+,,"passenger",1113,6.730
+,,"kitchen",859,6.710
+,,"bedroom",740,6.530
+,,"seat",1280,6.520
+,,"occupant",609,6.460
+,,"office",1947,6.440
+,,"Home",636,6.410
+,,"desk",626,6.330
+,,"cabin",580,6.230
+,,"lounge",489,6.210
+,,"suite",543,6.090
+,,"apartment",617,5.970
+,,"villa",372,5.710
+,,"computer",855,5.700
+,,"stranger",424,5.680
+,,"car",1832,5.650
+,,"mattress",340,5.610
+,,"accommodation",466,5.550
+,,"house",1923,5.530
+,,"living",801,5.530
+,,"lodge",315,5.420
+,,"scripture",390,5.380
+,,"surroundings",312,5.300
+,,"backyard",239,5.230
+,,"studio",352,5.180
+,,"resort",320,5.170
+,,"residence",394,5.070
+,,"balcony",218,5.070
+,,"tent",256,5.070
+,,"familiarity",233,5.050
+,,"conditioning",224,5.020
+comfort,"... of X",,143119,7.160
+,,"word",7319,7.750
+,,"crumb",739,7.340
+,,"level",23995,7.120
+,,"feeling",3445,7.010
+,,"God",1360,6.810
+,,"degree",3891,6.570
+,,"blend",1280,6.550
+,,"tidings",414,6.490
+,,"standard",2246,6.410
+,,"source",6933,6.380
+,,"sense",7476,6.320
+,,"measure",1809,6.270
+,,"haven",350,6.160
+,,"cocoon",318,6.140
+,,"oasis",327,6.030
+,,"zone",486,5.870
+,,"modicum",283,5.750
+,,"balance",912,5.730
+,,"message",681,5.710
+,,"gesture",318,5.710
+,,"place",2094,5.630
+,,"atmosphere",462,5.540
+,,"air",356,5.430
+,,"epitome",248,5.380
+,,"touch",481,5.150
+,,"deprive",283,5.120
+,,"creature",231,5.120
+,,"combination",1788,5.080
+,,"deal",800,5.070
+,,"prayer",215,5.050
+,,"sensation",206,5.040
+comfort,"... for X",,120190,6.010
+,,"close",5829,10.490
+,,"grip",790,7.650
+,,"design",6566,7.570
+,,"pad",681,7.510
+,,"strap",691,7.450
+,,"padding",626,7.380
+,,"foam",620,7.340
+,,"close",1241,7.300
+,,"fabric",685,7.290
+,,"lining",592,7.290
+,,"cushion",591,7.260
+,,"seat",908,7.250
+,,"build",1656,7.220
+,,"pad",614,7.100
+,,"handle",496,6.920
+,,"handle",473,6.900
+,,"amenity",456,6.800
+,,"stretch",437,6.770
+,,"collar",340,6.490
+,,"footbed",324,6.460
+,,"pillow",323,6.380
+,,"cotton",305,6.330
+,,"dress",392,6.290
+,,"insole",286,6.270
+,,"seam",281,6.240
+,,"midsole",270,6.190
+,,"upper",269,6.180
+,,"cushioning",263,6.150
+,,"hot",289,6.130
+,,"desire",806,6.110
+,,"engineer",286,6.110
+,,"close",258,6.050
+,,"back",290,5.980
+,,"foot",300,5.970
+,,"design",773,5.950
+,,"waistband",223,5.920
+,,"contour",213,5.850
+,,"line",213,5.840
+,,"adjustable",217,5.830
+,,"furnish",209,5.790
+,,"adjust",411,5.740
+,,"mattress",206,5.740
+,,"body",377,5.730
+,,"bed",300,5.730
+,,"high",390,5.720
+,,"chair",286,5.720
+,,"turn",239,5.710
+,,"pray",633,5.700
+,,"arm",243,5.700
+,,"layer",216,5.670
+,,"other",350,5.640
+,,"provide",1401,5.630
+,,"position",404,5.590
+,,"cushion",178,5.590
+,,"fit",435,5.580
+,,"shoulder",186,5.570
+,,"edge",198,5.560
+,,"conditioning",178,5.560
+,,"armrest",174,5.560
+,,"construction",206,5.530
+,,"leather",176,5.530
+,,"shape",174,5.530
+,,"blanket",179,5.490
+,,"liner",170,5.480
+,,"feature",332,5.480
+,,"equip",203,5.470
+,,"shape",203,5.450
+,,"backrest",156,5.400
+,,"prayer",262,5.400
+,,"neck",164,5.400
+,,"craft",164,5.400
+,,"panel",219,5.360
+,,"cold",162,5.340
+,,"food",491,5.340
+,,"interior",154,5.340
+,,"recline",149,5.340
+,,"label",211,5.330
+,,"waist",150,5.330
+,,"more",396,5.320
+,,"sole",148,5.310
+,,"hand",248,5.310
+,,"rest",186,5.310
+,,"breathable",145,5.300
+,,"eat",195,5.290
+,,"height",162,5.280
+,,"shoe",190,5.270
+,,"long",179,5.220
+,,"longing",190,5.210
+,,"adjustment",191,5.210
+,,"style",192,5.190
+,,"small",183,5.150
+,,"suspension",142,5.110
+,,"top",157,5.100
+,,"angle",141,5.090
+,,"insert",133,5.090
+,,"skin",151,5.080
+,,"warm",134,5.080
+,,"add",182,5.070
+,,"room",868,5.060
+,,"condition",124,5.060
+comfort,"... in X",,75854,3.790
+,,"ultimate",2170,9.310
+,,"relax",2661,8.990
+,,"utmost",404,7.370
+,,"enjoy",661,7.340
+,,"travel",1565,7.320
+,,"guest",625,7.200
+,,"unwind",371,7.150
+,,"dine",396,7.070
+,,"passenger",474,6.940
+,,"ride",685,6.860
+,,"travel",449,6.620
+,,"cruise",274,6.600
+,,"retire",383,6.520
+,,"meal",371,6.440
+,,"massage",214,6.370
+,,"sleep",657,6.270
+,,"adult",427,6.140
+,,"bask",302,6.140
+,,"workout",184,6.080
+,,"sit",2469,6.030
+,,"rest",345,5.830
+,,"sleep",185,5.790
+,,"lounge",139,5.710
+,,"ride",229,5.700
+,,"watch",243,5.620
+,,"shoulder",137,5.570
+,,"recline",106,5.420
+,,"movie",242,5.420
+,,"indulge",321,5.390
+,,"treatment",291,5.390
+,,"shop",117,5.340
+,,"online",214,5.310
+,,"pet",129,5.310
+,,"dining",108,5.300
+,,"standard",317,5.290
+,,"distance",155,5.290
+,,"luxuriate",97,5.290
+,,"care",326,5.290
+,,"occupant",92,5.180
+,,"revel",152,5.180
+,,"eat",222,5.160
+,,"recover",130,5.100
+,,"destination",186,5.010
+,,"seat",130,5.010
+comfort,"X in ...",,61124,3.060
+,,"knowledge",1261,7.720
+,,"fact",5551,7.500
+,,"familiarity",257,7.070
+,,"thought",657,6.740
+,,"affliction",186,6.550
+,,"idea",410,6.520
+,,"sorrow",171,6.300
+,,"arm",766,6.170
+,,"friend",170,6.150
+,,"belief",271,6.080
+,,"routine",191,6.010
+,,"mind",4361,5.840
+,,"word",648,5.820
+,,"notion",126,5.780
+,,"promise",125,5.770
+,,"surroundings",202,5.750
+,,"saddle",135,5.640
+,,"warmth",107,5.590
+,,"assurance",98,5.580
+,,"grief",106,5.550
+,,"embrace",103,5.450
+,,"friendship",103,5.450
+,,"weather",267,5.390
+,,"solitude",99,5.390
+,,"skin",212,5.380
+,,"thing",349,5.280
+,,"ritual",114,5.280
+,,"suffering",95,5.270
+,,"certainty",69,5.150
+,,"memory",453,5.070
+,,"food",294,5.070
+,,"religion",165,5.060
+,,"presence",366,5.030
+,,"wear",68,5.020
+,,"cabin",142,5.010
+comfort,"... from X",,42641,2.130
+,,"enjoy",818,9.020
+,,"online",1011,8.610
+,,"do",1219,8.180
+,,"shop",368,8.020
+,,"watch",637,7.800
+,,"shopping",280,7.640
+,,"right",608,7.170
+,,"participate",201,7.120
+,,"experience",534,7.090
+,,"world",442,7.080
+,,"play",336,7.040
+,,"game",617,7.010
+,,"shop",171,6.820
+,,"attend",151,6.680
+,,"class",223,6.610
+,,"show",238,6.550
+,,"scenery",123,6.460
+,,"complete",124,6.460
+,,"movie",203,6.440
+,,"session",142,6.320
+,,"event",275,6.290
+,,"study",125,6.280
+,,"course",193,6.230
+,,"work",852,6.190
+,,"Internet",115,6.160
+,,"wildlife",99,6.140
+,,"casino",92,6.100
+,,"care",144,6.090
+,,"workout",88,6.030
+,,"join",110,5.970
+,,"sunset",92,5.960
+,,"offer",106,5.940
+,,"view",201,5.900
+,,"skill",115,5.900
+,,"business",206,5.860
+,,"provider",85,5.810
+,,"need",169,5.790
+,,"meeting",84,5.730
+,,"view",393,5.710
+,,"fun",73,5.700
+,,"tour",88,5.690
+,,"concert",75,5.670
+,,"ticket",114,5.630
+,,"access",140,5.620
+,,"TV",76,5.620
+,,"entertainment",71,5.610
+,,"sky",72,5.600
+,,"action",146,5.590
+,,"experience",74,5.590
+,,"doctor",84,5.570
+,,"landscape",70,5.560
+,,"adventure",67,5.500
+,,"exam",63,5.470
+,,"explore",62,5.470
+,,"night",92,5.440
+,,"nature",63,5.420
+,,"conference",61,5.370
+,,"training",82,5.360
+,,"campus",59,5.340
+,,"meal",71,5.340
+,,"sight",59,5.330
+,,"screen",64,5.300
+,,"treatment",78,5.240
+,,"viewing",51,5.230
+,,"watch",62,5.230
+,,"gamble",49,5.230
+,,"order",108,5.220
+,,"work",264,5.150
+,,"use",92,5.150
+,,"service",275,5.150
+,,"live",115,5.150
+,,"time",220,5.130
+,,"firework",48,5.120
+,,"test",62,5.110
+,,"perform",57,5.100
+,,"computer",64,5.080
+,,"unfold",47,5.070
+,,"film",111,5.050
+,,"transaction",52,5.030
+,,"conduct",60,5.010
+comfort,"X to ...",,33344,1.670
+,,"enemy",2229,9.450
+,,"wearer",282,7.920
+,,"guest",546,7.030
+,,"passenger",316,6.980
+,,"soul",414,6.960
+,,"occupant",145,6.780
+,,"terrorist",162,6.550
+,,"mourner",77,6.210
+,,"traveler",132,6.190
+,,"believer",135,6.190
+,,"patient",1008,6.160
+,,"family",1686,6.080
+,,"rebellion",87,6.050
+,,"victim",360,6.040
+,,"baby",204,6.030
+,,"survivor",115,5.900
+,,"rider",95,5.740
+,,"mattress",61,5.700
+,,"sufferer",61,5.690
+,,"soldier",148,5.680
+,,"suffering",97,5.530
+,,"Christian",107,5.460
+,,"investor",258,5.450
+,,"million",146,5.450
+,,"traveller",64,5.410
+,,"lender",94,5.370
+,,"living",99,5.290
+,,"pet",72,5.270
+,,"heart",357,5.230
+,,"ride",63,5.230
+,,"thousand",140,5.150
+,,"mother",236,5.140
+,,"user",634,5.100
+,,"parent",359,5.090
+,,"racist",35,5.020
+comfort,"... with X",,32455,1.620
+,,"design",2554,8.560
+,,"charm",200,7.430
+,,"guest",403,7.270
+,,"elegance",164,7.230
+,,"style",470,7.120
+,,"furnish",339,7.010
+,,"luxury",111,6.640
+,,"passenger",128,6.470
+,,"wearer",88,6.430
+,,"hotel",201,6.280
+,,"appoint",96,6.230
+,,"equip",1505,6.050
+,,"architecture",95,6.030
+,,"performance",235,6.010
+,,"surround",106,6.010
+,,"accommodation",139,5.920
+,,"hospitality",61,5.870
+,,"protection",76,5.820
+,,"handling",56,5.750
+,,"look",125,5.730
+,,"design",250,5.670
+,,"build",321,5.580
+,,"quality",83,5.450
+,,"tradition",68,5.450
+,,"styling",48,5.450
+,,"durability",45,5.450
+,,"shoe",75,5.410
+,,"interior",68,5.390
+,,"atmosphere",64,5.340
+,,"nature",61,5.310
+,,"user",237,5.260
+,,"feature",82,5.260
+,,"synonymous",151,5.260
+,,"feel",46,5.260
+,,"past",66,5.180
+,,"efficiency",47,5.170
+,,"mattress",40,5.150
+,,"apartment",89,5.140
+,,"replete",93,5.130
+,,"stay",49,5.120
+,,"relax",71,5.100
+,,"concerned",46,5.100
+,,"craft",52,5.080
+,,"camp",41,5.060
+,,"travel",55,5.050
+,,"pet",43,5.050
+,,"convenience",35,5.050
+,,"room",481,5.040
+,,"fit",63,5.030
+,,"compromise",44,5.020
+comfort,"... to X",,24904,1.250
+,,"see",305,6.900
+,,"retreat",291,6.900
+,,"minister",156,6.750
+,,"conduce",82,6.590
+,,"retreat",104,6.380
+,,"minister",116,6.260
+,,"necessary",200,6.190
+,,"concession",123,6.190
+,,"attachment",256,6.140
+,,"retire",212,6.130
+,,"accustom",179,6.020
+,,"difference",242,5.780
+,,"compromise",45,5.720
+,,"conducive",146,5.630
+,,"addiction",86,5.370
+,,"administer",85,5.330
+,,"sacrament",31,5.290
+,,"attend",176,5.210
+,,"add",2809,5.210
+,,"indispensable",39,5.110
+comfort,"X for ...",,23727,1.190
+,,"occupant",491,8.790
+,,"wearer",284,8.370
+,,"passenger",833,7.960
+,,"foot",252,6.960
+,,"rider",281,6.820
+,,"wear",164,6.330
+,,"guest",514,6.240
+,,"driver",391,6.180
+,,"stay",197,6.090
+,,"operator",190,5.860
+,,"horse",179,5.780
+,,"sorrow",39,5.620
+,,"sleeper",43,5.620
+,,"baby",264,5.600
+,,"crew",99,5.520
+,,"believer",64,5.500
+,,"traveller",93,5.420
+,,"family",1253,5.400
+,,"troop",95,5.400
+,,"traveler",124,5.340
+,,"soul",137,5.290
+,,"grief",32,5.260
+,,"heart",78,5.240
+,,"soldier",97,5.230
+,,"back",55,5.210
+,,"style",129,5.170
+,,"driving",59,5.160
+,,"patient",818,5.130
+,,"user",768,5.100
+,,"pet",111,5.100
+,,"sleeping",33,5.080
+,,"haul",39,5.060
+comfort,"X with ...",,17687,0.880
+,,"ambiguity",220,8.190
+,,"elegance",85,6.640
+,,"speaking",50,6.370
+,,"convenience",70,6.160
+,,"durability",52,6.160
+,,"sexuality",62,6.110
+,,"style",359,6.090
+,,"uncertainty",100,6.010
+,,"technology",719,6.000
+,,"charm",78,5.940
+,,"luxury",49,5.890
+,,"nudity",37,5.890
+,,"fit",57,5.880
+,,"cushion",51,5.860
+,,"amenity",102,5.820
+,,"mattress",45,5.730
+,,"hospitality",37,5.610
+,,"styling",38,5.590
+,,"practicality",30,5.560
+,,"touch",156,5.540
+,,"discomfort",35,5.530
+,,"cushioning",26,5.480
+,,"handling",39,5.430
+,,"seat",125,5.360
+,,"padding",27,5.230
+,,"step",122,5.230
+,,"furnishing",33,5.200
+,,"intimacy",23,5.160
+,,"cabin",28,5.150
+,,"risk",164,5.150
+,,"unknown",25,5.150
+,,"feel",50,5.120
+,,"bedding",24,5.120
+,,"grip",43,5.070
+comfort,"... on X",,9552,0.480
+,,"compromise",1131,9.380
+,,"compromise",217,8.050
+,,"sacrifice",98,7.630
+,,"skimp",104,6.990
+,,"major",31,6.490
+,,"scrimp",27,6.320
+,,"big",110,5.970
+,,"premium",61,5.920
+,,"major",18,5.900
+,,"emphasis",804,5.400
+,,"priority",33,5.230
+comfort,"X from ...",,9045,0.450
+,,"fact",1674,8.390
+,,"thought",157,7.300
+,,"presence",122,7.120
+,,"warmth",39,6.930
+,,"knowledge",152,6.880
+,,"assurance",28,6.580
+,,"closeness",27,6.560
+,,"promise",36,6.540
+,,"caregiver",26,6.120
+,,"love",74,6.090
+,,"scripture",47,5.880
+,,"belief",51,5.840
+,,"prayer",23,5.760
+,,"nearness",15,5.750
+,,"hope",19,5.750
+,,"faith",51,5.730
+,,"touch",24,5.730
+,,"notion",28,5.640
+,,"heel",19,5.630
+,,"familiarity",15,5.620
+,,"word",174,5.610
+,,"embrace",16,5.560
+,,"grief",17,5.370
+,,"mattress",13,5.330
+,,"pain",84,5.310
+,,"feel",13,5.310
+,,"quilt",12,5.290
+,,"reflection",16,5.170
+,,"religion",41,5.150
+,,"mate",14,5.070
+,,"Christ",23,5.070
+,,"verse",20,5.070
+,,"possibility",15,5.070
+,,"decision",51,5.030
+,,"Lord",48,5.030
+comfort,"X on ...",,6451,0.320
+,,"ride",283,6.850
+,,"haul",15,6.070
+,,"insertion",10,5.520
+,,"terrain",45,5.480
+,,"commute",17,5.450
+,,"saddle",16,5.450
+,,"hike",34,5.140
+,,"getaway",10,5.100
+,,"trek",16,5.050
+,,"wrist",60,5.040
+comfort,"... is a X",,6399,0.320
+,,"presence",127,7.530
+,,"comfort",66,7.280
+,,"priority",119,7.040
+,,"familiarity",16,6.220
+,,"warmth",16,6.190
+,,"promise",28,6.140
+,,"shoe",50,6.000
+,,"assurance",14,5.910
+,,"pillow",16,5.830
+,,"boot",24,5.640
+,,"McEwan",10,5.640
+,,"Schrader",10,5.640
+,,"word",161,5.590
+,,"Soup",12,5.590
+,,"consideration",39,5.530
+,,"bed",43,5.460
+,,"Food",18,5.460
+,,"headphones",13,5.440
+,,"food",146,5.430
+,,"headset",11,5.400
+,,"chair",29,5.370
+,,"soup",18,5.360
+,,"thought",55,5.260
+,,"kindness",11,5.180
+,,"mattress",12,5.150
+,,"blanket",10,5.150
+,,"memory",45,5.100
+,,"concern",92,5.070
+,,"nursing",11,5.060
+,,"prayer",29,5.040
+,,"advantage",28,5.040
+comfort,"X at ...",,6291,0.310
+,,"anchor",42,6.050
+,,"tariff",12,5.730
+,,"workstation",12,5.320
+,,"bedtime",22,5.210
+comfort,"X during ...",,6137,0.310
+,,"wear",168,9.710
+,,"use",382,8.990
+,,"ride",92,7.670
+,,"workout",82,7.300
+,,"stay",344,7.190
+,,"procedure",149,7.140
+,,"journey",116,7.110
+,,"driving",26,6.780
+,,"travel",75,6.710
+,,"illness",33,6.530
+,,"treatment",127,6.470
+,,"activity",90,6.430
+,,"labor",37,6.380
+,,"weather",61,6.220
+,,"dive",20,6.170
+,,"sleep",60,6.080
+,,"usage",14,5.990
+,,"gaming",12,5.940
+,,"play",46,5.890
+,,"cycling",12,5.870
+,,"commute",17,5.860
+,,"grief",11,5.860
+,,"recovery",28,5.850
+,,"massage",13,5.830
+,,"work",48,5.780
+,,"flight",62,5.750
+,,"session",232,5.700
+,,"drive",20,5.640
+,,"injection",11,5.640
+,,"time",1157,5.620
+,,"experience",24,5.610
+,,"gameplay",16,5.530
+,,"exam",24,5.520
+,,"trip",104,5.510
+,,"moment",28,5.470
+,,"adventure",12,5.440
+,,"intercourse",18,5.410
+,,"heat",13,5.390
+,,"hike",10,5.390
+,,"application",14,5.330
+,,"scan",11,5.230
+,,"workday",10,5.220
+,,"vacation",23,5.120
+,,"movement",20,5.090
+,,"exercise",40,5.070
+,,"condition",20,5.060
+,,"situation",17,5.060
+,,"transport",16,5.040
+,,"sex",21,5.010
+comfort,"... about X",,4303,0.220
+,,"rave",34,5.530
+,,"concerned",29,5.490
+,,"particular",19,5.490
+,,"be",1327,5.120
+comfort,"... between X",,3023,0.150
+,,"balance",1833,8.330
+,,"compromise",158,7.920
+,,"combination",19,6.960
+,,"blend",13,6.740
+,,"compromise",10,6.570
+,,"spot",15,6.290
+,,"medium",12,6.220
+,,"spread",21,6.060
+,,"tradeoff",28,6.050
+,,"balance",19,6.000
+,,"trade-off",38,5.790
+,,"mix",12,5.450
+,,"choose",148,5.300
+,,"decide",18,5.120
+comfort,"... at X",,2602,0.130
+,,"sigh",12,6.100
+,,"massage",12,5.780
+,,"print",18,5.240
+,,"enjoy",24,5.180
+,,"workout",11,5.100
+comfort,"... as X",,2467,0.120
+,,"food",112,7.010
+,,"derive",12,6.400
+,,"provide",119,5.420
+,,"bring",21,5.100
+comfort,"... into X",,1913,0.100
+,,"relax",65,7.480
+,,"lull",39,7.370
+,,"retreat",103,7.180
+,,"retreat",35,7.180
+,,"slip",25,6.930
+,,"sink",27,6.590
+,,"snuggle",13,6.110
+,,"lean",69,6.050
+,,"nestle",17,6.000
+,,"sink",165,5.880
+,,"war",10,5.730
+,,"ease",29,5.700
+,,"retire",10,5.620
+,,"settle",178,5.510
+,,"withdraw",11,5.210
+comfort,"... by X",,1696,0.080
+,,"trouble",11,7.140
+,,"lull",12,6.910
+,,"seduce",43,6.200
+comfort,"verbs with particle ""up"" and X as object",,1602,0.080
+,,"give",1302,5.770
+comfort,"X over ...",,1571,0.080
+,,"fashion",79,10.270
+,,"style",200,10.120
+,,"sportiness",19,8.600
+,,"speed",45,8.160
+,,"journey",20,8.010
+,,"truth",29,7.810
+,,"performance",50,7.570
+,,"look",21,7.340
+,,"ride",13,7.210
+,,"toe",11,7.060
+,,"haul",23,6.740
+,,"handling",17,6.700
+,,"anything",30,6.580
+,,"distance",147,6.390
+,,"terrain",35,6.380
+,,"session",26,6.210
+,,"bump",17,6.080
+,,"safety",20,5.830
+,,"appearance",18,5.810
+,,"duration",11,5.370
+,,"model",16,5.160
+comfort,"... than X",,1415,0.070
+,,"concern",15,7.160
+,,"provide",19,6.800
+,,"character",23,6.710
+,,"pain",11,6.330
+,,"offer",15,6.050
+,,"priority",10,5.700
+,,"important",213,5.390
+,,"reason",12,5.290
+comfort,"X as ...",,1360,0.070
+,,"mattress",10,6.670
+,,"conditioning",11,6.430
+,,"priority",143,6.240
+,,"parking",13,6.000
+,,"consideration",10,5.040
+comfort,"X throughout ...",,970,0.050
+,,"wear",14,8.810
+,,"procedure",26,8.400
+,,"use",12,8.330
+,,"stay",63,8.300
+,,"workout",15,8.240
+,,"workday",10,7.710
+,,"treatment",18,7.620
+,,"trip",16,6.850
+,,"journey",38,6.540
+,,"night",73,6.430
+,,"home",41,6.270
+,,"experience",10,5.880
+,,"session",11,5.640
+,,"day",272,5.420
+,,"hotel",10,5.410
+comfort,"X through ...",,936,0.050
+,,"ventilation",14,8.470
+,,"touch",17,7.260
+,,"presence",14,6.770
+,,"food",24,5.830
+,,"prayer",24,5.790
+,,"hour",16,5.190
+,,"design",31,5.120
+comfort,"... like X",,914,0.050
+,,"home",42,8.130
+,,"quality",10,6.530
+,,"aspect",12,6.320
+,,"benefit",13,5.500
+,,"factor",36,5.050
+comfort,"... without X",,841,0.040
+,,"suffer",16,7.590
+,,"sleep",12,6.350
+,,"live",118,5.940
+,,"survive",21,5.180
+,,"go",91,5.120
+comfort,"X like ...",,698,0.030
+,,"conditioning",59,10.130
+,,"air-conditioning",19,9.450
+,,"heating",15,8.440
+,,"bedding",10,8.330
+,,"shower",26,8.050
+,,"linen",12,8.010
+,,"WiFi",10,7.820
+,,"parking",13,7.750
+,,"bed",29,7.630
+,,"seat",25,7.620
+,,"pillow",11,7.150
+,,"bathroom",12,7.070
+,,"electricity",16,6.900
+,,"blanket",21,6.870
+,,"kitchen",10,6.580
+,,"TV",30,6.510
+,,"pool",14,6.140
+,,"A",10,6.090
+,,"control",19,5.850
+,,"Internet",11,5.630
+,,"window",16,5.020
+comfort,"X than ...",,689,0.030
+,,"sportiness",12,9.130
+,,"handling",14,8.730
+,,"tent",23,8.280
+,,"mattress",14,7.830
+,,"style",23,6.480
+,,"performance",29,5.970
+,,"seat",20,5.740
+,,"sport",13,5.730
+,,"speed",30,5.550
+,,"hotel",16,5.480
+,,"look",10,5.420
+,,"need",10,5.180
+comfort,"X while ...",,618,0.030
+,,"design",20,9.420
+,,"riding",21,9.190
+,,"outsole",10,8.970
+,,"gaming",29,8.880
+,,"camping",24,8.660
+,,"sleeping",69,8.510
+,,"cycling",18,8.310
+,,"playing",54,7.640
+,,"walking",11,7.480
+,,"shooting",13,7.440
+,,"driver",11,7.320
+,,"fishing",19,6.760
+,,"reading",22,6.640
+,,"training",15,6.610
+,,"driving",30,5.530
+,,"shopping",10,5.270
+comfort,"X within ...",,569,0.030
+,,"cabin",11,8.130
+,,"skin",11,6.970
+,,"home",70,6.690
+,,"building",42,5.570
+,,"house",10,5.130
+,,"States",34,5.050
+comfort,"... within X",,533,0.030
+,,"enjoy",14,8.340
+,,"online",10,6.270
+,,"treatment",14,6.240
+,,"sit",22,5.600
+,,"experience",43,5.530
+,,"care",10,5.510
+,,"life",18,5.060
+,,"stay",58,5.050
+comfort,"... over X",,448,0.020
+,,"courage",83,11.940
+,,"fashion",20,8.480
+,,"truth",14,7.940
+,,"style",52,7.670
+,,"safety",10,7.240
+,,"character",10,6.030
+,,"look",13,5.470
+,,"precedence",31,5.030
+comfort,"... beyond X",,423,0.020
+,,"venture",12,7.720
+,,"step",11,7.140
+,,"stretch",16,6.010
+,,"push",10,5.760
+,,"see",17,5.010
+comfort,"... after X",,393,0.020
+,,"look",10,5.320
+,,"look",257,5.070
+comfort,"X without ...",,373,0.020
+,,"bulk",25,9.200
+,,"compromise",48,7.490
+,,"tag",22,7.360
+,,"point",11,6.520
+,,"pressure",12,5.520
+comfort,"... towards X",,333,0.020
+,,"more",47,6.410
+,,"bias",20,6.080
+,,"eye",11,5.730
+,,"gear",70,5.530
+,,"orient",16,5.230
+,,"bias",11,5.080
+comfort,"X under ...",,324,0.020
+,,"pack",13,9.820
+,,"affliction",14,9.060
+,,"foot",81,5.630
+comfort,"... behind X",,311,0.020
+,,"leave",263,5.730
+comfort,"X around ...",,249,0.010
+,,"ankle",24,6.260
+,,"foot",16,5.590
+comfort,"X inside ...",,226,0.010
+,,"restroom",16,10.530
+,,"cabin",33,7.560
+,,"vehicle",19,5.730
+,,"car",24,5.420
+,,"home",40,5.370
+comfort,"... around X",,211,0.010
+,,"design",58,6.560
+,,"year",20,5.290
+comfort,"X against ...",,204,0.010
+,,"tribulation",55,12.760
+,,"fear",10,6.840
+,,"skin",87,6.680
+comfort,"... toward X",,195,0.010
+,,"bias",10,6.260
+,,"more",17,6.030
+,,"eye",10,5.100
+comfort,"X above ...",,143,0.010
+,,"else",86,7.670
+,,"anything",11,7.150
+,,"everything",19,6.830
+comfort,"X among ...",,141,0.010
+,,"mourner",14,9.640
+comfort,"... outside X",,122,0.010
+,,"step",46,6.640
+comfort,"verbs with particle ""aside"" and X as object",,105,0.010
+,,"cast",14,6.030
+,,"lay",14,5.510
+comfort,"X beyond ...",,87,0.000
+,,"compare",15,6.710
+,,"imagination",17,5.530
+comfort,"... inside X",,77,0.000
+,,"sit",16,5.510
+,,"stay",11,5.230
+comfort,"verbs with particle ""off"" and X as object",,68,0.000
+,,"trade",16,6.290
+comfort,"X before ...",,59,0.000
+,,"fashion",11,11.340
+,,"style",11,10.440
+comfort,"... out X",,49,0.000
+,,"seek",23,5.780
+comfort,"X up ...",,37,0.000
+,,"notch",13,5.100
+comfort,"X aboard ...",,37,0.000
+,,"boat",10,5.770
+comfort,"X amid ...",,20,0.000
+,,"chaos",15,8.680
+comfort,"X below ...",,20,0.000
+,,"deck",20,6.200
+comfort,"X amidst ...",,18,0.000
+,,"chaos",11,8.170
+comfort,"... though X",,17,0.000
+,,"act",17,7.990
+comfort,"... so X",,16,0.000
+,,"bring",10,7.550
+comfort,"... up X",,12,0.000
+,,"amp",12,5.500
+comfort,"usage patterns",,0,0.000
+,,"it''s ""%w"" to ...",1435,0.070
