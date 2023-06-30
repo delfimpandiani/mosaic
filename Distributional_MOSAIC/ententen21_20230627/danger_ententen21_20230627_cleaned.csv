@@ -13,13 +13,11 @@
 ,hidden,4913,6.790
 ,real,1924,7.300
 ,fire,528,7.540
-,ever-present,1709,6.580
 ,extreme,6415,6.540
 ,constant,5770,6.490
 ,terrible,2975,6.060
 ,obvious,3732,6.050
 ,possible,8941,5.950
-,life-threatening,1027,5.660
 ,great,45094,5.640
 ,deadly,1771,5.580
 ,danger,13,10.250
@@ -123,10 +121,6 @@
 ,adversity,277,5.070
 ,damage,26,5.670
 ,horror,438,5.010
-,"... in ""%w""",316627,15.030
-,"""%w"" of ...",301177,14.300
-,"... of ""%w""",188973,8.970
-,"""%w"" to ...",107277,5.090
 ,past,1032,7.090
 ,implicit,210,6.930
 ,near,585,6.760
@@ -158,7 +152,6 @@
 ,radiation,16,7.580
 ,terrorism,15,7.700
 ,explosion,1017,6.420
-,two-fold,22,5.210
 ,ignorance,12,5.210
 ,Islam,100,5.850
 ,hour,48,5.150
@@ -178,7 +171,6 @@
 ,alcohol,12,6.440
 ,virus,35,5.930
 ,wave,10,5.920
-,COVID-19,14,5.450
 ,job,14,5.380
 ,vaccine,926,5.660
 ,product,15,6.440
@@ -338,7 +330,6 @@
 ,people,1681,8.630
 ,States,655,5.280
 ,patient,130,5.920
-,well-being,166,5.230
 ,kid,376,7.420
 ,welfare,162,5.220
 ,world,206,6.670
@@ -347,7 +338,6 @@
 ,future,327,5.120
 ,everyone,94,5.690
 ,unity,134,5.100
-,U.S.,293,5.070
 ,order,338,5.010
 ,parent,394,7.520
 ,tale,461,7.510
@@ -572,7 +562,6 @@
 ,instinct,45,6.280
 ,nose,46,6.270
 ,contempt,132,6.200
-,look-out,26,6.140
 ,scout,51,6.050
 ,watchful,20,6.030
 ,unprepared,49,5.790
@@ -622,7 +611,6 @@
 ,lure,34,6.170
 ,love,18,6.080
 ,thrust,75,5.970
-,head-first,18,5.940
 ,straight,37,5.850
 ,wander,63,5.630
 ,plunge,117,5.620
@@ -775,5 +763,4 @@
 ,ratchet,16,5.770
 ,amp,12,5.490
 ,imagination,18,5.620
-,p.m.,10,6.600
 ,percentage,16,9.580

@@ -3,7 +3,7 @@ import csv
 import os
 from collections import defaultdict
 import textwrap
-
+import re
 
 def generate_clusters_triples():
     # Load data from JSON file
@@ -34,32 +34,38 @@ def generate_clusters_triples():
     return rdf_declarations
 
 # DL KG: with distributional linguistic data from Sketch Engine
-def generate_dl_triples(corpus_name, download_date):
+def generate_situation_triples(corpus_name, download_date, annotator):
     # RDF prefixes
     rdf_prefix = "musco"
-    conceptnet_prefix = "conceptnet"
-    xsd_prefix = "xsd"
 
+    collocation_sit = f"{rdf_prefix}:{corpus_name}_{download_date}_sit"
+    collocation_desc = f"{rdf_prefix}:{corpus_name}_{download_date}_desc"
+    corpus = f"{rdf_prefix}:{corpus_name}"
+    collocation_role = f"{rdf_prefix}:collocate"
+    annotator = f"{rdf_prefix}:{annotator}"
+
+    situation_triples = [
+        ## Instance declarations
+        f"{collocation_sit} rdf:type {rdf_prefix}:CollocationAnnotationSituation .",
+        f"{collocation_desc} rdf:type {rdf_prefix}:CollocationAnnotationDescription .",
+        f"{corpus} rdf:type {rdf_prefix}:Dataset .",
+        f"{collocation_role} rdf:type {rdf_prefix}:CollocationRole .",
+        f"{annotator} rdf:type {rdf_prefix}:Annotator .",
+
+        ## Object property declarations
+        f"{collocation_sit} {rdf_prefix}:satisfies {collocation_desc} .",
+        f'{collocation_sit} {rdf_prefix}:hasAnnotator {annotator} .',
+        f'{collocation_sit} {rdf_prefix}:involvesDataset "{corpus} .',
+
+        ## Data property declarations
+        f"{collocation_sit} {rdf_prefix}:hasDate '{download_date}'^^xsd:dateTime .",
+    ]
     # RDF triples
-    rdf_triples = []
-    rdf_triples.append(
-        f"{rdf_prefix}:{corpus_name}_{download_date}_sit rdf:type {rdf_prefix}:CollocationAnnotationSituation .")
-    rdf_triples.append(
-        f"{rdf_prefix}:{corpus_name}_{download_date}_desc rdf:type {rdf_prefix}:CollocationAnnotationDescription .")
-    rdf_triples.append(
-        f"{rdf_prefix}:{corpus_name}_{download_date}_sit  {rdf_prefix}:satisfies {rdf_prefix}:{corpus_name}_{download_date}_desc .")
-    rdf_triples.append(
-        f'{rdf_prefix}:{corpus_name}_{download_date}_sit  {rdf_prefix}:hasTimeInterval "{download_date}"^^{xsd_prefix}:decimal .')
-    rdf_triples.append(
-        f'{rdf_prefix}:{corpus_name}_{download_date}_sit  {rdf_prefix}:hasAnnotator {rdf_prefix}:DelfinaSolMartinezPandiani .')
-    rdf_triples.append(f"{rdf_prefix}:collocate rdf:type {rdf_prefix}:CollocationRole .")
-    rdf_triples.append(
-        f"{rdf_prefix}:{corpus_name}_{download_date}_sit {rdf_prefix}:involvesDataset {rdf_prefix}:{corpus_name} .")
-
-    rdf_triples = list(set(rdf_triples))
-    # for triple in rdf_triples:
+    situation_triples = list(set(situation_triples))
+    # for triple in situation_triples:
     #     print(triple)
-    return rdf_triples
+    return situation_triples
+
 # keeps collocates only once, with the highest score encountered. also takes out random rows
 def clean_sk_eng_csvs(corpus_name, download_date):
     folder_path = str(corpus_name + "_" + download_date)
@@ -88,7 +94,14 @@ def clean_sk_eng_csvs(corpus_name, download_date):
                         try:
                             word = row[2]
                             score = float(row[4])
-                            if len(row) >= 4 and row[2] and float(row[-1]) > 5:
+                            if (
+                                len(row) >= 4
+                                and row[2]
+                                and float(row[-1]) > 5
+                                and len(word) > 1
+                                and not word.isdigit()
+                                and all(c.isalpha() for c in word)
+                            ):
                                 if word in filtered_rows:
                                     # Compare and update the score
                                     if score > float(filtered_rows[word][4]):
@@ -106,9 +119,13 @@ def clean_sk_eng_csvs(corpus_name, download_date):
                     for row in filtered_rows.values():
                         writer.writerow(row[1:])
     return output_paths
-def generate_collocation_annotations(corpus_name, download_date):
+
+
+def generate_collocation_triples(corpus_name, download_date):
+    rdf_prefix = "musco"
     output_paths = clean_sk_eng_csvs(corpus_name, download_date)
-    rdf_triples = []
+    collocation_triples = []
+
     for path in output_paths:
         file_name = path.split("/")[-1].replace("_cleaned.csv", "")
         # Extract concept name, corpus name, and download date from the modified file name
@@ -120,34 +137,45 @@ def generate_collocation_annotations(corpus_name, download_date):
             # Dictionary to store collocate information
             collocates = defaultdict(lambda: {"freq_sum": 0, "score_sum": 0, "count": 0})
 
+            collocate_triples = []  # Initialize list to store triples for each CSV file
+
             # Iterate over each row in the CSV
             for row in reader:
                 collocate_word = row[1]
                 score = float(row[3])
 
-        # Generate RDF triples for each collocate
-                annotation_id = f"{concept_name}_{collocate_word}_{corpus_name}"
-                collocate_id = f"conceptnet:{collocate_word}"
-                collocate_triples = [
-                    f"musco:{corpus_name}_{download_date}_sit musco:involvesCollocationAnnotation musco:{annotation_id} .",
-                    f"conceptnet:{concept_name} musco:hasCollocateTypedBy {collocate_id} .",
-                    f"musco:{annotation_id} musco:aboutAnnotatedEntity conceptnet:{concept_name} .",
-                    f"musco:{annotation_id} musco:annotationTypedBy {collocate_id} .",
-                    f"musco:{annotation_id} musco:isClassifiedBy musco:collocate .",
-                    f"musco:{annotation_id} musco:hasCollocationStrength '{score}'^^xsd:decimal ."
-                ]
+                # Generate RDF triples for each collocate
+                annotation_id = f"{rdf_prefix}:{concept_name}_{collocate_word}_{corpus_name}_{download_date}"
+                collocate_le = f"{rdf_prefix}:le_{collocate_word}"
+                annotated_concept = f"conceptnet:{concept_name}"
+                collocate_concept = f"conceptnet:{collocate_word}"
+                collocation_sit = f"{rdf_prefix}:{corpus_name}_{download_date}_sit"
 
-                rdf_triples.extend(collocate_triples)
+                collocate_triples.extend([
+                    ## Instance declarations
+                    f"{annotation_id} rdf:type {rdf_prefix}:CollocationAnnotation .",
+                    f"{collocate_le}_sit rdf:type {rdf_prefix}:LexicalEntry .",
+                    f"{annotated_concept} rdf:type {rdf_prefix}:Concept .",
+                    f"{collocate_concept} rdf:type {rdf_prefix}:Concept .",
 
-    rdf_triples = list(set(rdf_triples))
-  # Print or store the RDF triples as needed
-  #   for triple in rdf_triples:
-  #       print(triple)
+                    ## Object property declarations
+                    f"{collocation_sit} {rdf_prefix}:involvesCollocationAnnotation {annotation_id} .",
+                    f"{collocation_sit} {rdf_prefix}:involvesAnnotatedEntity {annotated_concept} .",
+                    f"{rdf_prefix}:collocate {rdf_prefix}:classifies {annotation_id} .",
+                    f"{annotation_id} {rdf_prefix}:aboutAnnotatedEntity {annotated_concept} .",
+                    f"{annotation_id} {rdf_prefix}:annotationWithLexicalEntry {collocate_le} .",
+                    f"{annotated_concept} {rdf_prefix}:isAnnotatedWithLexicalEntry {collocate_le} .",
+                    f"{collocate_le} {rdf_prefix}:typedByConcept {collocate_concept} .",
+                    f"{annotated_concept} {rdf_prefix}:hasCollocateTypedBy {collocate_concept} .",
 
-    return rdf_triples
+                    ## Data property declarations
+                    f"{annotation_id} {rdf_prefix}:hasAnnotationStrength '{score}'^^xsd:decimal ."
+                ])
 
+        collocation_triples.extend(collocate_triples)  # Add triples for the current CSV file to the main list
+    return collocation_triples
 
-def create_dl_MOSAIC_kg(corpus_name, download_date):
+def create_collocation_situation_kg(corpus_name, download_date, annotator):
     # Prefixes and base declaration
     prefixes = textwrap.dedent("""\
     @prefix : <https://w3id.org/musco#> .
@@ -163,38 +191,40 @@ def create_dl_MOSAIC_kg(corpus_name, download_date):
     @prefix terms: <http://purl.org/dc/terms/> .
     @prefix fschema: <https://w3id.org/framester/schema/> .
     @prefix conceptnet: <https://w3id.org/framester/conceptnet/5.7.0/c/en/> .
-    @prefix quokka: <http://etna.istc.cnr.it/quokka/concepts#> .
 
     @base <https://w3id.org/musco#> .
 
     """)
     cluster_triples = generate_clusters_triples()
-    dl_triples = generate_dl_triples(corpus_name, download_date)
-    collocation_triples = generate_collocation_annotations(corpus_name, download_date)
+    for triple in cluster_triples:
+        print(triple)
+    situation_triples = generate_situation_triples(corpus_name, download_date, annotator)
+    for triple in situation_triples:
+        print(triple)
+    collocation_triples = generate_collocation_triples(corpus_name, download_date)
+    for triple in collocation_triples:
+        print(triple)
     combined_set = set(cluster_triples)
-    combined_set.update(dl_triples)
+    combined_set.update(situation_triples)
     combined_set.update(collocation_triples)
 
     # Output the turtle (.ttl) file
-    output_filename = "Distributional-linguistics_MOSAIC_kg.ttl"
+    output_filename = f"{corpus_name}_{download_date}_Distributional-linguistics_MOSAIC_kg.ttl"
 
     with open(output_filename, "w") as file:
         file.write(prefixes)
         for triple in combined_set:
             file.write(triple + "\n")
 
-    print(f"DL MOSAIC KG created successfully and saved as '{output_filename}'.")
+    print(f"DL MOSAIC KG created successfully for collocation situation {corpus_name}_{download_date} by {annotator} and saved as '{output_filename}'.")
 
     return
-# ## Generate RDF declarations for AbstractConceptClusters and ClusterConcepts
-# cluster_triples = generate_clusters_triples()
-# ## Generate RDF declarations for Distributional Linguistic KG
-# dl_triples = generate_dl_triples("ententen21", "20230627")
-# collocation_triples = generate_collocation_annotations("ententen21", "20230627")
-# combined_set = set(cluster_triples)
-# combined_set.update(dl_triples)
-# combined_set.update(collocation_triples)
 
 
+# Specifics of a collocation annotation situation
+corpus_name = "ententen21"
+download_date = "20230627"
+annotator = "DelfinaSolMartinezPandiani"
 
-create_dl_MOSAIC_kg("ententen21", "20230627")
+# create that collocation situation's DL KG
+create_collocation_situation_kg(corpus_name, download_date, annotator)

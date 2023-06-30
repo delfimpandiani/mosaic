@@ -1,0 +1,40 @@
+## I want all concepts that are collocated with the concept "conceptnet:couch" using the "musco:hasCollocateTypedBy" property:
+
+PREFIX : <https://w3id.org/musco#>
+PREFIX musco: <https://w3id.org/musco#>
+PREFIX conceptnet: <https://w3id.org/framester/conceptnet/5.7.0/c/en/>
+
+SELECT ?Concept
+WHERE {
+   ?Concept musco:hasCollocateTypedBy conceptnet:couch .
+}
+
+
+## I want all musco:LexicalEntries that are the object of a triple with the domain conceptnet:comfort and the object property :isAnnotatedWithLexicalEntry,
+
+PREFIX : <https://w3id.org/musco#>
+PREFIX musco: <https://w3id.org/musco#>
+PREFIX conceptnet: <https://w3id.org/framester/conceptnet/5.7.0/c/en/>
+
+SELECT ?lexicalEntry
+WHERE {
+  conceptnet:comfort :isAnnotatedWithLexicalEntry ?lexicalEntry .
+}
+
+
+## Include only those Lexical Entries involved in a Collocation Annotation about conceptnet:comfort that has a score that is at least .75
+
+PREFIX : <https://w3id.org/musco#>
+PREFIX musco: <https://w3id.org/musco#>
+PREFIX conceptnet: <https://w3id.org/framester/conceptnet/5.7.0/c/en/>
+
+SELECT ?lexicalEntry
+WHERE {
+  conceptnet:comfort :isAnnotatedWithLexicalEntry ?lexicalEntry .
+
+  ?annotation musco:annotationWithLexicalEntry ?lexicalEntry ;
+              musco:aboutAnnotatedEntity conceptnet:comfort .
+              musco:hasAnnotationStrength ?strength .
+
+  FILTER (?strength >= 7.5)
+}

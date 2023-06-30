@@ -54,7 +54,6 @@
 ,environmental,6397,5.310
 ,roadway,339,7.970
 ,overall,6305,5.280
-,long-term,4605,5.270
 ,school,164,8.340
 ,player,1923,5.520
 ,drug,956,8.220
@@ -204,7 +203,6 @@
 ,scissor,317,5.080
 ,effectiveness,27970,8.750
 ,welfare,23715,8.540
-,well-being,21647,8.370
 ,wellbeing,11524,7.530
 ,tolerability,8714,7.290
 ,convenience,39,9.310
@@ -254,7 +252,6 @@
 ,enforcement,79,8.420
 ,need,140,7.040
 ,speed,62,8.580
-,"""%w"" of ...",491487,7.580
 ,paramount,4438,10.160
 ,conscious,852,8.050
 ,first,7086,7.660
@@ -270,7 +267,6 @@
 ,manual,151,5.310
 ,certified,82,5.300
 ,foremost,63,5.280
-,non-negotiable,63,5.210
 ,questionable,113,5.170
 ,prioritised,12,5.230
 ,fundamental,144,5.110
@@ -279,7 +275,6 @@
 ,collaborative,112,5.040
 ,responsibility,1254,8.350
 ,number,2607,7.950
-,No.,255,6.820
 ,focus,5842,7.220
 ,goal,349,6.680
 ,topic,146,7.330
@@ -607,7 +602,6 @@
 ,stretch,43,6.490
 ,transit,43,6.480
 ,defense,31,5.930
-,A9,23,5.060
 ,farm,371,5.040
 ,street,618,5.010
 ,endpoint,172,7.900
@@ -717,7 +711,6 @@
 ,NHTSA,12,5.260
 ,contamination,12,6.930
 ,foe,16,5.230
-,COVID-19,25,9.170
 ,earthquake,21,8.370
 ,deportation,17,5.180
 ,calamity,13,5.180
@@ -745,7 +738,6 @@
 ,outage,33,6.030
 ,ride,34,5.960
 ,response,26,5.890
-,Covid-19,23,5.860
 ,tribulation,20,5.810
 ,launch,30,5.800
 ,collision,20,5.800
@@ -842,9 +834,7 @@
 ,enquiry,29,5.640
 ,dart,12,5.540
 ,tradeoff,114,8.030
-,trade-off,130,7.540
 ,balance,863,7.230
-,trade-offs,13,6.480
 ,choose,292,6.270
 ,choice,123,6.180
 ,decide,25,5.560
@@ -879,7 +869,6 @@
 ,image,21,6.880
 ,line,18,6.660
 ,NCAP,19,7.370
-,end-use,21,7.360
 ,rescuer,19,7.280
 ,helicopter,101,6.850
 ,anybody,47,6.720
@@ -977,6 +966,5 @@
 ,safe,12,7.900
 ,grade,14,9.750
 ,second,15,6.810
-,[number],51,6.590
 ,Communication,29,10.320
 ,BS,23,7.800

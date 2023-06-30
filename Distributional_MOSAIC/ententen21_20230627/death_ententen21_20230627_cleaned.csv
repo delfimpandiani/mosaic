@@ -20,7 +20,6 @@
 ,slow,16167,7.180
 ,unexpected,1729,7.950
 ,cardiac,10885,7.150
-,COVID-19,5936,10.080
 ,excess,9941,6.900
 ,impending,7980,6.820
 ,horrible,8903,6.810
@@ -43,8 +42,6 @@
 ,spiritual,9025,6.060
 ,cardiovascular,5021,6.060
 ,unexplained,4274,6.010
-,Covid-19,1485,8.510
-,drug-related,4062,5.970
 ,gruesome,4133,5.960
 ,fetal,4265,5.940
 ,gun,31,6.210
@@ -59,7 +56,6 @@
 ,mass,5999,5.770
 ,inevitable,2929,8.330
 ,avoidable,529,6.590
-,cancer-related,3370,5.710
 ,opioid,424,6.820
 ,apoptotic,3287,5.670
 ,brutal,3812,5.650
@@ -82,14 +78,12 @@
 ,cruel,62,5.690
 ,cause,34,11.860
 ,sad,271,6.930
-,opioid-related,2518,5.290
 ,unfortunate,2904,5.290
 ,illness,16,9.940
 ,horrific,2676,5.260
 ,more,19319,5.830
 ,quick,5347,5.180
 ,disease,55,11.480
-,coronavirus-related,2249,5.120
 ,heat,12,5.450
 ,reported,2292,5.120
 ,perinatal,2181,5.060
@@ -284,9 +278,6 @@
 ,survival,52,8.590
 ,abuse,333,6.120
 ,defeat,2081,5.110
-,"... of ""%w""",1348038,11.580
-,"""%w"" of ...",1183764,10.170
-,"... to ""%w""",829377,7.130
 ,attributable,3492,8.700
 ,due,45676,8.060
 ,instantaneous,999,7.470
@@ -430,7 +421,6 @@
 ,realm,45,8.130
 ,hawkmoth,21,5.400
 ,chill,23,5.390
-,Jest-Book,20,5.320
 ,cockroach,20,5.320
 ,portal,34,5.250
 ,veil,21,5.230
@@ -598,7 +588,6 @@
 ,Son,2447,6.000
 ,III,2539,5.990
 ,individual,245,7.250
-,I,2166,5.750
 ,resident,576,8.700
 ,citizen,59,7.230
 ,relative,1873,5.610
@@ -681,7 +670,6 @@
 ,crash,2724,7.330
 ,States,10639,7.170
 ,Venice,1802,6.940
-,U.S.,46,8.170
 ,Family,1308,6.630
 ,Iraq,2813,6.440
 ,hospital,94,8.810
@@ -911,11 +899,9 @@
 ,teach,313,6.340
 ,residence,289,6.230
 ,reign,132,11.640
-,1950,277,6.160
 ,maintain,24,6.690
 ,area,269,6.040
 ,community,21,6.330
-,1960,249,6.010
 ,editor,247,6.000
 ,board,238,5.940
 ,occupy,28,6.930
@@ -926,23 +912,19 @@
 ,farming,207,5.750
 ,emeritus,204,5.730
 ,firm,203,5.720
-,1920,201,5.700
 ,faithful,846,11.160
 ,school,19,5.860
 ,practice,36,6.800
 ,law,191,5.620
 ,city,14,5.790
-,1930,187,5.600
 ,perform,185,5.580
 ,operate,192,5.570
 ,University,179,5.540
-,1970,179,5.530
 ,collect,177,5.520
 ,career,177,5.520
 ,title,132,7.670
 ,affair,167,5.440
 ,land,57,6.430
-,1940,163,5.400
 ,virus,2742,9.080
 ,AIDS,1167,8.220
 ,Above,826,7.750
@@ -999,7 +981,6 @@
 ,Ebola,150,5.320
 ,CHD,148,5.310
 ,tumor,155,5.290
-,covid-19,146,5.290
 ,bleeding,146,5.270
 ,brush,4259,9.880
 ,threaten,4035,9.480
@@ -1039,16 +1020,9 @@
 ,Nile,1288,8.490
 ,battlefield,936,7.340
 ,Calvary,232,6.790
-,Dec.,591,6.440
 ,conscience,292,6.330
-,Jan.,12,6.860
-,Aug.,484,6.280
 ,voyage,75,6.750
-,Feb.,22,6.610
-,Nov.,489,6.050
 ,passage,67,6.160
-,Sept.,446,5.900
-,Oct.,453,5.890
 ,vomit,192,5.810
 ,spot,426,5.700
 ,Act,836,7.640
@@ -1288,7 +1262,6 @@
 ,Klan,99,5.770
 ,pixie,90,5.640
 ,All,84,5.460
-,self-will,74,5.370
 ,foe,22,7.670
 ,spy,68,5.190
 ,fanatic,66,5.180
@@ -1464,7 +1437,6 @@
 ,riot,76,6.660
 ,unrest,52,5.710
 ,lamentation,51,5.700
-,grief-stricken,50,5.700
 ,emotion,22,7.640
 ,Victor,48,5.640
 ,government,15,6.350
@@ -1494,18 +1466,14 @@
 ,Review,37,5.280
 ,immerse,40,5.230
 ,inhabitant,416,8.570
-,person-year,319,8.410
 ,capita,1044,8.230
 ,mile,389,7.400
 ,annum,348,6.860
-,100k,97,6.600
 ,vehicle,82,6.220
 ,caput,75,6.210
 ,livebirth,46,5.710
 ,TWh,41,5.540
-,100K,34,5.270
 ,female,122,7.260
-,patient-year,32,5.170
 ,prescription,32,5.150
 ,pale,405,8.810
 ,silent,197,7.600
@@ -1557,8 +1525,6 @@
 ,diabetic,25,5.220
 ,homeless,25,5.210
 ,cyclist,25,5.210
-,year-old,24,5.180
-,African-Americans,25,5.170
 ,Hispanics,24,5.110
 ,neonate,23,5.110
 ,bum,22,5.060
@@ -1590,7 +1556,6 @@
 ,widow,22,5.500
 ,obscurity,21,5.430
 ,lonely,21,5.420
-,mother-in-law,20,5.360
 ,emerge,22,5.340
 ,leadership,20,5.330
 ,print,20,5.300
@@ -1598,7 +1563,6 @@
 ,movement,27,5.920
 ,meeting,22,5.230
 ,wave,161,7.780
-,follow-up,132,7.670
 ,interrogation,97,7.110
 ,argument,54,7.040
 ,raid,109,6.590
@@ -1724,7 +1688,6 @@
 ,irradiation,12,5.280
 ,bout,14,5.270
 ,seizure,12,5.240
-,h,35,6.870
 ,fashion,12,5.100
 ,procedure,27,5.050
 ,ingestion,13,5.050
@@ -1813,7 +1776,6 @@
 ,seem,38,7.610
 ,care,18,7.090
 ,lay,21,6.710
-,pay-per-view,66,8.670
 ,help,45,7.940
 ,disco,35,7.780
 ,decaf,30,7.560
@@ -1821,7 +1783,6 @@
 ,dragon,17,6.720
 ,XI,16,6.660
 ,ambulance,18,6.650
-,X,17,6.650
 ,wicket,17,6.410
 ,morning,84,7.560
 ,assistance,13,6.300
@@ -1862,7 +1823,6 @@
 ,Monday,39,6.850
 ,Sunday,28,6.600
 ,Saturday,24,6.400
-,mid-March,18,6.380
 ,Court,12,5.920
 ,update,26,5.780
 ,Thursday,16,5.760
@@ -1996,9 +1956,6 @@
 ,demand,12,5.740
 ,need,29,5.400
 ,Corner,22,7.450
-,A.D.,13,7.450
-,a.m.,26,5.830
-,p.m.,24,5.340
 ,mete,13,8.900
 ,dish,52,5.840
 ,dole,39,5.750
@@ -2033,7 +1990,6 @@
 ,lobster,14,7.500
 ,lamb,18,6.980
 ,sheep,20,6.180
-,o,29,6.430
 ,nightclub,29,8.740
 ,Mexico,12,8.380
 ,bar,39,8.160

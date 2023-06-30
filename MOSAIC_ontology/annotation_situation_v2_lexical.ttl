@@ -1,0 +1,1025 @@
+@prefix : <https://w3id.org/musco#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix DUL: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix musco: <https://w3id.org/musco#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix quokka: <http://etna.istc.cnr.it/quokka/concepts#> .
+@prefix fschema: <https://w3id.org/framester/schema/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix conceptnet: <https://w3id.org/framester/conceptnet/5.7.0/c/en/> .
+@base <https://w3id.org/musco#> .
+
+<https://w3id.org/musco> rdf:type owl:Ontology ;
+                          owl:versionIRI <https://w3id.org/musco/mosaic> ;
+                          dc:creator "Delfina Sol Martinez Pandiani, Valentina Presutti." ;
+                          rdfs:comment "This is the ontological module underlying the Multimodal Descriptions of Social Concepts (MUSCO) project, which aims to investigate, model, and experiment with how and why social concepts (such as violence, power, peace, or destruction) are modeled and detected by humans and machines in images. It specifically focuses on the detection of social concepts referring to non-physical objects in (visual) art images. It implements some Ontology Design Patterns such as Descriptions and Situations (DnS) in a modular way. It is furthermore aligned to DUL - Dolce Ultralight foundational Ontology and imports synset and frame evocation classes from the Framester hub." ;
+                          owl:versionInfo "This is the annotation situation module that describes annotation situations specifically related to abstract social concepts." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith
+DUL:associatedWith rdf:type owl:ObjectProperty ;
+                   owl:equivalentProperty musco:associatedWith .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies
+DUL:classifies rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty musco:classifies .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines
+DUL:defines rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty musco:defines .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole
+DUL:hasRole rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty musco:hasRole .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting
+DUL:hasSetting rdf:type owl:ObjectProperty ;
+               owl:equivalentProperty musco:hasSetting .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy
+DUL:isClassifiedBy rdf:type owl:ObjectProperty ;
+                   owl:equivalentProperty musco:isClassifiedBy .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn
+DUL:isConceptUsedIn rdf:type owl:ObjectProperty ;
+                    owl:equivalentProperty musco:isConceptUsedIn .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn
+DUL:isDefinedIn rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty musco:isDefinedIn .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf
+DUL:isRoleOf rdf:type owl:ObjectProperty ;
+             owl:equivalentProperty musco:isRoleOf .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor
+DUL:isSettingFor rdf:type owl:ObjectProperty ;
+                 owl:equivalentProperty musco:isSettingFor .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies
+DUL:satisfies rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty musco:satisfies .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept
+DUL:usesConcept rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty musco:usesConcept .
+
+
+###  https://w3id.org/musco#aboutAnnotatedEntity
+musco:aboutAnnotatedEntity rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf musco:associatedWith ;
+                           owl:inverseOf musco:hasAnnotation ;
+                           rdfs:domain musco:Annotation ;
+                           rdfs:range musco:Entity ;
+                           rdfs:comment "Annotates an entity with additional information." ;
+                           rdfs:label "about annotated entity" .
+
+
+###  https://w3id.org/musco#annotationTypedBy
+musco:annotationTypedBy rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith ;
+                        owl:inverseOf musco:typesAnnotation ;
+                        rdfs:domain musco:Annotation ;
+                        rdfs:range musco:Concept ;
+                        rdfs:comment "Associates an annotation with a specific concept." ;
+                        rdfs:label "annotation typed by" .
+
+
+###  https://w3id.org/musco#annotationWithLexicalEntry
+musco:annotationWithLexicalEntry rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf musco:associatedWith ;
+                                 owl:inverseOf musco:lexicalEntryForAnnotation ;
+                                 rdfs:domain musco:Annotation ;
+                                 rdfs:range ontolex:LexicalEntry ;
+                                 rdfs:comment "Associates an annotation with a lexical entry." ;
+                                 rdfs:label "annotation with lexical entry" .
+
+
+###  https://w3id.org/musco#associatedWith
+musco:associatedWith rdf:type owl:ObjectProperty ;
+                     owl:inverseOf musco:associatedWith ;
+                     rdf:type owl:SymmetricProperty ,
+                              owl:TransitiveProperty ;
+                     rdfs:domain musco:Entity ;
+                     rdfs:range musco:Entity ;
+                     rdfs:comment "Equivalent to dul:associatedWith." ,
+                                  "Relates two entities that are associated with each other." ;
+                     rdfs:label "associated with" .
+
+
+###  https://w3id.org/musco#classifies
+musco:classifies rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf musco:associatedWith ;
+                 owl:inverseOf musco:isClassifiedBy ;
+                 rdfs:domain musco:Entity ;
+                 rdfs:range musco:Entity ;
+                 rdfs:comment "Equivalent to dul:classifies" ,
+                              "Specifies the classification relationship between two entities." ;
+                 rdfs:isDefinedBy <https://w3id.org/musco> ;
+                 rdfs:label "classifies" .
+
+
+###  https://w3id.org/musco#defines
+musco:defines rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf musco:usesConcept ;
+              rdfs:comment "Specifies a concept's definition." ;
+              rdfs:label "defines" .
+
+
+###  https://w3id.org/musco#hasAffiliation
+musco:hasAffiliation rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf musco:associatedWith ;
+                     owl:inverseOf musco:isAffiliationOf ;
+                     rdfs:domain musco:Agent ;
+                     rdfs:range musco:Affiliation ;
+                     rdfs:comment "Specifies the affiliation relationship between an agent and an affiliation." ;
+                     rdfs:label "has affiliation" .
+
+
+###  https://w3id.org/musco#hasAnnotation
+musco:hasAnnotation rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf musco:associatedWith ;
+                    rdfs:comment "Specifies the annotation relationship between two entities." ;
+                    rdfs:label "has annotation" .
+
+
+###  https://w3id.org/musco#hasAnnotationPlace
+musco:hasAnnotationPlace rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf musco:associatedWith ;
+                         rdfs:comment "Specifies the place in which an annotation situation took place." ;
+                         rdfs:label "has annotation place" .
+
+
+###  https://w3id.org/musco#hasAnnotationSituation
+musco:hasAnnotationSituation rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf musco:hasSetting ;
+                             owl:inverseOf musco:isAnnotationSituationOf ;
+                             rdfs:range musco:AnnotationSituation ;
+                             rdfs:comment "Relates an entity with the annotation situation it belongs to." ;
+                             rdfs:label "has annotation situation" .
+
+
+###  https://w3id.org/musco#hasAnnotationTime
+musco:hasAnnotationTime rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith ;
+                        owl:inverseOf musco:isAnnotationTimeOfSituation ;
+                        rdfs:domain musco:Situation ;
+                        rdfs:comment "Relates a situation with the time interval of its annotation." ;
+                        rdfs:label "has annotation time" .
+
+
+###  https://w3id.org/musco#hasAnnotationTypedBy
+musco:hasAnnotationTypedBy rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf musco:associatedWith ;
+                           owl:inverseOf musco:typesAnnotationOf ;
+                           rdfs:domain musco:Entity ;
+                           rdfs:range musco:Concept ;
+                           rdfs:comment "Relates an entity with the concept that is used for its annotation." ;
+                           rdfs:label "has annotation typed by" .
+
+
+###  https://w3id.org/musco#hasClusterConcept
+musco:hasClusterConcept rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith ;
+                        rdfs:domain musco:AbstractConceptCluster ;
+                        rdfs:range musco:AbstractSocialConcept ;
+                        rdfs:comment "Relates an abstract concept cluster with an abstract social concept." ;
+                        rdfs:label "has cluster concept" .
+
+
+###  https://w3id.org/musco#hasCollocateTypedBy
+musco:hasCollocateTypedBy rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf musco:hasAnnotationTypedBy ;
+                          owl:inverseOf musco:typesCollocateOf ;
+                          rdfs:comment "Relates an annotation with the type of collocate used." ;
+                          rdfs:label "has collocate typed by" .
+
+
+###  https://w3id.org/musco#hasIndigenousAffiliation
+musco:hasIndigenousAffiliation rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf musco:hasAffiliation ;
+                               owl:inverseOf musco:isIndigenousAffiliationOf ;
+                               rdfs:comment "Relates an agent with its indigenous affiliation." ;
+                               rdfs:label "has indigenous affiliation" .
+
+
+###  https://w3id.org/musco#hasLabelTypedBy
+musco:hasLabelTypedBy rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:hasAnnotationTypedBy ;
+                      owl:inverseOf musco:typesLabelOf ;
+                      rdfs:domain musco:Image ;
+                      rdfs:range musco:Concept ;
+                      rdfs:comment "Relates an image with the type of label used." ;
+                      rdfs:label "has label typed by" .
+
+
+###  https://w3id.org/musco#hasPoliticalAffiliation
+musco:hasPoliticalAffiliation rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:hasAffiliation ;
+                              owl:inverseOf musco:isPoliticalAffiliationOf ;
+                              rdfs:comment "Relates an agent with its political affiliation." ;
+                              rdfs:label "has political affiliation" .
+
+
+###  https://w3id.org/musco#hasReligiousAffiliation
+musco:hasReligiousAffiliation rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:hasAffiliation ;
+                              owl:inverseOf musco:isReligiousAffiliationOf ;
+                              rdfs:comment "Relates an agent with its religious affiliation." ;
+                              rdfs:label "has religious affiliation" .
+
+
+###  https://w3id.org/musco#hasRole
+musco:hasRole rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf musco:isClassifiedBy ;
+              owl:inverseOf musco:isRoleOf ;
+              rdfs:comment "Relates an entity with the role it plays." ;
+              rdfs:label "has role" .
+
+
+###  https://w3id.org/musco#hasSetting
+musco:hasSetting rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf musco:associatedWith ;
+                 rdfs:comment "Relates an entity with its setting." ;
+                 rdfs:label "has setting" .
+
+
+###  https://w3id.org/musco#involves
+musco:involves rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:associatedWith ;
+               rdfs:comment "Relates entities that are involved with each other." ;
+               rdfs:label "involves" .
+
+
+###  https://w3id.org/musco#involvesAnnotatedEntity
+musco:involvesAnnotatedEntity rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:involves ;
+                              owl:inverseOf musco:isInvolvedInAnnotationSituation ;
+                              rdfs:domain musco:AnnotationSituation ;
+                              rdfs:range musco:Entity ;
+                              rdfs:comment "Relates an annotation situation with the annotated entity involved in it." ;
+                              rdfs:label "involves annotated entity" .
+
+
+###  https://w3id.org/musco#involvesAnnotator
+musco:involvesAnnotator rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:involves ;
+                        owl:inverseOf musco:isAnnotatorInvolvedInSituation ;
+                        rdfs:domain musco:Situation ;
+                        rdfs:range musco:Annotator ;
+                        rdfs:comment "Relates a situation with the annotator involved in it." ;
+                        rdfs:label "involves annotator" .
+
+
+###  https://w3id.org/musco#involvesDataset
+musco:involvesDataset rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:involves ;
+                      owl:inverseOf musco:isDatasetInvolvedInSituation ;
+                      rdfs:domain musco:Situation ;
+                      rdfs:range musco:Entity ;
+                      rdfs:comment "Relates a situation with the dataset involved in it." ;
+                      rdfs:label "involves dataset" .
+
+
+###  https://w3id.org/musco#involvesRemunerationScheme
+musco:involvesRemunerationScheme rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf musco:involves ;
+                                 owl:inverseOf musco:isRemunerationSchemeOfSituation ;
+                                 rdfs:domain musco:Situation ;
+                                 rdfs:range musco:RemunerationScheme ;
+                                 rdfs:comment "Relates a situation with the remuneration scheme involved in it." ;
+                                 rdfs:label "involves remuneration scheme" .
+
+
+###  https://w3id.org/musco#isAffiliationOf
+musco:isAffiliationOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:associatedWith ;
+                      rdfs:comment "Relates an entity with its affiliation." ;
+                      rdfs:label "is affiliation of" .
+
+
+###  https://w3id.org/musco#isAnnotatedWithLexicalEntry
+musco:isAnnotatedWithLexicalEntry rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf musco:associatedWith ;
+                                  owl:inverseOf musco:isLexicalEntryOfAnnotationFor ;
+                                  rdfs:domain musco:Entity ;
+                                  rdfs:range musco:LexicalEntry ;
+                                  rdfs:comment "Relates an entity with the lexical entry used for annotation." ;
+                                  rdfs:label "is annotated with lexical entry" .
+
+
+###  https://w3id.org/musco#isAnnotationPlaceOfSituation
+musco:isAnnotationPlaceOfSituation rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf musco:associatedWith ;
+                                   rdfs:comment "Relates an annotation place with the situation it is associated with." ;
+                                   rdfs:label "is annotation place of situation" .
+
+
+###  https://w3id.org/musco#isAnnotationSituationOf
+musco:isAnnotationSituationOf rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf musco:isSettingFor ;
+                              rdfs:comment "Relates a setting with the annotation situation it is associated with." ;
+                              rdfs:label "is annotation situation of" .
+
+
+###  https://w3id.org/musco#isAnnotationTimeOfSituation
+musco:isAnnotationTimeOfSituation rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf musco:associatedWith ;
+                                  rdfs:domain DUL:Entity ;
+                                  rdfs:comment "Relates a situation with the annotation time associated with it." ;
+                                  rdfs:label "is annotation time of situation" .
+
+
+###  https://w3id.org/musco#isAnnotatorInvolvedInSituation
+musco:isAnnotatorInvolvedInSituation rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf musco:involves ;
+                                     rdfs:comment "Relates an annotator with the situation they are involved in." ;
+                                     rdfs:label "is annotator involved in situation" .
+
+
+###  https://w3id.org/musco#isClassifiedBy
+musco:isClassifiedBy rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf musco:associatedWith ;
+                     rdfs:comment "Equivalent to DUL:isClassifiedBy" ,
+                                  "Relates an entity with the classification applied to it." ;
+                     rdfs:label "is classified by" .
+
+
+###  https://w3id.org/musco#isConceptUsedIn
+musco:isConceptUsedIn rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:associatedWith ;
+                      rdfs:comment "Relates a concept with the entities it is used in." ;
+                      rdfs:label "is concept used in" .
+
+
+###  https://w3id.org/musco#isDatasetInvolvedInSituation
+musco:isDatasetInvolvedInSituation rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf musco:involves ;
+                                   rdfs:comment "Relates a dataset with the situation it is involved in." ;
+                                   rdfs:label "is dataset involved in situation" .
+
+
+###  https://w3id.org/musco#isDefinedIn
+musco:isDefinedIn rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf musco:isConceptUsedIn ;
+                  rdfs:domain musco:Role ;
+                  rdfs:range musco:Description ;
+                  rdfs:comment "Relates a role with the description defining it." ;
+                  rdfs:label "is defined in" .
+
+
+###  https://w3id.org/musco#isIndigenousAffiliationOf
+musco:isIndigenousAffiliationOf rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf musco:isAffiliationOf ;
+                                rdfs:comment "Relates an affiliation with the indigenous entity it is associated with." ;
+                                rdfs:label "is indigenous affiliation of" .
+
+
+###  https://w3id.org/musco#isInvolvedInAnnotationSituation
+musco:isInvolvedInAnnotationSituation rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf musco:involves ;
+                                      rdfs:comment "Relates an entity with the annotation situation it is involved in." ;
+                                      rdfs:label "is involved in annotation situation" .
+
+
+###  https://w3id.org/musco#isLexicalEntryOfAnnotationFor
+musco:isLexicalEntryOfAnnotationFor rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf musco:associatedWith ;
+                                    rdfs:domain musco:Entity ;
+                                    rdfs:range musco:LexicalEntry ;
+                                    rdfs:comment "Relates a lexical entry with the entity it is used to annotate." ;
+                                    rdfs:label "is lexical entry of annotation for" .
+
+
+###  https://w3id.org/musco#isPoliticalAffiliationOf
+musco:isPoliticalAffiliationOf rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf musco:isAffiliationOf ;
+                               rdfs:domain musco:PoliticalAffiliation ;
+                               rdfs:range musco:Annotator ;
+                               rdfs:comment "Relates a political affiliation with the annotator it is associated with." ;
+                               rdfs:label "is political affiliation of" .
+
+
+###  https://w3id.org/musco#isReligiousAffiliationOf
+musco:isReligiousAffiliationOf rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf musco:isAffiliationOf ;
+                               rdfs:comment "Relates a religious affiliation with the entity it is associated with." ;
+                               rdfs:label "is religious affiliation of" .
+
+
+###  https://w3id.org/musco#isRemunerationSchemeOfSituation
+musco:isRemunerationSchemeOfSituation rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf musco:involves ;
+                                      rdfs:comment "Relates a situation with the remuneration scheme involved in it." ;
+                                      rdfs:label "is remuneration scheme of situation" .
+
+
+###  https://w3id.org/musco#isRoleOf
+musco:isRoleOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:classifies ;
+               rdfs:domain musco:Role ;
+               rdfs:range musco:Annotation ;
+               rdfs:comment "Relates a role with the annotation it classifies." ;
+               rdfs:label "is role of" .
+
+
+###  https://w3id.org/musco#isSatisfiedBy
+musco:isSatisfiedBy rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf musco:associatedWith ;
+                    owl:inverseOf musco:satisfies ;
+                    rdfs:domain musco:Description ;
+                    rdfs:comment "Relates a description with the entity it satisfies." ;
+                    rdfs:label "is satisfied by" .
+
+
+###  https://w3id.org/musco#isSettingFor
+musco:isSettingFor rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf musco:associatedWith ;
+                   rdfs:comment "Relates an entity with the setting it is associated with. Equivalent to dul:isSettingFor." ;
+                   rdfs:label "is setting for" .
+
+
+###  https://w3id.org/musco#lexicalEntryForAnnotation
+musco:lexicalEntryForAnnotation rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf musco:associatedWith ;
+                                rdfs:comment "Relates a lexical entry with the annotation it is associated with." ;
+                                rdfs:label "lexical entry for annotation" .
+
+
+###  https://w3id.org/musco#realizes
+musco:realizes rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:associatedWith ;
+               rdfs:comment "Relates an entity with the realization it is associated with." ;
+               rdfs:label "realizes" .
+
+
+###  https://w3id.org/musco#satisfies
+musco:satisfies rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf musco:associatedWith ;
+                rdfs:comment "Relates a description with the entity it satisfies." ;
+                rdfs:label "satisfies" .
+
+
+###  https://w3id.org/musco#typesAnnotation
+musco:typesAnnotation rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf musco:associatedWith ;
+                      rdfs:comment "Relates a concept with the annotation it types." ;
+                      rdfs:label "types annotation" .
+
+
+###  https://w3id.org/musco#typesAnnotationOf
+musco:typesAnnotationOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf musco:associatedWith ;
+                        rdfs:comment "Relates an annotation with the entity it types." ;
+                        rdfs:label "types annotation of" .
+
+
+###  https://w3id.org/musco#typesCollocateOf
+musco:typesCollocateOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf musco:typesAnnotationOf ;
+                       rdfs:domain musco:Concept ;
+                       rdfs:range musco:Concept ;
+                       rdfs:comment "Relates a concept with another concept that it collocates with." ;
+                       rdfs:label "types collocate of" .
+
+
+###  https://w3id.org/musco#typesLabelOf
+musco:typesLabelOf rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf musco:typesAnnotationOf ;
+                   rdfs:domain musco:Concept ;
+                   rdfs:range musco:Image ;
+                   rdfs:comment "Relates a concept with the image that represents its label." ;
+                   rdfs:label "types label of" .
+
+
+###  https://w3id.org/musco#usesConcept
+musco:usesConcept rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf musco:associatedWith ;
+                  rdfs:comment "Relates an entity with the concept it uses." ;
+                  rdfs:label "uses concept" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue
+DUL:hasDataValue rdf:type owl:DatatypeProperty ;
+                 owl:equivalentProperty musco:hasDataValue .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue
+DUL:hasRegionDataValue rdf:type owl:DatatypeProperty ;
+                       owl:equivalentProperty musco:hasRegionDataValue .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+skos:notation rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty musco:notation .
+
+
+###  https://w3id.org/musco#hasAnnotationStrength
+musco:hasAnnotationStrength rdf:type owl:DatatypeProperty ;
+                            rdfs:domain musco:Annotation ;
+                            rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/musco#hasCoverage
+musco:hasCoverage rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf musco:hasDataValue ;
+                  rdfs:range xsd:decimal .
+
+
+###  https://w3id.org/musco#hasDataValue
+musco:hasDataValue rdf:type owl:DatatypeProperty ;
+                   rdfs:label "has data value" .
+
+
+###  https://w3id.org/musco#hasDate
+musco:hasDate rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:dateTime .
+
+
+###  https://w3id.org/musco#hasHeight
+musco:hasHeight rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf musco:hasRegionDataValue ;
+                rdfs:range xsd:decimal ;
+                rdfs:label "has height" .
+
+
+###  https://w3id.org/musco#hasRegionDataValue
+musco:hasRegionDataValue rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf musco:hasDataValue ;
+                         rdfs:comment "A datatype property that encodes values for a Region, e.g. a float for the Region Height." ;
+                         rdfs:isDefinedBy <https://w3id.org/musco> ;
+                         rdfs:label "has region data value"@en ,
+                                    "regione ha valore"@it .
+
+
+###  https://w3id.org/musco#hasWidth
+musco:hasWidth rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf musco:hasRegionDataValue ;
+               rdfs:range xsd:decimal ;
+               rdfs:label "has width" .
+
+
+###  https://w3id.org/musco#hasXCoordinate
+musco:hasXCoordinate rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf musco:hasRegionDataValue ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:label "has x coordinate" .
+
+
+###  https://w3id.org/musco#hasYCoordinate
+musco:hasYCoordinate rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf musco:hasRegionDataValue ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:label "has y coordinate" .
+
+
+###  https://w3id.org/musco#isDateOf
+musco:isDateOf rdf:type owl:DatatypeProperty ;
+               rdfs:domain [ rdf:type owl:Restriction ;
+                             owl:onProperty musco:hasDate ;
+                             owl:someValuesFrom xsd:dateTime
+                           ] ;
+               rdfs:comment "The date in which something takes place." ;
+               rdfs:label "is date of" .
+
+
+###  https://w3id.org/musco#notation
+musco:notation rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/musco#rgbCoordinateBlue
+musco:rgbCoordinateBlue rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf musco:hasDataValue ;
+                        rdfs:range xsd:nonNegativeInteger .
+
+
+###  https://w3id.org/musco#rgbCoordinateGreen
+musco:rgbCoordinateGreen rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf musco:hasDataValue ;
+                         rdfs:range xsd:nonNegativeInteger .
+
+
+###  https://w3id.org/musco#rgbCoordinateRed
+musco:rgbCoordinateRed rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf musco:hasDataValue ;
+                       rdfs:range xsd:nonNegativeInteger .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept
+DUL:Concept rdf:type owl:Class ;
+            owl:equivalentClass musco:Concept .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description
+DUL:Description rdf:type owl:Class ;
+                owl:equivalentClass musco:Description .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity
+DUL:Entity rdf:type owl:Class ;
+           owl:equivalentClass musco:Entity .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity
+DUL:InformationEntity rdf:type owl:Class ;
+                      owl:equivalentClass musco:InformationEntity .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject
+DUL:InformationObject rdf:type owl:Class ;
+                      owl:equivalentClass musco:InformationObject .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization
+DUL:InformationRealization rdf:type owl:Class ;
+                           owl:equivalentClass musco:InformationRealization .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object
+DUL:Object rdf:type owl:Class ;
+           owl:equivalentClass musco:Object .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region
+DUL:Region rdf:type owl:Class ;
+           owl:equivalentClass musco:Region .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role
+DUL:Role rdf:type owl:Class ;
+         owl:equivalentClass musco:Role .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation
+DUL:Situation rdf:type owl:Class ;
+              owl:equivalentClass musco:Situation .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject
+DUL:SocialObject rdf:type owl:Class ;
+                 owl:equivalentClass musco:SocialObject .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion
+DUL:SpaceRegion rdf:type owl:Class ;
+                owl:equivalentClass musco:SpaceRegion .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+ontolex:LexicalEntry rdf:type owl:Class ;
+                     owl:equivalentClass musco:LexicalEntry .
+
+
+###  https://w3id.org/framester/schema/ConceptualFrame
+fschema:ConceptualFrame rdf:type owl:Class ;
+                        owl:equivalentClass musco:ConceptualFrame ;
+                        rdfs:subClassOf fschema:Frame .
+
+
+###  https://w3id.org/framester/schema/Frame
+fschema:Frame rdf:type owl:Class .
+
+
+###  https://w3id.org/framester/schema/Synset
+fschema:Synset rdf:type owl:Class ;
+               owl:equivalentClass musco:WnSynsetFrame .
+
+
+###  https://w3id.org/musco#AbstractConceptCluster
+musco:AbstractConceptCluster rdf:type owl:Class ;
+                             rdfs:subClassOf musco:Entity ;
+                             rdfs:comment "A cluster of abstract concepts that tend to be evoked together, as defined in the ADVISE dataset [Ye and Kovashka 2018]." ;
+                             rdfs:label "Abstract Concept Cluster" .
+
+
+###  https://w3id.org/musco#AbstractSocialConcept
+musco:AbstractSocialConcept rdf:type owl:Class ;
+                            rdfs:subClassOf musco:SocialConcept ;
+                            rdfs:comment "An abstract social concept that forms part of an AbstractConceptCluster" ;
+                            rdfs:label "Abstract Social Concept" .
+
+
+###  https://w3id.org/musco#Affiliation
+musco:Affiliation rdf:type owl:Class ;
+                  rdfs:subClassOf musco:SocialObject ;
+                  rdfs:comment "An affiliation group, whether it is political, religious, indigenous, etc. An Agent can have an affiliation to it" ;
+                  rdfs:label "Affiliation" .
+
+
+###  https://w3id.org/musco#Agent
+musco:Agent rdf:type owl:Class ;
+            rdfs:subClassOf musco:Object ;
+            rdfs:comment "An agent that can perform actions." ;
+            rdfs:label "Agent" .
+
+
+###  https://w3id.org/musco#Annotation
+musco:Annotation rdf:type owl:Class ;
+                 rdfs:subClassOf musco:SocialObject ;
+                 rdfs:comment "A single annotation made about a certain Entity with a LexicalEntry. " ;
+                 rdfs:label "Annotation" .
+
+
+###  https://w3id.org/musco#AnnotationDescription
+musco:AnnotationDescription rdf:type owl:Class ;
+                            rdfs:subClassOf musco:Description ;
+                            rdfs:comment "A description of an annotation, which can be satisfied by annotation situations." ;
+                            rdfs:label "Annotation Description" .
+
+
+###  https://w3id.org/musco#AnnotationRole
+musco:AnnotationRole rdf:type owl:Class ;
+                     rdfs:subClassOf musco:Role ;
+                     rdfs:comment "A role associated with an annotation type." ;
+                     rdfs:label "Annotation Role" .
+
+
+###  https://w3id.org/musco#AnnotationSituation
+musco:AnnotationSituation rdf:type owl:Class ;
+                          rdfs:subClassOf musco:Situation ;
+                          rdfs:comment "An annotation situation is the state of affairs within which an Annotation takes place." ;
+                          rdfs:label "Annotation Situation" .
+
+
+###  https://w3id.org/musco#Annotator
+musco:Annotator rdf:type owl:Class ;
+                rdfs:subClassOf musco:Agent ;
+                rdfs:comment "An annotator who creates annotations." ;
+                rdfs:label "Annotator" .
+
+
+###  https://w3id.org/musco#AnnotatorCommunity
+musco:AnnotatorCommunity rdf:type owl:Class ;
+                         rdfs:subClassOf musco:Annotator ,
+                                         musco:CollectiveAgent ;
+                         rdfs:comment "A collection of Agents that function together as an Annotator. It serves to represent Annotator data when it is aggregated and not about single Agents." ;
+                         rdfs:label "Annotator Community" .
+
+
+###  https://w3id.org/musco#CollectiveAgent
+musco:CollectiveAgent rdf:type owl:Class ;
+                      rdfs:subClassOf musco:Agent ;
+                      rdfs:comment "A collective agent that acts as a group." ;
+                      rdfs:label "Collective Agent" .
+
+
+###  https://w3id.org/musco#CollocationAnnotation
+musco:CollocationAnnotation rdf:type owl:Class ;
+                            rdfs:subClassOf musco:Annotation ;
+                            rdfs:comment "An annotation referring to a collocation." ;
+                            rdfs:label "Collocation Annotation" .
+
+
+###  https://w3id.org/musco#CollocationAnnotationDescription
+musco:CollocationAnnotationDescription rdf:type owl:Class ;
+                                       rdfs:subClassOf musco:AnnotationDescription ;
+                                       rdfs:comment "A description of a collocation annotation, satisfied by a CollocationAnnotationSituation." ;
+                                       rdfs:label "Collocation Annotation Description" .
+
+
+###  https://w3id.org/musco#CollocationRole
+musco:CollocationRole rdf:type owl:Class ;
+                      rdfs:subClassOf musco:AnnotationRole ;
+                      rdfs:comment "A role associated with collocation annotations." ;
+                      rdfs:label "Collocation Role" .
+
+
+###  https://w3id.org/musco#CollocationSituation
+musco:CollocationSituation rdf:type owl:Class ;
+                           rdfs:subClassOf musco:AnnotationSituation ;
+                           rdfs:comment "A situation in which collocation annotation occurs." ;
+                           rdfs:label "Collocation Situation" .
+
+
+###  https://w3id.org/musco#Concept
+musco:Concept rdf:type owl:Class ;
+              rdfs:subClassOf musco:SocialObject ;
+              rdfs:comment "A concept or idea." ;
+              rdfs:label "Concept" .
+
+
+###  https://w3id.org/musco#ConceptualFrame
+musco:ConceptualFrame rdf:type owl:Class .
+
+
+###  https://w3id.org/musco#Country
+musco:Country rdf:type owl:Class ;
+              rdfs:subClassOf musco:Place ;
+              rdfs:comment "A country or nation." ;
+              rdfs:label "Country" .
+
+
+###  https://w3id.org/musco#Dataset
+musco:Dataset rdf:type owl:Class ;
+              rdfs:subClassOf musco:SocialObject ;
+              rdfs:comment "A dataset or collection of data, such as image datasets and lexical corpora." ;
+              rdfs:label "Dataset" .
+
+
+###  https://w3id.org/musco#Description
+musco:Description rdf:type owl:Class ;
+                  rdfs:subClassOf musco:Entity ;
+                  rdfs:comment "A description or representation of an entity." ;
+                  rdfs:label "Description" .
+
+
+###  https://w3id.org/musco#Entity
+musco:Entity rdf:type owl:Class ;
+             rdfs:comment "An entity or object." ;
+             rdfs:label "Entity" .
+
+
+###  https://w3id.org/musco#Image
+musco:Image rdf:type owl:Class ;
+            rdfs:subClassOf musco:InformationObject ;
+            rdfs:comment "An image or picture." ;
+            rdfs:label "Image" .
+
+
+###  https://w3id.org/musco#ImageAnnotation
+musco:ImageAnnotation rdf:type owl:Class ;
+                      rdfs:subClassOf musco:Annotation ;
+                      rdfs:comment "An annotation made on an image with a LexicalEntry." ;
+                      rdfs:label "Image Annotation" .
+
+
+###  https://w3id.org/musco#ImageAnnotationDescription
+musco:ImageAnnotationDescription rdf:type owl:Class ;
+                                 rdfs:subClassOf musco:AnnotationDescription ;
+                                 rdfs:comment "A description of an image annotation, satisfied by an ImageAnnotationSituation." ;
+                                 rdfs:label "Image Annotation Description" .
+
+
+###  https://w3id.org/musco#ImageAnnotationRole
+musco:ImageAnnotationRole rdf:type owl:Class ;
+                          rdfs:subClassOf musco:AnnotationRole ;
+                          rdfs:comment "A role associated with an image annotation." ;
+                          rdfs:label "Image Annotation Role" .
+
+
+###  https://w3id.org/musco#ImageAnnotationSituation
+musco:ImageAnnotationSituation rdf:type owl:Class ;
+                               rdfs:subClassOf musco:AnnotationSituation ;
+                               rdfs:comment "A situation in which an image annotation occurs." ;
+                               rdfs:label "Image Annotation Situation" .
+
+
+###  https://w3id.org/musco#IndigenousAffiliation
+musco:IndigenousAffiliation rdf:type owl:Class ;
+                            rdfs:subClassOf musco:Affiliation ;
+                            rdfs:comment "An affiliation group related to indigenous identities." ;
+                            rdfs:label "Indigenous Affiliation" .
+
+
+###  https://w3id.org/musco#IndividualAnnotator
+musco:IndividualAnnotator rdf:type owl:Class ;
+                          rdfs:subClassOf musco:Annotator ;
+                          rdfs:comment "An individual annotator." ;
+                          rdfs:label "Individual Annotator" .
+
+
+###  https://w3id.org/musco#InformationEntity
+musco:InformationEntity rdf:type owl:Class ;
+                        rdfs:subClassOf musco:Entity ;
+                        rdfs:comment "An entity that contains information." ;
+                        rdfs:label "Information Entity" .
+
+
+###  https://w3id.org/musco#InformationObject
+musco:InformationObject rdf:type owl:Class ;
+                        rdfs:subClassOf musco:InformationEntity ;
+                        rdfs:comment "An object that contains information." ;
+                        rdfs:label "Information Object" .
+
+
+###  https://w3id.org/musco#InformationRealization
+musco:InformationRealization rdf:type owl:Class .
+
+
+###  https://w3id.org/musco#LexicalEntry
+musco:LexicalEntry rdf:type owl:Class ;
+                   rdfs:subClassOf musco:SocialObject ;
+                   rdfs:comment "A lexical entry represents a unit of analysis of the lexicon that consists of a set of forms that are grammatically related and a set of base meanings that are associated with all of these forms. Thus, a lexical entry is a word, multiword expression or affix with a single part-of-speech, morphological pattern, etymology and set of senses." ;
+                   rdfs:label "Lexical Entry" .
+
+
+###  https://w3id.org/musco#Object
+musco:Object rdf:type owl:Class ;
+             rdfs:subClassOf musco:Entity ;
+             rdfs:comment "An object or entity." ;
+             rdfs:label "Object" .
+
+
+###  https://w3id.org/musco#Place
+musco:Place rdf:type owl:Class ;
+            rdfs:subClassOf musco:SocialObject ;
+            rdfs:comment "A place or location." ;
+            rdfs:label "Place" .
+
+
+###  https://w3id.org/musco#PoliticalAffiliation
+musco:PoliticalAffiliation rdf:type owl:Class ;
+                           rdfs:subClassOf musco:Affiliation ;
+                           rdfs:comment "An affiliation group related to political identities." ;
+                           rdfs:label "Political Affiliation" .
+
+
+###  https://w3id.org/musco#Region
+musco:Region rdf:type owl:Class .
+
+
+###  https://w3id.org/musco#ReligiousAffiliation
+musco:ReligiousAffiliation rdf:type owl:Class ;
+                           rdfs:subClassOf musco:Affiliation ;
+                           rdfs:comment "An affiliation group related to religious identities." ;
+                           rdfs:label "Religious Affiliation" .
+
+
+###  https://w3id.org/musco#RemunerationScheme
+musco:RemunerationScheme rdf:type owl:Class ;
+                         rdfs:subClassOf musco:SocialObject ;
+                         rdfs:comment "A scheme or system for remuneration." ;
+                         rdfs:label "Remuneration Scheme" .
+
+
+###  https://w3id.org/musco#Role
+musco:Role rdf:type owl:Class ;
+           rdfs:subClassOf musco:Concept ;
+           rdfs:comment "A role or position." ;
+           rdfs:label "Role" .
+
+
+###  https://w3id.org/musco#Situation
+musco:Situation rdf:type owl:Class ;
+                rdfs:subClassOf musco:Entity ;
+                rdfs:comment "A situation or context." ;
+                rdfs:label "Situation" .
+
+
+###  https://w3id.org/musco#SocialConcept
+musco:SocialConcept rdf:type owl:Class ;
+                    rdfs:subClassOf musco:Concept ;
+                    rdfs:comment "A social concept or idea." ;
+                    rdfs:label "Social Concept" .
+
+
+###  https://w3id.org/musco#SocialObject
+musco:SocialObject rdf:type owl:Class ;
+                   rdfs:subClassOf musco:Object ;
+                   rdfs:comment "A social object or entity." ;
+                   rdfs:label "Social Object" .
+
+
+###  https://w3id.org/musco#SpaceRegion
+musco:SpaceRegion rdf:type owl:Class .
+
+
+###  https://w3id.org/musco#WnSynsetFrame
+musco:WnSynsetFrame rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

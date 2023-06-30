@@ -3,7 +3,6 @@
 ,ride,7742,8.220
 ,maximum,15927,7.590
 ,thermal,8016,7.560
-,all-day,2930,7.340
 ,occupant,491,8.790
 ,utmost,404,7.370
 ,added,8171,6.930
@@ -14,7 +13,6 @@
 ,optimum,2448,6.610
 ,superior,3954,6.570
 ,patient,4951,6.520
-,air-conditioned,1567,6.410
 ,relative,4155,6.330
 ,optimal,2942,6.290
 ,supreme,1726,6.080
@@ -41,9 +39,7 @@
 ,durability,7333,8.130
 ,indoor,1463,5.210
 ,safety,36417,8.920
-,long-lasting,738,5.200
 ,seating,828,5.160
-,year-round,74,5.300
 ,lasting,1137,5.120
 ,homely,577,5.070
 ,offering,867,5.030
@@ -104,7 +100,6 @@
 ,strength,5132,6.380
 ,satisfaction,2395,6.370
 ,consolation,1544,6.250
-,well-being,2270,6.240
 ,versatility,1576,6.140
 ,refinement,1525,6.100
 ,cleanliness,1475,6.090
@@ -146,9 +141,6 @@
 ,calm,762,5.130
 ,welfare,947,5.080
 ,comfort,66,7.280
-,"""%w"" of ...",200535,10.030
-,"... of ""%w""",143119,7.160
-,"... for ""%w""",120190,6.010
 ,paramount,324,6.880
 ,key,839,6.140
 ,subjective,105,5.970
@@ -570,7 +562,6 @@
 ,medium,12,6.220
 ,spread,21,6.060
 ,tradeoff,28,6.050
-,trade-off,38,5.790
 ,mix,12,5.450
 ,choose,148,5.300
 ,decide,18,5.120
@@ -611,7 +602,6 @@
 ,suffer,16,7.590
 ,survive,21,5.180
 ,go,91,5.120
-,air-conditioning,19,9.450
 ,heating,15,8.440
 ,shower,26,8.050
 ,linen,12,8.010
@@ -619,7 +609,6 @@
 ,bathroom,12,7.070
 ,electricity,16,6.900
 ,pool,14,6.140
-,A,10,6.090
 ,window,16,5.020
 ,sport,13,5.730
 ,riding,21,9.190
