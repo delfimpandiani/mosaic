@@ -206,6 +206,14 @@ musco:hasAnnotationTypedBy rdf:type owl:ObjectProperty ;
                            rdfs:label "has annotation typed by" .
 
 
+###  https://w3id.org/musco#hasCause
+musco:hasCause rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:associatedWith ;
+               owl:inverseOf musco:isCauseOf ;
+               rdfs:comment "According to the Framester hub and the Quokka tool, the relation between a concept and another concept that causes it" ;
+               rdfs:label "has cause" .
+
+
 ###  https://w3id.org/musco#hasClusterConcept
 musco:hasClusterConcept rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf musco:associatedWith ;
@@ -247,6 +255,15 @@ musco:hasPoliticalAffiliation rdf:type owl:ObjectProperty ;
                               owl:inverseOf musco:isPoliticalAffiliationOf ;
                               rdfs:comment "Relates an agent with its political affiliation." ;
                               rdfs:label "has political affiliation" .
+
+
+###  https://w3id.org/musco#hasRelatedConcept
+musco:hasRelatedConcept rdf:type owl:ObjectProperty ,
+                                 owl:SymmetricProperty ;
+                        rdfs:domain musco:Concept ;
+                        rdfs:range musco:Concept ;
+                        rdfs:comment "An AbstractConceptCluster is related to some Concept (usually via one of its cluster concepts in the Framester hub)" ;
+                        rdfs:label "has related concept" .
 
 
 ###  https://w3id.org/musco#hasReligiousAffiliation
@@ -365,6 +382,13 @@ musco:isAnnotatorInvolvedInSituation rdf:type owl:ObjectProperty ;
                                      rdfs:label "is annotator involved in situation" .
 
 
+###  https://w3id.org/musco#isCauseOf
+musco:isCauseOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf musco:associatedWith ;
+                rdfs:domain musco:Concept ;
+                rdfs:range musco:Concept .
+
+
 ###  https://w3id.org/musco#isClassifiedBy
 musco:isClassifiedBy rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf musco:associatedWith ;
@@ -428,6 +452,14 @@ musco:isPoliticalAffiliationOf rdf:type owl:ObjectProperty ;
                                rdfs:label "is political affiliation of" .
 
 
+###  https://w3id.org/musco#isProvokedBy
+musco:isProvokedBy rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf musco:associatedWith ;
+                   owl:inverseOf musco:provokes ;
+                   rdfs:comment "According to the Framester hub and the Quokka tool, the relation between a concept and another concept that provokes it" ;
+                   rdfs:label "is provoked by" .
+
+
 ###  https://w3id.org/musco#isReligiousAffiliationOf
 musco:isReligiousAffiliationOf rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf musco:isAffiliationOf ;
@@ -472,6 +504,14 @@ musco:lexicalEntryForAnnotation rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf musco:associatedWith ;
                                 rdfs:comment "Relates a lexical entry with the annotation it is associated with." ;
                                 rdfs:label "lexical entry for annotation" .
+
+
+###  https://w3id.org/musco#provokes
+musco:provokes rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf musco:associatedWith ;
+               rdfs:domain musco:Concept ;
+               rdfs:range musco:Concept ;
+               rdfs:label "provokes" .
 
 
 ###  https://w3id.org/musco#realizes
