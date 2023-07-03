@@ -305,13 +305,9 @@ def create_collocation_situation_kg(corpus_name, download_date, annotator, corpu
 
 
 
-
-
-
-
 # Specifics of a collocation annotation situation
-corpus_name = "parlaMint21"
-corpus_lan = "es"
+corpus_name = "film-corpus"
+corpus_lan = "en"
 download_date = "20230703"
 annotator = "DelfinaSolMartinezPandiani"
 
