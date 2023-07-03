@@ -154,7 +154,7 @@ def generate_collocation_triples(corpus_name, download_date):
                 collocate_triples.extend([
                     ## Instance declarations
                     f"{annotation_id} rdf:type {rdf_prefix}:CollocationAnnotation .",
-                    f"{collocate_le}_sit rdf:type {rdf_prefix}:LexicalEntry .",
+                    f"{collocate_le} rdf:type {rdf_prefix}:LexicalEntry .",
                     f"{annotated_concept} rdf:type {rdf_prefix}:Concept .",
                     f"{collocate_concept} rdf:type {rdf_prefix}:Concept .",
 
@@ -222,8 +222,8 @@ def create_collocation_situation_kg(corpus_name, download_date, annotator):
 
 
 # Specifics of a collocation annotation situation
-corpus_name = "ententen21"
-download_date = "20230627"
+corpus_name = "brexit-nt"
+download_date = "20230703"
 annotator = "DelfinaSolMartinezPandiani"
 
 # create that collocation situation's DL KG

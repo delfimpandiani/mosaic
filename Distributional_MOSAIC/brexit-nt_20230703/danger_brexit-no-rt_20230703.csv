@@ -1,0 +1,266 @@
+﻿"corpus","preloaded/brexit_dedup"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+danger,"modifiers of X",,64,23.440
+,,"mortal",3,10.410
+,,"present",3,9.010
+,,"pose",1,8.980
+,,"present",1,8.910
+,,"myriad",1,8.730
+,,"inherent",1,8.710
+,,"immense",1,8.440
+,,"imminent",1,8.400
+,,"real",11,8.110
+,,"ttip",1,8.020
+,,"legitimate",1,7.760
+,,"hate",1,7.640
+,,"considerable",1,7.500
+,,"potential",3,6.980
+,,"serious",2,6.890
+,,"immediate",1,6.560
+,,"various",1,6.290
+,,"such",2,5.990
+,,"economic",6,5.870
+,,"current",2,5.850
+,,"massive",1,5.830
+,,"clear",1,5.770
+,,"great",4,5.720
+,,"significant",1,5.450
+,,"much",1,5.310
+,,"future",1,5.270
+,,"small",1,4.930
+,,"major",1,4.660
+,,"big",2,4.270
+,,"same",1,4.060
+,,"global",1,3.890
+,,"many",1,3.260
+,,"brexit",3,3.150
+,,"eu",1,1.040
+danger,"nouns and verbs modified by X",,8,2.930
+,,"crossing",2,11.470
+,,"pose",1,9.610
+,,"instability",1,8.400
+,,"zone",2,7.780
+,,"sign",1,7.440
+,,"man",1,5.130
+danger,"verbs with X as object",,83,30.400
+,,"misunderstand",2,9.440
+,,"highlight",5,9.230
+,,"pose",3,8.720
+,,"understate",1,8.430
+,,"suppose",2,8.300
+,,"underline",1,8.240
+,,"exaggerate",1,8.230
+,,"illustrate",1,7.910
+,,"outweigh",1,7.860
+,,"loom",1,7.780
+,,"place",2,7.540
+,,"risk",1,7.220
+,,"tackle",1,7.040
+,,"associate",1,7.020
+,,"represent",2,7.010
+,,"show",5,6.490
+,,"reflect",1,6.460
+,,"present",1,6.390
+,,"ignore",1,6.120
+,,"involve",1,6.060
+,,"believe",2,6.040
+,,"consider",1,5.620
+,,"stop",1,5.510
+,,"raise",1,5.440
+,,"reduce",1,5.290
+,,"mean",1,4.850
+,,"be",37,4.740
+,,"become",1,4.600
+,,"see",1,3.160
+,,"say",1,2.500
+,,"leave",1,1.700
+,,"have",1,1.250
+danger,"verbs with X as subject",,20,7.330
+,,"lurk",1,9.870
+,,"result",1,8.520
+,,"fly",1,8.250
+,,"accord",1,7.670
+,,"face",1,6.030
+,,"lose",1,5.840
+,,"follow",1,5.310
+,,"come",1,3.790
+,,"be",12,2.530
+danger,"X and/or ...",,17,6.230
+,,"ineffectiveness",1,10.750
+,,"nationhood",1,10.680
+,,"similarity",1,10.470
+,,"sensex",1,9.950
+,,"liquidity",1,9.830
+,,"sort",1,9.380
+,,"tension",1,9.350
+,,"instability",1,8.910
+,,"damage",1,8.370
+,,"uncertainty",2,8.300
+,,"concern",1,7.970
+,,"hate",1,7.670
+,,"hope",1,7.290
+,,"campaign",1,6.410
+,,"europe",1,5.150
+,,"eu",1,4.130
+danger,"prepositional phrases",,188,0.000
+,,"""%w"" of ...",51,18.680
+,,"... in ""%w""",44,16.120
+,,"... of ""%w""",38,13.920
+,,"""%w"" to ...",15,5.490
+,,"... about ""%w""",13,4.760
+,,"... to ""%w""",5,1.830
+,,"""%w"" for ...",4,1.470
+,,"... with ""%w""",3,1.100
+,,"... on ""%w""",3,1.100
+,,"... as ""%w""",2,0.730
+,,"... from ""%w""",2,0.730
+,,"... against ""%w""",2,0.730
+,,"""%w"" in ...",1,0.370
+,,"... like ""%w""",1,0.370
+,,"""%w"" within ...",1,0.370
+,,"... while ""%w""",1,0.370
+,,"... upon ""%w""",1,0.370
+,,"""%w"" To ...",1,0.370
+danger,"adjective predicates of X",,2,0.730
+,,"ideological",1,13.410
+,,"such",1,5.260
+danger,"X is a ...",,2,0.730
+,,"setting",1,13.410
+,,"people",1,8.760
+danger,"X of ...",,51,18.680
+,,"polarization",2,10.190
+,,"vaccination",1,9.300
+,,"conflation",1,9.300
+,,"crappy",1,9.300
+,,"side-effect",1,9.300
+,,"paracetamol",1,9.270
+,,"psychiatrist",1,9.270
+,,"bre",1,9.270
+,,"attractiveness",1,9.270
+,,"extinction",1,9.210
+,,"effect",2,9.170
+,,"expansion",1,9.160
+,,"federalism",1,9.140
+,,"fascism",1,9.060
+,,"isolationism",1,9.000
+,,"manipulation",1,9.000
+,,"treatment",1,8.870
+,,"exit",3,8.840
+,,"drug",1,8.710
+,,"agency",1,8.570
+,,"independence",1,8.240
+,,"nationalism",1,8.190
+,,"outcome",1,8.180
+,,"attack",1,7.970
+,,"brexit",12,7.730
+,,"immigration",2,7.380
+,,"war",1,7.140
+,,"politics",1,7.020
+,,"britain",2,6.610
+,,"day",1,6.570
+,,"union",2,6.180
+,,"debate",1,5.780
+,,"vote",1,5.250
+danger,"... in X",,44,16.120
+,,"increment",1,9.500
+,,"outfit",1,9.480
+,,"lesson",1,9.350
+,,"briton",1,9.350
+,,"life",3,9.280
+,,"put",2,8.630
+,,"woman",1,8.200
+,,"be",31,8.190
+,,"right",1,8.070
+,,"job",1,7.290
+,,"live",1,5.100
+danger,"... of X",,38,13.920
+,,"warn",16,11.240
+,,"warning",6,10.940
+,,"reminder",2,10.040
+,,"heedless",1,9.710
+,,"pose",1,9.710
+,,"indictment",1,9.380
+,,"overview",1,9.350
+,,"evidence",2,9.120
+,,"perspective",1,9.120
+,,"study",1,8.960
+,,"talk",1,8.470
+,,"aware",1,8.160
+,,"face",1,7.640
+,,"example",1,7.390
+,,"risk",1,7.080
+,,"part",1,4.140
+danger,"X to ...",,15,5.490
+,,"apple",1,11.000
+,,"merkel",1,10.600
+,,"traffic",1,10.540
+,,"stability",1,9.950
+,,"right",2,9.560
+,,"job",1,9.060
+,,"company",1,8.930
+,,"pound",1,8.650
+,,"union",1,8.240
+,,"economy",2,8.070
+,,"nhs",1,7.950
+,,"country",1,6.710
+,,"uk",1,5.520
+danger,"... about X",,13,4.760
+,,"slogan",2,12.090
+,,"report",2,11.830
+,,"right",2,11.410
+,,"trenchant",1,11.190
+,,"exaggerate",1,11.190
+,,"child",1,11.090
+,,"warning",2,10.140
+,,"warn",1,10.000
+,,"speak",1,8.790
+danger,"... is a X",,5,1.830
+,,"seehofer",1,12.410
+,,"while",1,12.410
+,,"yes",1,12.410
+,,"eu",1,5.320
+,,"brexit",1,5.110
+danger,"... to X",,5,1.830
+,,"proportionate",2,13.190
+,,"country",1,9.530
+,,"point",2,9.090
+danger,"X for ...",,4,1.470
+,,"living",1,11.000
+,,"greece",1,10.820
+,,"democracy",1,8.200
+,,"eu",1,6.910
+danger,"... with X",,3,1.100
+,,"cope",2,9.670
+,,"deal",1,6.560
+danger,"... on X",,3,1.100
+,,"warning",1,10.680
+,,"plan",1,9.950
+,,"expert",1,8.850
+danger,"verbs with particle ""out"" and X as object",,3,1.100
+,,"spell",3,12.490
+danger,"... as X",,2,0.730
+,,"perceive",1,11.300
+,,"boris",1,11.000
+danger,"... from X",,2,0.730
+,,"unshielded",1,13.410
+,,"divert",1,13.000
+danger,"... against X",,2,0.730
+,,"warning",1,11.410
+,,"protect",1,11.090
+danger,"X in ...",,1,0.370
+,,"building",1,10.140
+danger,"... like X",,1,0.370
+,,"feel",1,8.110
+danger,"X within ...",,1,0.370
+,,"economy",1,12.680
+danger,"... while X",,1,0.370
+,,"brexit",1,11.090
+danger,"... upon X",,1,0.370
+,,"focus",1,13.410
+danger,"X To ...",,1,0.370
+,,"child",1,13.990
+danger,"verbs with particle ""up"" and X as object",,1,0.370
+,,"ramp",1,10.750
+danger,"verbs with particle ""off"" and X as object",,1,0.370
+,,"shrug",1,11.410

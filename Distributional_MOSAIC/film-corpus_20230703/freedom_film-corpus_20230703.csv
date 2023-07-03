@@ -1,0 +1,122 @@
+﻿"corpus","preloaded/film_corpus"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+freedom,"modifiers of X",,121,19.740
+,,"shuttle",45,12.010
+,,"independence",2,8.870
+,,"religious",4,8.530
+,,"freedom",2,8.370
+,,"basic",2,7.870
+,,"personal",6,7.420
+,,"fuck",2,6.790
+,,"pure",2,6.770
+,,"total",2,6.220
+,,"true",2,6.050
+,,"sudden",2,5.730
+,,"much",2,4.820
+,,"great",5,4.680
+,,"real",2,3.950
+,,"new",2,2.950
+freedom,"nouns modified by X",,77,12.560
+,,"Sharp",8,10.390
+,,"Chick",3,9.570
+,,"fighter",9,8.930
+,,"parade",3,8.810
+,,"cockpit",3,8.540
+,,"freedom",2,8.370
+,,"Harry",5,7.820
+,,"paper",3,6.320
+,,"song",2,5.990
+freedom,"verbs with X as object",,135,22.020
+,,"taste",4,8.670
+,,"celebrate",2,7.810
+,,"restore",2,7.720
+,,"enjoy",5,7.200
+,,"protect",3,7.150
+,,"win",3,6.570
+,,"back",2,6.410
+,,"want",7,5.240
+,,"lose",3,4.420
+,,"find",5,4.000
+,,"need",3,3.950
+,,"give",3,3.730
+,,"fuck",2,3.580
+,,"have",14,3.240
+,,"say",2,2.940
+,,"take",5,2.440
+,,"be",26,2.060
+freedom,"verbs with X as subject",,40,6.530
+,,"be",28,2.080
+freedom,"X and/or ...",,77,12.560
+,,"exhilaration",2,9.640
+,,"individuality",2,9.620
+,,"democracy",2,9.500
+,,"opportunity",2,9.150
+,,"society",2,9.140
+,,"joy",3,8.930
+,,"truth",2,7.710
+,,"life",3,6.680
+freedom,"prepositional phrases",,218,0.000
+,,"... of ""%w""",60,9.790
+,,"""%w"" of ...",40,6.530
+,,"... for ""%w""",32,5.220
+,,"... to ""%w""",26,4.240
+,,"... in ""%w""",12,1.960
+,,"""%w"" from ...",7,1.140
+,,"""%w"" for ...",5,0.820
+,,"... with ""%w""",5,0.820
+,,"""%w"" in ...",4,0.650
+,,"""%w"" to ...",3,0.490
+,,"""%w"" with ...",2,0.330
+,,"... into ""%w""",2,0.330
+,,"""%w"" through ...",2,0.330
+,,"... toward ""%w""",2,0.330
+,,"""%w"" after ...",2,0.330
+,,"... towards ""%w""",2,0.330
+freedom,"adjective predicates of X",,7,1.140
+,,"first",2,6.920
+freedom,"pronominal possessors of X",,85,13.870
+,,"our",17,5.180
+,,"their",15,3.930
+,,"my",16,3.150
+,,"your",13,2.820
+,,"her",10,2.000
+,,"his",14,1.260
+freedom,"... of X",,60,9.790
+,,"root",2,9.170
+,,"symbol",2,8.900
+,,"chance",2,8.850
+,,"breath",2,8.740
+,,"spirit",2,8.500
+,,"day",2,6.890
+,,"sense",3,6.790
+,,"image",2,6.290
+,,"kind",2,3.890
+freedom,"X of ...",,40,6.530
+,,"sea",10,10.940
+,,"speech",4,10.200
+,,"press",3,9.810
+,,"movement",5,9.480
+,,"choice",2,9.260
+,,"country",2,8.110
+freedom,"... for X",,32,5.220
+,,"yearning",2,10.680
+,,"fight",2,9.850
+,,"die",3,9.630
+,,"dash",2,9.530
+,,"fight",2,8.160
+,,"stand",2,7.860
+freedom,"... to X",,26,4.240
+,,"climb",2,8.580
+,,"key",2,8.260
+,,"way",4,6.630
+freedom,"... in X",,12,1.960
+,,"belief",3,11.300
+,,"interested",2,7.530
+,,"live",2,6.110
+freedom,"X from ...",,7,1.140
+,,"want",2,12.830
+freedom,"X for ...",,5,0.820
+,,"job",2,8.920
+freedom,"X to ...",,3,0.490
+,,"galaxy",2,12.680

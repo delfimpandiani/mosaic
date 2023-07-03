@@ -1,0 +1,174 @@
+﻿"corpus","preloaded/ske_parlamint21_es"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+muerte,"modifiers of X",,303,27.300
+,,"digno",148,11.660
+,,"prematuro",14,10.380
+,,"evitable",6,9.260
+,,"inminente",4,8.490
+,,"violento",5,8.350
+,,"dulce",3,8.220
+,,"natural",7,7.790
+,,"seguro",5,7.710
+,,"civil",15,6.750
+,,"anual",3,6.730
+,,"bueno",25,6.630
+,,"propio",11,5.860
+,,"solo",3,4.710
+,,"primero",3,2.930
+muerte,"verbs with X as object",,301,27.120
+,,"causar",17,9.390
+,,"procurar",6,9.000
+,,"provocar",20,8.760
+,,"lamentar",5,8.700
+,,"asistir",5,8.510
+,,"asociar",4,7.900
+,,"desear",4,7.820
+,,"anunciar",7,7.720
+,,"evitar",15,7.710
+,,"anticipar",4,7.710
+,,"elegir",5,7.490
+,,"investigar",3,7.410
+,,"afrontar",5,6.960
+,,"vivir",5,6.870
+,,"producir",9,6.850
+,,"permitir",7,6.740
+,,"suponer",8,6.170
+,,"querer",4,6.020
+,,"facilitar",3,5.920
+,,"traer",3,5.420
+,,"conocer",3,5.370
+,,"utilizar",3,5.260
+,,"pedir",4,5.040
+,,"apoyar",3,5.010
+,,"garantizar",4,4.700
+,,"haber",12,4.210
+,,"ser",36,3.730
+,,"dar",5,3.100
+,,"tener",12,3.030
+muerte,"verbs with X as subject",,19,1.710
+,,"evitar",3,9.950
+,,"poder",3,4.250
+,,"tener",3,3.120
+muerte,"X and/or ...",,109,9.820
+,,"supervivencia",11,11.310
+,,"susto",5,10.470
+,,"vida",21,10.360
+,,"contagio",5,10.270
+,,"ruina",5,10.150
+,,"desolación",3,9.750
+,,"lesión",3,9.630
+,,"destrucción",3,9.410
+,,"muerte",4,9.230
+,,"enfermedad",3,8.950
+,,"sufrimiento",3,8.680
+muerte,"prepositional phrases",,719,0.000
+,,"... de ""%w""",307,27.660
+,,"... a ""%w""",106,9.550
+,,"""%w"" de ...",105,9.460
+,,"""%w"" en ...",45,4.050
+,,"""%w"" a ...",36,3.240
+,,"""%w"" por ...",28,2.520
+,,"... por ""%w""",26,2.340
+,,"... con ""%w""",15,1.350
+,,"... sobre ""%w""",10,0.900
+,,"... en ""%w""",8,0.720
+,,"... hacia ""%w""",7,0.630
+,,"... hasta ""%w""",5,0.450
+,,"... para ""%w""",4,0.360
+muerte,"X is ...",,9,0.810
+,,"aplicable",3,11.030
+muerte,"X is a ...",,8,0.720
+,,"castigo",4,12.910
+muerte,"pronominal possessors of X",,45,4.050
+,,"su",36,3.860
+,,"nuestro",7,2.600
+muerte,"... de X",,307,27.660
+,,"pena",35,10.950
+,,"herir",13,10.350
+,,"amenaza",10,9.450
+,,"causa",14,9.060
+,,"sentencia",9,9.000
+,,"amenazar",5,8.980
+,,"peligro",5,8.790
+,,"dueño",5,8.760
+,,"resultado",12,8.490
+,,"lecho",3,8.300
+,,"responsable",8,8.240
+,,"crónica",3,8.190
+,,"prestación",7,7.940
+,,"huir",4,7.890
+,,"exceso",3,7.760
+,,"riesgo",5,7.200
+,,"proceso",8,7.090
+,,"número",8,6.990
+,,"ley",20,6.480
+,,"calidad",4,6.470
+,,"momento",3,6.230
+,,"año",5,6.100
+,,"mil",4,5.900
+,,"hablar",6,4.250
+muerte,"... de X",,258,23.240
+,,"pena",35,11.110
+,,"amenaza",10,9.740
+,,"sentencia",9,9.380
+,,"causa",14,9.330
+,,"peligro",5,9.040
+,,"dueño",5,8.980
+,,"resultado",12,8.730
+,,"lecho",3,8.540
+,,"responsable",8,8.490
+,,"crónica",3,8.440
+,,"prestación",7,8.210
+,,"exceso",3,7.940
+,,"riesgo",5,7.300
+,,"proceso",8,7.140
+,,"número",8,7.030
+,,"calidad",4,6.850
+,,"ley",20,6.710
+,,"momento",3,6.400
+,,"año",5,6.190
+,,"mil",4,5.930
+muerte,"... a X",,106,9.550
+,,"condenar",15,10.220
+,,"condena",5,9.850
+,,"condenado",3,9.760
+,,"abocar",5,9.230
+,,"derecho",42,8.990
+,,"conducir",4,8.650
+,,"enfrentar",5,8.220
+,,"llevar",4,5.340
+muerte,"X de ...",,105,9.460
+,,"dictador",7,10.500
+,,"animal",5,9.200
+,,"paciente",4,8.650
+,,"mil",7,8.050
+,,"niño",3,7.190
+,,"persona",13,6.660
+,,"mujer",3,5.940
+muerte,"X de ...",,80,7.210
+,,"animal",5,9.500
+,,"paciente",3,8.860
+,,"mil",7,8.130
+,,"persona",13,6.770
+,,"mujer",3,6.110
+muerte,"X en ...",,45,4.050
+,,"accidente",4,10.400
+,,"carretera",5,9.880
+,,"frontera",5,9.640
+,,"mar",3,9.450
+,,"vida",3,7.790
+muerte,"X a ...",,36,3.240
+,,"año",8,8.260
+muerte,"X por ...",,28,2.520
+,,"inanición",5,12.110
+,,"coronavirus",4,10.320
+,,"violencia",3,9.700
+muerte,"... por X",,26,2.340
+,,"condolencia",3,11.450
+,,"lucha",3,9.370
+muerte,"... para X",,4,0.360
+,,"condición",3,9.500
+muerte,"usage patterns",,0,0.000
+,,"""%w"" + ""ser""",20,1.800
+,,"""ser %w""",5,0.450

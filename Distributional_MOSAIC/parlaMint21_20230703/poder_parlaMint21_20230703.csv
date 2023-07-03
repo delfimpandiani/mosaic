@@ -1,0 +1,236 @@
+﻿"corpus","preloaded/ske_parlamint21_es"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+poder,"modifiers of X",,3936,71.240
+,,"judicial",1982,12.830
+,,"adquisitivo",578,12.020
+,,"ejecutivo",125,9.940
+,,"legislativo",170,9.740
+,,"público",464,9.330
+,,"político",105,7.500
+,,"fáctico",19,7.290
+,,"económico",66,7.110
+,,"financiero",26,6.840
+,,"territorial",14,6.290
+,,"independiente",10,6.160
+,,"constituyente",8,6.000
+,,"mayor",19,5.840
+,,"extraordinario",9,5.790
+,,"absoluto",10,5.730
+,,"adjudicador",6,5.640
+,,"salvaje",6,5.610
+,,"máximo",8,5.590
+,,"grande",19,5.550
+,,"distinto",8,5.420
+,,"excepcional",6,5.400
+,,"autonómico",8,5.380
+,,"discrecional",5,5.350
+,,"arbitrario",5,5.330
+,,"diferente",7,5.280
+,,"alto",8,5.240
+,,"municipal",5,5.180
+,,"solo",8,5.150
+,,"especial",6,5.010
+,,"amplio",5,4.990
+,,"menor",5,4.950
+,,"democrático",6,4.650
+,,"propio",6,4.320
+,,"constitucional",5,4.140
+,,"mismo",5,3.730
+,,"europeo",5,3.180
+,,"social",5,2.960
+poder,"verbs with X as object",,835,15.110
+,,"perder",119,10.210
+,,"mantener",54,8.930
+,,"recuperar",36,8.810
+,,"ganar",22,8.640
+,,"ejercer",20,8.440
+,,"otorgar",12,8.280
+,,"conservar",8,8.160
+,,"emanar",7,8.020
+,,"garantizar",44,8.010
+,,"limitar",13,7.880
+,,"ocupar",9,7.630
+,,"acumular",7,7.560
+,,"alcanzar",13,7.510
+,,"importar",6,7.330
+,,"controlar",6,7.170
+,,"utilizar",12,6.980
+,,"constituir",6,6.900
+,,"incrementar",7,6.620
+,,"aumentar",7,6.530
+,,"querer",7,6.490
+,,"mejorar",8,5.860
+,,"tener",83,5.810
+,,"compartir",5,5.810
+,,"dar",29,5.590
+,,"determinar",5,5.500
+,,"establecer",5,5.280
+,,"ser",51,4.220
+,,"haber",7,3.400
+,,"hacer",7,3.120
+poder,"verbs with X as subject",,154,2.790
+,,"promover",10,10.420
+,,"garantizar",7,8.940
+,,"deber",14,7.340
+,,"tener",28,6.320
+,,"poder",7,5.430
+poder,"X and/or ...",,168,3.040
+,,"poder",8,9.610
+,,"independencia",7,9.240
+,,"institución",7,8.760
+,,"transparencia",7,8.700
+,,"competencia",6,8.510
+poder,"prepositional phrases",,3409,0.000
+,,"... de ""%w""",2391,43.280
+,,"""%w"" de ...",297,5.380
+,,"... a ""%w""",161,2.910
+,,"... en ""%w""",151,2.730
+,,"""%w"" en ...",68,1.230
+,,"""%w"" a ...",55,1.000
+,,"... con ""%w""",52,0.940
+,,"... por ""%w""",44,0.800
+,,"... entre ""%w""",38,0.690
+,,"""%w"" con ...",23,0.420
+,,"""%w"" para ...",22,0.400
+,,"... para ""%w""",18,0.330
+,,"""%w"" por ...",17,0.310
+,,"... desde ""%w""",17,0.310
+,,"... contra ""%w""",6,0.110
+,,"... sobre ""%w""",6,0.110
+,,"""%w"" desde ...",6,0.110
+,,"""%w"" sobre ...",5,0.090
+,,"""%w"" entre ...",5,0.090
+,,"""%w"" durante ...",5,0.090
+poder,"pronominal possessors of X",,121,2.190
+,,"su",109,5.460
+,,"mi",6,4.250
+,,"nuestro",6,2.380
+poder,"... de X",,2391,43.280
+,,"consejo",907,12.240
+,,"separación",304,11.820
+,,"división",115,10.520
+,,"pérdida",108,10.120
+,,"ley",243,9.720
+,,"abuso",40,8.950
+,,"ganancia",26,8.440
+,,"mantenimiento",28,8.290
+,,"equilibrio",19,7.960
+,,"obligación",20,7.890
+,,"recuperación",20,7.700
+,,"independencia",16,7.530
+,,"relación",15,7.510
+,,"actuación",13,7.210
+,,"parte",31,6.950
+,,"arbitrariedad",9,6.930
+,,"ejercicio",14,6.930
+,,"ansia",9,6.930
+,,"abusar",9,6.880
+,,"ambición",8,6.750
+,,"estructura",8,6.660
+,,"distribución",7,6.410
+,,"traspaso",6,6.320
+,,"deber",6,6.280
+,,"reparto",6,6.140
+,,"garantía",7,6.130
+,,"acción",6,6.130
+,,"maquinaria",5,6.080
+,,"vacío",5,6.080
+,,"cuota",5,5.970
+,,"limitación",5,5.940
+,,"servicio",8,5.880
+,,"control",6,5.870
+,,"posición",5,5.830
+,,"resto",9,5.820
+,,"compromiso",5,5.780
+,,"euro",5,5.760
+,,"competencia",5,5.740
+,,"término",5,5.590
+,,"aumento",5,5.570
+,,"capacidad",5,5.530
+,,"interés",5,5.510
+,,"gobierno",7,4.730
+,,"hablar",6,3.980
+poder,"... de X",,972,17.590
+,,"separación",304,12.870
+,,"división",114,11.710
+,,"pérdida",88,10.720
+,,"abuso",34,9.860
+,,"ganancia",26,9.690
+,,"equilibrio",19,9.200
+,,"obligación",19,8.870
+,,"relación",15,8.630
+,,"actuación",13,8.260
+,,"arbitrariedad",9,8.220
+,,"ansia",9,8.190
+,,"ambición",8,8.030
+,,"independencia",10,7.970
+,,"estructura",8,7.860
+,,"traspaso",6,7.560
+,,"deber",6,7.490
+,,"maquinaria",5,7.370
+,,"vacío",5,7.360
+,,"acción",6,7.190
+,,"parte",24,7.180
+,,"cuota",5,7.120
+,,"reparto",5,6.980
+,,"compromiso",5,6.800
+,,"euro",5,6.750
+,,"competencia",5,6.710
+,,"resto",9,6.400
+,,"término",5,6.400
+,,"capacidad",5,6.310
+poder,"X de ...",,297,5.380
+,,"pensionista",49,11.400
+,,"pensión",58,9.600
+,,"compra",9,9.370
+,,"negociación",12,8.650
+,,"banca",5,8.570
+,,"funcionario",7,8.190
+,,"decisión",9,8.100
+,,"mercado",7,7.070
+,,"trabajador",8,6.900
+poder,"X de ...",,270,4.890
+,,"pensionista",49,11.500
+,,"pensión",58,9.690
+,,"compra",9,9.490
+,,"negociación",12,8.760
+,,"banca",5,8.710
+,,"funcionario",7,8.330
+,,"decisión",9,8.270
+,,"mercado",5,7.480
+,,"trabajador",8,7.000
+poder,"... a X",,161,2.910
+,,"obligar",10,9.240
+,,"corresponder",6,8.240
+,,"llegar",14,7.010
+,,"ir",5,6.190
+poder,"... en X",,151,2.730
+,,"perpetuar",15,11.460
+,,"mantener",32,11.050
+,,"obrar",7,10.430
+,,"permanecer",6,9.580
+,,"seguir",9,9.070
+,,"realizar",6,8.800
+,,"tener",10,7.070
+,,"estar",18,6.220
+poder,"X en ...",,68,1.230
+,,"país",6,5.240
+poder,"X a ...",,55,1.000
+,,"costa",5,8.550
+poder,"... con X",,52,0.940
+,,"hacer",5,6.690
+poder,"... por X",,44,0.800
+,,"atender",5,10.720
+poder,"... entre X",,38,0.690
+,,"conflicto",6,10.870
+,,"equilibrio",10,10.840
+,,"relación",8,10.350
+poder,"X para ...",,22,0.400
+,,"pensionista",7,11.640
+poder,"X por ...",,17,0.310
+,,"parte",5,5.530
+poder,"usage patterns",,0,0.000
+,,"""%w"" + ""ser""",19,0.340
+,,"""%w"" + ""estar""",9,0.160
+,,"""ser %w""",5,0.090

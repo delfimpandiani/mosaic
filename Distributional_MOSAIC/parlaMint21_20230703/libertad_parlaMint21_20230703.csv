@@ -1,0 +1,331 @@
+﻿"corpus","preloaded/ske_parlamint21_es"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+libertad,"modifiers of X",,901,16.240
+,,"religioso",74,11.040
+,,"individual",76,10.800
+,,"condicional",40,10.430
+,,"sexual",64,10.120
+,,"ideológico",58,10.020
+,,"fundamental",111,9.830
+,,"sindical",29,9.560
+,,"pleno",27,8.570
+,,"total",12,7.740
+,,"personal",12,7.450
+,,"democrático",25,7.420
+,,"público",107,7.410
+,,"civil",26,7.370
+,,"negativo",6,6.980
+,,"educativo",15,6.900
+,,"solo",15,6.820
+,,"absoluto",10,6.710
+,,"auténtico",5,6.440
+,,"verdadero",5,6.200
+,,"básico",5,5.880
+,,"constitucional",11,5.840
+,,"mismo",10,5.130
+,,"político",13,4.740
+,,"mayor",6,4.660
+,,"propio",5,4.590
+,,"real",5,3.990
+,,"económico",5,3.700
+libertad,"verbs with X as object",,1234,22.240
+,,"defender",140,9.850
+,,"coartar",24,9.250
+,,"atacar",25,9.100
+,,"limitar",37,9.090
+,,"proteger",32,8.860
+,,"garantizar",77,8.720
+,,"cercenar",16,8.620
+,,"respetar",29,8.530
+,,"ejercer",24,8.430
+,,"vulnerar",17,8.380
+,,"amenazar",14,8.350
+,,"restringir",14,8.330
+,,"recortar",11,7.700
+,,"vigilar",8,7.650
+,,"pedir",27,7.490
+,,"amparar",7,7.370
+,,"perseguir",8,7.270
+,,"recuperar",14,7.240
+,,"reivindicar",7,7.220
+,,"preservar",7,7.200
+,,"negar",8,7.090
+,,"reconocer",13,7.040
+,,"conquistar",5,6.980
+,,"robar",5,6.810
+,,"asegurar",7,6.770
+,,"dejar",9,6.770
+,,"significar",6,6.760
+,,"haber",67,6.630
+,,"considerar",6,6.530
+,,"ampliar",6,6.520
+,,"querer",8,6.470
+,,"exigir",7,6.440
+,,"existir",11,6.440
+,,"llamar",10,6.410
+,,"perder",9,6.330
+,,"traer",6,5.930
+,,"incluir",5,5.680
+,,"tomar",6,5.520
+,,"estar",6,5.400
+,,"tener",62,5.370
+,,"ser",109,5.310
+,,"dar",20,5.030
+libertad,"verbs with X as subject",,101,1.820
+,,"existir",6,8.100
+,,"ser",5,6.420
+,,"poder",10,5.960
+,,"tener",15,5.420
+libertad,"X and/or ...",,1450,26.140
+,,"derecho",810,12.900
+,,"democracia",64,10.190
+,,"seguridad",80,10.130
+,,"igualdad",63,9.990
+,,"vida",21,8.520
+,,"justicia",18,8.290
+,,"libertad",26,8.190
+,,"indemnidad",12,8.060
+,,"dignidad",11,7.740
+,,"expresión",10,7.720
+,,"paz",10,7.690
+,,"prosperidad",9,7.580
+,,"convivencia",9,7.500
+,,"autonomía",9,7.480
+,,"pluralidad",8,7.430
+,,"bienestar",9,7.410
+,,"pluralismo",7,7.260
+,,"progreso",6,6.960
+,,"independencia",6,6.880
+,,"garantía",6,6.770
+,,"integridad",5,6.750
+,,"unidad",5,6.630
+,,"lucha",5,6.610
+,,"calidad",5,6.490
+,,"compromiso",5,6.480
+,,"educación",5,6.360
+libertad,"prepositional phrases",,3555,0.000
+,,"""%w"" de ...",1365,24.600
+,,"... de ""%w""",1065,19.200
+,,"... a ""%w""",271,4.880
+,,"... en ""%w""",217,3.910
+,,"... con ""%w""",134,2.420
+,,"... por ""%w""",100,1.800
+,,"""%w"" en ...",97,1.750
+,,"... contra ""%w""",76,1.370
+,,"""%w"" a ...",44,0.790
+,,"""%w"" para ...",29,0.520
+,,"... entre ""%w""",25,0.450
+,,"... sobre ""%w""",24,0.430
+,,"... para ""%w""",23,0.410
+,,"""%w"" con ...",16,0.290
+,,"... sin ""%w""",13,0.230
+,,"""%w"" sin ...",12,0.220
+,,"""%w"" por ...",10,0.180
+,,"... desde ""%w""",7,0.130
+libertad,"pronominal possessors of X",,324,5.840
+,,"nuestro",156,7.070
+,,"su",153,5.940
+,,"mi",14,5.440
+libertad,"X de ...",,1365,24.600
+,,"expresión",503,13.060
+,,"enseñanza",51,10.050
+,,"elección",51,9.680
+,,"circulación",26,9.190
+,,"movimiento",26,9.090
+,,"ciudadano",67,9.080
+,,"información",37,9.060
+,,"preso",26,9.030
+,,"cátedra",22,9.010
+,,"reunión",21,8.790
+,,"español",47,8.740
+,,"prensa",20,8.570
+,,"pensamiento",16,8.520
+,,"mujer",30,8.420
+,,"empresa",35,8.380
+,,"ciudadanía",24,8.260
+,,"padre",14,8.110
+,,"individuo",11,7.990
+,,"persona",42,7.970
+,,"voto",13,7.690
+,,"establecimiento",8,7.520
+,,"opinión",9,7.500
+,,"pueblo",16,7.440
+,,"opción",7,7.330
+,,"conciencia",7,7.280
+,,"imprenta",6,7.160
+,,"amortización",6,7.120
+,,"extranjero",6,7.080
+,,"conjunto",8,7.020
+,,"familia",9,6.800
+,,"decisión",7,6.740
+,,"mercado",9,6.730
+,,"gente",7,6.630
+,,"educación",8,6.550
+,,"catalán",5,6.550
+,,"contratación",5,6.520
+,,"país",6,4.590
+libertad,"X de ...",,1333,24.030
+,,"expresión",503,13.090
+,,"enseñanza",51,10.080
+,,"elección",51,9.770
+,,"circulación",26,9.230
+,,"movimiento",26,9.210
+,,"ciudadano",66,9.120
+,,"información",37,9.120
+,,"preso",26,9.090
+,,"cátedra",22,9.050
+,,"reunión",21,8.840
+,,"español",47,8.810
+,,"prensa",20,8.610
+,,"pensamiento",16,8.580
+,,"mujer",30,8.520
+,,"empresa",35,8.450
+,,"ciudadanía",24,8.330
+,,"padre",14,8.180
+,,"persona",42,8.060
+,,"voto",13,7.860
+,,"pueblo",11,7.740
+,,"opinión",9,7.610
+,,"establecimiento",8,7.570
+,,"opción",7,7.370
+,,"conciencia",7,7.310
+,,"imprenta",6,7.200
+,,"amortización",6,7.160
+,,"extranjero",6,7.120
+,,"individuo",5,6.900
+,,"familia",9,6.890
+,,"mercado",7,6.850
+,,"decisión",7,6.820
+,,"gente",7,6.730
+,,"educación",8,6.630
+,,"catalán",5,6.620
+,,"contratación",5,6.570
+,,"país",6,4.880
+libertad,"... de X",,1065,19.200
+,,"privar",48,10.160
+,,"privación",39,10.130
+,,"espacio",37,9.690
+,,"defensa",79,9.580
+,,"pena",31,9.570
+,,"ejercicio",41,9.110
+,,"recorte",15,8.540
+,,"garantía",21,8.460
+,,"restricción",11,8.210
+,,"protección",23,7.940
+,,"valor",12,7.890
+,,"falta",25,7.820
+,,"régimen",13,7.790
+,,"límite",9,7.700
+,,"concepto",10,7.660
+,,"enemigo",7,7.660
+,,"derecho",26,7.600
+,,"favor",19,7.590
+,,"hablar",64,7.560
+,,"conquista",6,7.460
+,,"nombre",9,7.440
+,,"contra",12,7.340
+,,"anhelo",5,7.230
+,,"garante",5,7.140
+,,"reino",6,7.080
+,,"tren",5,7.040
+,,"principio",13,7.040
+,,"manifestación",5,7.040
+,,"ámbito",11,7.010
+,,"defensor",6,6.920
+,,"ley",29,6.880
+,,"condición",9,6.760
+,,"sistema",19,6.690
+,,"partido",6,6.670
+,,"precio",6,6.610
+,,"marco",5,6.200
+,,"materia",10,6.160
+,,"forma",5,6.160
+,,"parte",7,5.060
+libertad,"... de X",,909,16.380
+,,"privación",39,10.370
+,,"espacio",37,9.870
+,,"defensa",79,9.810
+,,"pena",31,9.760
+,,"ejercicio",41,9.320
+,,"recorte",15,8.760
+,,"garantía",21,8.670
+,,"restricción",11,8.410
+,,"protección",23,8.160
+,,"valor",12,8.130
+,,"régimen",13,7.980
+,,"límite",9,7.920
+,,"falta",25,7.890
+,,"enemigo",7,7.890
+,,"concepto",10,7.830
+,,"favor",19,7.810
+,,"derecho",26,7.740
+,,"conquista",6,7.690
+,,"nombre",9,7.650
+,,"contra",12,7.610
+,,"defensor",6,7.550
+,,"anhelo",5,7.450
+,,"garante",5,7.380
+,,"manifestación",5,7.270
+,,"tren",5,7.260
+,,"reino",6,7.250
+,,"ámbito",11,7.240
+,,"principio",13,7.200
+,,"ley",29,7.100
+,,"precio",6,6.940
+,,"condición",9,6.890
+,,"partido",6,6.880
+,,"sistema",19,6.750
+,,"marco",5,6.460
+,,"forma",5,6.300
+,,"materia",10,6.230
+,,"parte",7,5.420
+libertad,"... a X",,271,4.880
+,,"ataque",37,11.200
+,,"miedo",16,10.140
+,,"derecho",76,9.760
+,,"restricción",7,9.450
+,,"respeto",14,8.460
+,,"renunciar",6,8.300
+,,"acceder",6,7.680
+,,"afectar",9,7.030
+,,"respecto",5,5.810
+libertad,"... en X",,217,3.910
+,,"elegir",8,9.950
+,,"creer",28,9.900
+,,"puesta",12,9.260
+,,"educar",5,9.230
+,,"vida",5,8.500
+,,"vivir",12,8.340
+,,"basar",5,6.830
+,,"poner",15,6.590
+,,"estar",16,6.030
+libertad,"... con X",,134,2.420
+,,"ejercer",7,10.340
+,,"acabar",15,8.220
+,,"compromiso",6,8.100
+,,"ver",9,7.230
+libertad,"... por X",,100,1.800
+,,"lucha",17,11.290
+,,"luchar",18,10.930
+,,"luchador",6,10.820
+,,"vida",5,10.340
+,,"pacto",8,9.500
+libertad,"X en ...",,97,1.750
+,,"país",20,6.970
+,,"caso",5,6.220
+libertad,"... contra X",,76,1.370
+,,"delito",19,11.830
+,,"atentar",23,11.360
+,,"atentado",6,10.680
+libertad,"... entre X",,25,0.450
+,,"equilibrio",11,11.080
+libertad,"... sobre X",,24,0.430
+,,"decidir",5,9.770
+libertad,"... is a X",,19,0.340
+,,"cosa",5,10.180
+libertad,"usage patterns",,0,0.000
+,,"""%w"" + ""ser""",50,0.900
+,,"""ser %w""",43,0.780
+,,"""%w"" + ""estar""",11,0.200
+,,"""es %w para ...""",5,0.090

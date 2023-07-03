@@ -1,0 +1,110 @@
+﻿"corpus","preloaded/brexit_dedup"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+comfort,"modifiers of X",,14,21.540
+,,"momentary",2,11.470
+,,"cushy",1,10.820
+,,"psychological",1,9.120
+,,"temporary",1,8.200
+,,"relative",1,8.150
+,,"overall",1,6.820
+,,"little",3,6.670
+,,"security",1,5.950
+,,"much",1,5.400
+,,"general",1,5.340
+,,"great",1,3.750
+comfort,"nouns and verbs modified by X",,9,13.850
+,,"blanket",1,10.910
+,,"fabric",1,9.790
+,,"zone",4,8.770
+,,"food",1,7.530
+,,"propaganda",1,7.290
+,,"club",1,6.000
+comfort,"verbs with X as object",,24,36.920
+,,"reflect",2,7.710
+,,"regain",1,6.930
+,,"ensure",1,6.500
+,,"seek",1,6.480
+,,"feel",1,6.320
+,,"find",2,5.800
+,,"give",4,5.480
+,,"take",5,4.880
+,,"provide",1,4.760
+,,"want",1,4.080
+,,"be",5,1.860
+comfort,"X and/or ...",,12,18.460
+,,"discomfort",1,11.090
+,,"convenience",1,10.910
+,,"help",2,10.870
+,,"fit",1,10.680
+,,"status",1,9.040
+,,"need",1,8.760
+,,"technology",1,7.820
+,,"value",1,7.700
+,,"security",2,7.190
+,,"result",1,6.770
+comfort,"prepositional phrases",,43,0.000
+,,"""%w"" to ...",9,13.850
+,,"... of ""%w""",7,10.770
+,,"""%w"" of ...",6,9.230
+,,"... for ""%w""",5,7.690
+,,"""%w"" in ...",4,6.150
+,,"... with ""%w""",3,4.620
+,,"""%w"" from ...",3,4.620
+,,"... in ""%w""",2,3.080
+,,"""%w"" for ...",1,1.540
+,,"... between ""%w""",1,1.540
+,,"""%w"" over ...",1,1.540
+,,"""%w"" throughout ...",1,1.540
+comfort,"X to ...",,9,13.850
+,,"scapegoater",1,11.670
+,,"shareholder",1,10.910
+,,"investor",2,9.910
+,,"idea",1,9.640
+,,"anyone",1,9.210
+,,"side",1,8.690
+,,"people",2,7.660
+comfort,"... of X",,7,10.770
+,,"shield",1,11.990
+,,"moment",1,8.820
+,,"word",1,8.540
+,,"life",1,8.220
+,,"matter",1,7.900
+,,"state",1,6.910
+,,"lot",1,4.910
+comfort,"X of ...",,6,9.230
+,,"investor",2,10.110
+,,"nation",1,7.070
+,,"economy",1,7.020
+,,"life",1,6.590
+,,"people",1,4.340
+comfort,"... for X",,5,7.690
+,,"seam",1,12.410
+,,"close",1,12.410
+,,"praise",1,11.540
+,,"desire",1,9.750
+,,"opt",1,9.350
+comfort,"X in ...",,4,6.150
+,,"gymwear",1,12.680
+,,"productivity",1,12.410
+,,"reaction",1,11.410
+,,"ability",1,10.040
+comfort,"... with X",,3,4.620
+,,"asana",1,13.000
+,,"movement",1,11.990
+,,"session",1,11.670
+comfort,"X from ...",,3,4.620
+,,"poll",3,11.410
+comfort,"... in X",,2,3.080
+,,"life",1,8.150
+,,"live",1,5.170
+comfort,"... is a X",,1,1.540
+,,"month",1,11.540
+comfort,"X for ...",,1,1.540
+,,"million",1,10.470
+comfort,"... between X",,1,1.540
+,,"choice",1,9.300
+comfort,"X over ...",,1,1.540
+,,"benefit",1,11.830
+comfort,"X throughout ...",,1,1.540
+,,"workout",1,13.990

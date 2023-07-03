@@ -1,0 +1,356 @@
+﻿"corpus","preloaded/ske_parlamint21_es"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+seguridad,"modifiers of X",,5173,54.770
+,,"social",2996,12.100
+,,"jurídico",636,11.150
+,,"ciudadano",347,10.900
+,,"vial",144,9.780
+,,"nacional",254,9.500
+,,"nuclear",58,8.430
+,,"alimentario",53,8.300
+,,"mayor",88,7.890
+,,"ferroviario",36,7.620
+,,"aéreo",27,7.340
+,,"sanitario",42,7.210
+,,"público",96,6.980
+,,"interior",17,6.550
+,,"total",15,6.330
+,,"necesario",17,6.160
+,,"marítimo",11,6.050
+,,"máximo",12,5.880
+,,"internacional",16,5.780
+,,"completo",9,5.700
+,,"personal",10,5.640
+,,"absoluto",11,5.600
+,,"mundial",9,5.550
+,,"laboral",14,5.460
+,,"operacional",7,5.460
+,,"exterior",8,5.350
+,,"industrial",8,5.310
+,,"común",9,5.290
+,,"integral",7,5.220
+,,"energético",8,5.120
+,,"pleno",7,5.120
+,,"propio",11,5.020
+,,"colectivo",5,4.690
+,,"suficiente",5,4.640
+,,"económico",10,4.280
+,,"único",5,4.190
+,,"importante",5,3.980
+,,"europeo",8,3.770
+,,"español",5,3.430
+seguridad,"verbs with X as object",,1135,12.020
+,,"garantizar",222,10.270
+,,"aportar",31,9.010
+,,"privar",47,9.000
+,,"mejorar",64,8.760
+,,"proporcionar",19,8.740
+,,"otorgar",20,8.710
+,,"preservar",13,8.190
+,,"reforzar",23,8.140
+,,"ofrecer",18,7.970
+,,"dar",148,7.920
+,,"proteger",11,7.380
+,,"incrementar",13,7.340
+,,"amenazar",5,6.980
+,,"generar",16,6.950
+,,"aumentar",10,6.880
+,,"necesitar",12,6.810
+,,"defender",15,6.660
+,,"mantener",11,6.520
+,,"buscar",7,6.170
+,,"querer",6,6.110
+,,"tener",88,5.880
+,,"ser",64,4.550
+,,"haber",15,4.470
+seguridad,"verbs with X as subject",,67,0.710
+,,"necesitar",5,7.510
+,,"deber",5,5.900
+,,"tener",9,4.690
+seguridad,"X and/or ...",,882,9.340
+,,"defensa",87,11.220
+,,"salud",45,10.260
+,,"paz",36,10.180
+,,"libertad",80,10.130
+,,"migraciones",30,10.070
+,,"certidumbre",25,9.740
+,,"calidad",30,9.610
+,,"protección",35,9.600
+,,"certeza",22,9.580
+,,"justicia",25,9.280
+,,"estabilidad",20,9.040
+,,"garantía",19,8.980
+,,"fiabilidad",13,8.870
+,,"tranquilidad",13,8.800
+,,"confianza",15,8.790
+,,"seguridad",20,8.530
+,,"orden",10,8.390
+,,"lucha",9,8.050
+,,"prevención",9,8.020
+,,"bienestar",9,7.980
+,,"transparencia",7,7.500
+,,"vida",7,7.460
+,,"dignidad",6,7.460
+,,"empleo",9,7.280
+,,"control",6,7.270
+,,"eficacia",5,7.230
+,,"principio",5,7.130
+,,"derecho",8,6.500
+seguridad,"prepositional phrases",,6062,0.000
+,,"... de ""%w""",3508,37.140
+,,"""%w"" de ...",1435,15.190
+,,"""%w"" en ...",227,2.400
+,,"""%w"" a ...",168,1.780
+,,"... a ""%w""",138,1.460
+,,"... con ""%w""",118,1.250
+,,"... para ""%w""",113,1.200
+,,"... en ""%w""",97,1.030
+,,"... por ""%w""",65,0.690
+,,"""%w"" para ...",64,0.680
+,,"... sobre ""%w""",26,0.280
+,,"""%w"" con ...",25,0.260
+,,"... contra ""%w""",18,0.190
+,,"""%w"" por ...",12,0.130
+,,"... entre ""%w""",9,0.100
+,,"""%w"" sobre ...",7,0.070
+,,"""%w"" ante ...",6,0.060
+seguridad,"X is a ...",,32,0.340
+,,"concepto",7,11.720
+seguridad,"pronominal possessors of X",,158,1.670
+,,"nuestro",72,5.960
+,,"su",84,5.080
+seguridad,"... de X",,3508,37.140
+,,"cuerpos",789,12.550
+,,"cuerpo",204,10.650
+,,"fuerza",137,10.150
+,,"consejo",212,9.900
+,,"ley",257,9.640
+,,"junta",75,9.290
+,,"materia",124,9.180
+,,"medida",72,8.720
+,,"red",52,8.650
+,,"protección",67,8.640
+,,"política",82,8.540
+,,"reserva",38,8.410
+,,"principio",58,8.380
+,,"tesorería",31,8.160
+,,"estrategia",35,8.120
+,,"concepto",34,8.100
+,,"condición",42,8.050
+,,"agencia",32,8.050
+,,"estar",62,8.040
+,,"garantía",34,7.980
+,,"dotar",31,7.920
+,,"distancia",23,7.720
+,,"nivel",30,7.620
+,,"instituto",24,7.620
+,,"sistema",50,7.600
+,,"estado",32,7.390
+,,"ámbito",24,7.230
+,,"razón",18,7.160
+,,"régimen",19,7.150
+,,"problema",26,7.120
+,,"cuestión",19,6.980
+,,"departamento",13,6.900
+,,"comisión",22,6.790
+,,"colchón",11,6.670
+,,"vista",12,6.600
+,,"requisito",11,6.600
+,,"hablar",39,6.550
+,,"falta",17,6.520
+,,"empresa",11,6.490
+,,"protocolo",10,6.460
+,,"motivo",11,6.450
+,,"cultura",10,6.440
+,,"mejora",12,6.330
+,,"fuerzas",8,6.220
+,,"plan",14,6.200
+,,"ara",8,6.180
+,,"informe",9,6.170
+,,"marco",10,6.140
+,,"tema",10,6.130
+,,"vigilante",7,6.030
+,,"servicio",11,6.020
+,,"dispositivo",7,6.010
+,,"elemento",8,6.000
+,,"refuerzo",7,5.960
+,,"administración",9,5.830
+,,"grado",7,5.830
+,,"modelo",9,5.720
+,,"autoridad",6,5.700
+,,"término",7,5.660
+,,"crisis",6,5.560
+,,"criterio",6,5.530
+,,"encargar",5,5.510
+,,"ordenación",5,5.480
+,,"agente",5,5.480
+,,"control",6,5.450
+,,"reto",5,5.430
+,,"dirección",5,5.380
+,,"mantenimiento",5,5.340
+,,"base",5,5.150
+,,"favor",6,5.120
+seguridad,"... de X",,3326,35.210
+,,"cuerpos",789,12.610
+,,"cuerpo",204,10.730
+,,"fuerza",137,10.240
+,,"consejo",212,10.160
+,,"ley",257,9.810
+,,"junta",75,9.370
+,,"materia",124,9.230
+,,"medida",72,8.810
+,,"protección",67,8.760
+,,"red",52,8.730
+,,"política",82,8.620
+,,"principio",58,8.490
+,,"reserva",38,8.480
+,,"tesorería",31,8.230
+,,"estrategia",35,8.200
+,,"concepto",34,8.170
+,,"agencia",32,8.130
+,,"condición",42,8.130
+,,"garantía",34,8.080
+,,"distancia",23,7.810
+,,"nivel",30,7.700
+,,"instituto",24,7.690
+,,"sistema",50,7.640
+,,"estado",32,7.440
+,,"ámbito",24,7.350
+,,"razón",18,7.250
+,,"régimen",19,7.240
+,,"problema",26,7.230
+,,"cuestión",19,7.070
+,,"departamento",13,6.970
+,,"comisión",22,6.900
+,,"colchón",11,6.750
+,,"vista",12,6.710
+,,"requisito",11,6.680
+,,"empresa",11,6.590
+,,"falta",17,6.570
+,,"motivo",11,6.550
+,,"cultura",10,6.550
+,,"protocolo",10,6.540
+,,"mejora",12,6.460
+,,"fuerzas",8,6.300
+,,"informe",9,6.280
+,,"ara",8,6.270
+,,"plan",14,6.260
+,,"marco",10,6.260
+,,"tema",10,6.250
+,,"administración",9,6.140
+,,"servicio",11,6.110
+,,"vigilante",7,6.100
+,,"elemento",8,6.080
+,,"dispositivo",7,6.080
+,,"refuerzo",7,6.040
+,,"grado",7,5.900
+,,"modelo",9,5.780
+,,"autoridad",6,5.780
+,,"término",7,5.740
+,,"crisis",6,5.680
+,,"criterio",6,5.620
+,,"control",6,5.590
+,,"ordenación",5,5.580
+,,"agente",5,5.560
+,,"reto",5,5.540
+,,"mantenimiento",5,5.480
+,,"dirección",5,5.480
+,,"base",5,5.270
+,,"favor",6,5.240
+seguridad,"X de ...",,1435,15.190
+,,"estado",838,11.760
+,,"naciones",64,10.160
+,,"suministro",35,9.420
+,,"ciudadano",63,8.970
+,,"paciente",21,8.700
+,,"red",13,7.780
+,,"usuario",9,7.530
+,,"embalse",8,7.470
+,,"persona",29,7.420
+,,"operación",8,7.290
+,,"español",16,7.160
+,,"frontera",7,7.050
+,,"mujer",11,6.940
+,,"trabajador",12,6.880
+,,"presa",5,6.790
+,,"obra",6,6.700
+,,"viajero",5,6.700
+,,"país",24,6.580
+,,"cataluña",6,6.410
+,,"ciudadanía",6,6.220
+,,"gobierno",5,5.930
+,,"sistema",6,5.280
+seguridad,"X de ...",,511,5.410
+,,"naciones",64,11.190
+,,"suministro",20,9.900
+,,"ciudadano",63,9.400
+,,"usuario",9,8.830
+,,"red",13,8.780
+,,"operación",8,8.520
+,,"frontera",7,8.330
+,,"presa",5,8.230
+,,"viajero",5,7.980
+,,"persona",29,7.780
+,,"obra",6,7.700
+,,"español",16,7.650
+,,"mujer",11,7.600
+,,"trabajador",12,7.420
+,,"cataluña",6,7.140
+,,"ciudadanía",6,6.910
+,,"país",20,6.810
+seguridad,"X en ...",,227,2.400
+,,"carretera",10,9.840
+,,"recrecimiento",5,9.450
+,,"trabajo",9,9.370
+,,"cumplimiento",5,8.900
+,,"red",7,8.790
+,,"mercado",9,8.430
+,,"ámbito",7,6.560
+,,"materia",10,6.270
+,,"país",8,5.610
+seguridad,"X a ...",,168,1.780
+,,"ciudadano",12,7.840
+,,"ciudadanía",6,7.720
+,,"empresa",6,7.510
+,,"sector",5,7.290
+,,"hora",5,7.110
+,,"través",6,6.340
+,,"persona",5,6.170
+seguridad,"... a X",,138,1.460
+,,"amenaza",9,10.420
+,,"afectar",39,9.230
+,,"vincular",5,7.970
+,,"dedicar",5,7.800
+,,"contribuir",5,7.720
+,,"relativo",5,7.280
+,,"derecho",9,6.750
+seguridad,"... con X",,118,1.250
+,,"jugar",8,9.830
+,,"relacionar",6,7.910
+,,"contar",7,6.840
+,,"hacer",5,6.630
+,,"ver",5,6.400
+,,"relación",5,5.960
+seguridad,"... para X",,113,1.200
+,,"interés",15,11.500
+,,"amenaza",11,10.860
+,,"peligro",9,10.570
+,,"riesgo",8,10.100
+,,"autoridad",5,10.100
+seguridad,"... en X",,97,1.030
+,,"invertir",6,8.460
+,,"inversión",5,7.570
+seguridad,"... por X",,65,0.690
+,,"velar",21,10.940
+seguridad,"X para ...",,64,0.680
+,,"trabajador",6,9.340
+,,"conjunto",5,8.740
+,,"persona",6,8.580
+seguridad,"... sobre X",,26,0.280
+,,"comisión",10,11.940
+seguridad,"... contra X",,18,0.190
+,,"atentar",7,9.970
+seguridad,"usage patterns",,0,0.000
+,,"""%w"" + ""ser""",55,0.580
+,,"""ser %w""",21,0.220

@@ -1,0 +1,133 @@
+﻿"corpus","preloaded/ske_parlamint21_es"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+peligro,"modifiers of X",,124,18.130
+,,"latente",3,9.480
+,,"inminente",4,9.470
+,,"patente",3,9.440
+,,"manifiesto",3,8.820
+,,"serio",9,8.330
+,,"grave",22,8.220
+,,"cierto",5,8.000
+,,"severo",2,7.730
+,,"auténtico",6,7.470
+,,"verdadero",7,7.310
+,,"evidente",2,7.030
+,,"mayor",13,5.920
+,,"global",2,5.890
+,,"claro",2,5.010
+,,"principal",2,4.710
+,,"único",3,4.660
+,,"real",4,3.780
+,,"grande",3,3.370
+,,"nuevo",3,3.290
+,,"público",3,2.310
+peligro,"verbs with X as object",,167,24.420
+,,"correr",25,11.030
+,,"conjurar",2,8.550
+,,"agravar",2,7.560
+,,"constituir",3,6.650
+,,"significar",2,6.460
+,,"existir",7,6.220
+,,"suponer",6,5.810
+,,"saber",2,5.610
+,,"incrementar",2,5.300
+,,"evitar",2,4.890
+,,"ser",71,4.710
+,,"poner",3,4.420
+,,"haber",11,4.090
+,,"tener",4,1.450
+peligro,"verbs with X as subject",,16,2.340
+,,"correr",2,9.890
+,,"poder",2,3.660
+,,"tener",3,3.120
+peligro,"X and/or ...",,20,2.920
+,,"riesgo",2,8.190
+peligro,"prepositional phrases",,585,0.000
+,,"... en ""%w""",334,48.830
+,,"""%w"" para ...",81,11.840
+,,"""%w"" de ...",62,9.060
+,,"... de ""%w""",41,5.990
+,,"""%w"" a ...",20,2.920
+,,"""%w"" en ...",12,1.750
+,,"... contra ""%w""",5,0.730
+,,"... a ""%w""",5,0.730
+,,"""%w"" por ...",5,0.730
+,,"... sobre ""%w""",5,0.730
+,,"... con ""%w""",4,0.580
+,,"""%w"" con ...",3,0.440
+,,"... ante ""%w""",3,0.440
+,,"... por ""%w""",2,0.290
+,,"... sin ""%w""",2,0.290
+peligro,"... en X",,334,48.830
+,,"poner",227,10.470
+,,"estar",67,8.080
+,,"hábitat",2,7.610
+,,"vida",3,7.430
+,,"manifestar",2,6.930
+,,"ver",4,6.900
+,,"encontrar",4,6.690
+,,"persona",3,6.460
+,,"convertir",5,6.410
+,,"país",2,6.240
+peligro,"X para ...",,81,11.840
+,,"seguridad",9,10.570
+,,"democracia",9,10.500
+,,"economía",13,10.190
+,,"integridad",3,10.120
+,,"salud",5,9.740
+,,"humanidad",2,9.530
+,,"vida",4,9.420
+,,"empleado",2,9.190
+,,"convivencia",2,9.090
+,,"sistema",2,8.330
+,,"sociedad",2,7.990
+,,"español",2,7.930
+,,"país",3,7.260
+peligro,"X de ...",,62,9.060
+,,"campamento",2,9.950
+,,"desaparición",2,9.440
+,,"inundación",2,9.350
+,,"extinción",2,9.170
+,,"virus",4,8.820
+,,"muerte",5,8.790
+,,"exclusión",3,8.310
+,,"discurso",2,7.850
+,,"violencia",4,6.440
+peligro,"X de ...",,53,7.750
+,,"campamento",2,10.160
+,,"desaparición",2,9.660
+,,"inundación",2,9.560
+,,"extinción",2,9.340
+,,"muerte",5,9.040
+,,"discurso",2,8.590
+,,"exclusión",3,8.400
+,,"violencia",4,6.560
+peligro,"... de X",,41,5.990
+,,"alertar",6,10.970
+,,"advertir",7,10.820
+,,"avisar",2,10.090
+,,"consciente",2,7.120
+,,"delito",2,6.180
+,,"caso",2,4.820
+,,"situación",3,4.700
+,,"tipo",3,4.640
+peligro,"X a ...",,20,2.920
+,,"montón",2,11.090
+,,"país",6,7.340
+peligro,"... de X",,18,2.630
+,,"delito",2,6.230
+,,"caso",2,4.990
+,,"situación",3,4.800
+,,"tipo",3,4.660
+peligro,"X en ...",,12,1.750
+,,"mar",2,9.260
+peligro,"... is a X",,11,1.610
+,,"avión",2,12.190
+peligro,"... contra X",,5,0.730
+,,"defensa",2,12.290
+,,"proteger",2,11.750
+peligro,"... con X",,4,0.580
+,,"ver",2,5.160
+peligro,"usage patterns",,0,0.000
+,,"""%w"" + ""ser""",4,0.580

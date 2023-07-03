@@ -1,0 +1,65 @@
+﻿"corpus","preloaded/film_corpus"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+fitness,"modifiers of X",,9,16.070
+,,"cardiovascular",1,11.540
+,,"physical",5,8.490
+,,"presidential",1,7.680
+,,"mental",1,6.550
+,,"command",1,5.910
+fitness,"nouns modified by X",,40,71.430
+,,"trainer",2,9.150
+,,"report",14,9.150
+,,"generation",1,8.270
+,,"empire",1,8.180
+,,"instructor",1,8.090
+,,"center",8,7.340
+,,"expert",1,7.250
+,,"training",1,7.120
+,,"crap",1,7.050
+,,"facility",1,6.030
+,,"program",1,5.680
+,,"club",2,5.510
+,,"equipment",1,5.310
+,,"device",1,5.290
+,,"area",1,3.100
+,,"room",3,2.440
+fitness,"verbs with X as object",,4,7.140
+,,"doubt",1,8.750
+,,"improve",1,8.400
+,,"determine",1,7.500
+,,"maintain",1,6.530
+fitness,"verbs with X as subject",,4,7.140
+,,"test",1,8.980
+,,"use",1,4.550
+,,"hang",1,3.260
+fitness,"X and/or ...",,2,3.570
+,,"determination",1,9.140
+,,"condition",1,8.980
+fitness,"prepositional phrases",,9,0.000
+,,"... of ""%w""",4,7.140
+,,"""%w"" for ...",2,3.570
+,,"... to ""%w""",1,1.790
+,,"""%w"" as ...",1,1.790
+,,"... about ""%w""",1,1.790
+fitness,"adjective predicates of X",,1,1.790
+,,"important",1,6.730
+fitness,"possessors of X",,1,1.790
+,,"Kirk",1,8.760
+fitness,"pronominal possessors of X",,4,7.140
+,,"their",2,1.030
+,,"your",2,0.120
+fitness,"... of X",,4,7.140
+,,"reevaluation",1,12.680
+,,"subject",1,9.320
+,,"stage",1,8.100
+,,"full",1,3.960
+fitness,"X for ...",,2,3.570
+,,"trial",1,10.750
+,,"service",1,9.350
+fitness,"... to X",,1,1.790
+,,"pretend",1,11.830
+fitness,"X as ...",,1,1.790
+,,"mother",1,9.670
+fitness,"... about X",,1,1.790
+,,"shit-all",1,13.990

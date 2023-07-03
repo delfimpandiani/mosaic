@@ -1,0 +1,164 @@
+﻿"corpus","preloaded/brexit_dedup"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+freedom,"modifiers of X",,364,27.290
+,,"traitor",58,12.110
+,,"citizen",10,9.480
+,,"democracy",11,9.390
+,,"religious",9,9.370
+,,"individual",13,9.310
+,,"sovereignty",4,8.100
+,,"biafra",3,8.050
+,,"constitutional",4,8.030
+,,"prosperity",3,7.970
+,,"fundamental",4,7.830
+,,"peace",4,7.740
+,,"complete",3,7.340
+,,"less",4,7.230
+,,"country",3,7.040
+,,"more",13,6.790
+,,"great",9,6.720
+,,"personal",3,6.650
+,,"britain",4,6.600
+,,"democratic",3,6.570
+,,"uk",16,6.440
+,,"immigration",3,6.160
+,,"vote",3,5.860
+,,"economic",6,5.750
+,,"eu",20,5.340
+,,"political",3,4.790
+,,"european",4,4.590
+,,"brexit",4,3.530
+freedom,"nouns and verbs modified by X",,157,11.770
+,,"sovereignty",50,11.610
+,,"independence",9,9.810
+,,"flotilla",4,9.480
+,,"democracy",8,8.680
+,,"security",4,7.570
+,,"party",16,7.530
+freedom,"verbs with X as object",,314,23.540
+,,"defend",11,9.460
+,,"choose",10,8.970
+,,"enjoy",9,8.800
+,,"accept",10,8.720
+,,"restrict",5,8.600
+,,"favour",5,8.570
+,,"preserve",4,8.410
+,,"regain",5,8.190
+,,"allow",11,8.160
+,,"secure",4,7.960
+,,"value",3,7.940
+,,"cite",3,7.590
+,,"forget",3,7.560
+,,"limit",3,7.480
+,,"maintain",3,7.240
+,,"seek",3,7.220
+,,"mean",6,7.170
+,,"protect",4,7.170
+,,"love",3,7.050
+,,"bring",4,6.970
+,,"need",6,6.900
+,,"want",8,6.880
+,,"call",5,6.820
+,,"include",7,6.740
+,,"give",9,6.510
+,,"lose",5,6.470
+,,"have",37,6.440
+,,"increase",3,6.440
+,,"take",10,5.810
+,,"say",5,4.770
+,,"get",3,4.620
+,,"be",21,3.920
+freedom,"verbs with X as subject",,53,3.970
+,,"allow",10,10.050
+,,"be",25,3.590
+,,"have",5,2.710
+freedom,"X and/or ...",,397,29.760
+,,"traitor",57,11.970
+,,"sovereignty",65,11.500
+,,"democracy",42,10.740
+,,"independence",13,9.720
+,,"prosperity",13,9.560
+,,"liberty",9,9.320
+,,"right",17,9.120
+,,"peace",8,8.760
+,,"serfdom",5,8.660
+,,"union",10,8.300
+,,"market",11,8.180
+,,"self-determination",3,7.880
+,,"control",4,7.720
+,,"safety",3,7.660
+,,"security",5,7.610
+,,"justice",3,7.560
+,,"opportunity",3,7.480
+,,"immigration",4,7.070
+,,"country",4,7.020
+,,"government",4,6.940
+,,"trade",3,6.630
+,,"brexit",3,5.380
+freedom,"prepositional phrases",,836,0.000
+,,"""%w"" of ...",351,26.310
+,,"... of ""%w""",81,6.070
+,,"... for ""%w""",79,5.920
+,,"""%w"" for ...",74,5.550
+,,"... in ""%w""",62,4.650
+,,"... to ""%w""",37,2.770
+,,"... on ""%w""",30,2.250
+,,"""%w"" from ...",25,1.870
+,,"""%w"" in ...",16,1.200
+,,"... from ""%w""",14,1.050
+,,"""%w"" to ...",8,0.600
+,,"... about ""%w""",7,0.520
+,,"... as ""%w""",6,0.450
+,,"... with ""%w""",6,0.450
+,,"... between ""%w""",4,0.300
+,,"... like ""%w""",4,0.300
+,,"""%w"" on ...",3,0.220
+,,"... towards ""%w""",3,0.220
+freedom,"X of ...",,351,26.310
+,,"movement",221,13.310
+,,"speech",27,11.100
+,,"rule",15,10.010
+,,"press",12,9.970
+,,"expression",8,9.500
+,,"pricing",6,9.080
+,,"choice",6,8.900
+,,"request",3,8.070
+,,"travel",3,7.970
+,,"people",3,5.640
+freedom,"... of X",,81,6.070
+,,"principle",5,9.930
+,,"sake",3,9.310
+,,"degree",3,9.040
+,,"loss",3,8.040
+freedom,"... for X",,79,5.920
+,,"fight",13,10.720
+,,"die",3,9.830
+,,"voteremain",3,9.690
+,,"chance",3,9.530
+,,"voteleave",3,9.150
+,,"brexit",3,8.830
+,,"wait",3,8.160
+,,"vote",6,8.020
+,,"vote",3,7.130
+freedom,"X for ...",,74,5.550
+,,"britain",63,11.160
+freedom,"... in X",,62,4.650
+,,"unite",49,13.430
+,,"believe",4,8.390
+freedom,"... to X",,37,2.770
+,,"reduce",3,10.600
+,,"right",6,10.350
+freedom,"... on X",,30,2.250
+,,"quit",7,12.130
+,,"rule",8,11.420
+freedom,"X from ...",,25,1.870
+,,"eu",5,7.500
+freedom,"X in ...",,16,1.200
+,,"europe",4,6.400
+freedom,"... from X",,14,1.050
+,,"benefit",12,10.510
+freedom,"X to ...",,8,0.600
+,,"britain",3,8.320
+freedom,"... as X",,6,0.450
+,,"such",3,6.630

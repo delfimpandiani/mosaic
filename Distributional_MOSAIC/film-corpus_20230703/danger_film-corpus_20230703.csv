@@ -1,0 +1,115 @@
+﻿"corpus","preloaded/film_corpus"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+danger,"modifiers of X",,170,20.630
+,,"grave",17,10.620
+,,"immediate",9,9.440
+,,"sense",6,9.290
+,,"imminent",3,8.820
+,,"mortal",4,8.810
+,,"impending",3,8.760
+,,"considerable",3,8.320
+,,"radiation",2,8.020
+,,"potential",2,7.680
+,,"terrible",5,7.230
+,,"serious",4,7.140
+,,"real",16,6.930
+,,"possible",2,6.890
+,,"extreme",2,6.590
+,,"great",18,6.520
+,,"much",2,4.790
+,,"more",5,4.410
+,,"many",2,4.030
+,,"only",2,3.820
+,,"big",4,3.710
+,,"new",3,3.530
+,,"own",2,3.340
+,,"little",3,2.800
+danger,"nouns modified by X",,39,4.730
+,,"zone",5,8.680
+,,"gas",2,7.510
+,,"close",2,4.840
+danger,"verbs with X as object",,207,25.120
+,,"sense",30,10.130
+,,"court",2,8.190
+,,"pose",2,7.880
+,,"realize",6,7.720
+,,"appreciate",2,6.840
+,,"ignore",2,6.240
+,,"face",5,6.110
+,,"understand",2,5.830
+,,"notice",3,5.200
+,,"spot",2,5.190
+,,"approach",3,4.820
+,,"feel",2,4.380
+,,"like",2,4.070
+,,"think",2,3.920
+,,"be",86,3.790
+,,"know",4,3.750
+,,"see",12,3.540
+danger,"verbs with X as subject",,68,8.250
+,,"lurk",5,10.180
+,,"face",2,5.890
+,,"pass",4,5.430
+,,"be",25,1.920
+,,"have",4,1.910
+danger,"X and/or ...",,61,7.400
+,,"Robinson",2,9.190
+,,"beauty",2,8.100
+,,"death",3,7.890
+,,"everyone",2,7.080
+danger,"prepositional phrases",,431,0.000
+,,"... in ""%w""",211,25.610
+,,"... of ""%w""",85,10.320
+,,"""%w"" of ...",25,3.030
+,,"""%w"" to ...",25,3.030
+,,"... to ""%w""",15,1.820
+,,"""%w"" in ...",11,1.330
+,,"... for ""%w""",11,1.330
+,,"""%w"" from ...",8,0.970
+,,"... with ""%w""",7,0.850
+,,"... from ""%w""",7,0.850
+,,"... about ""%w""",6,0.730
+,,"""%w"" for ...",3,0.360
+,,"... through ""%w""",3,0.360
+,,"""%w"" on ...",2,0.240
+,,"... on ""%w""",2,0.240
+,,"... into ""%w""",2,0.240
+,,"... without ""%w""",2,0.240
+danger,"pronominal possessors of X",,12,1.460
+,,"its",2,2.570
+,,"her",4,0.690
+,,"your",2,0.120
+danger,"... in X",,211,25.610
+,,"life",6,8.630
+,,"be",180,8.380
+,,"son",2,8.040
+,,"place",2,7.700
+,,"people",3,6.850
+danger,"... of X",,85,10.320
+,,"unaware",10,10.620
+,,"sense",14,8.980
+,,"deal",2,8.190
+,,"presence",2,8.160
+,,"air",2,8.010
+,,"hint",2,7.750
+,,"sign",5,7.240
+,,"aware",2,7.020
+,,"be",3,5.890
+,,"face",2,5.750
+,,"lot",4,5.070
+danger,"X of ...",,25,3.030
+,,"extinction",2,11.040
+,,"kind",2,7.610
+danger,"X to ...",,25,3.030
+,,"Nathan",2,10.600
+,,"society",2,10.440
+,,"States",2,10.210
+,,"public",2,10.020
+danger,"... to X",,15,1.820
+,,"alert",2,11.540
+,,"oblivious",6,9.610
+danger,"X in ...",,11,1.330
+,,"eye",2,5.340
+danger,"... from X",,7,0.850
+,,"safe",2,11.090

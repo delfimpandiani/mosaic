@@ -1,0 +1,226 @@
+﻿"corpus","preloaded/brexit_dedup"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+power,"modifiers of X",,937,43.180
+,,"more",115,9.730
+,,"military",24,9.310
+,,"soft",19,9.200
+,,"bargaining",13,8.760
+,,"voting",15,8.490
+,,"paddy",10,8.420
+,,"nuclear",10,8.210
+,,"much",15,8.180
+,,"spending",9,8.130
+,,"corporate",9,7.920
+,,"31-year-old",7,7.920
+,,"political",30,7.890
+,,"sweeping",7,7.880
+,,"dominant",7,7.840
+,,"sovereign",8,7.830
+,,"great",23,7.810
+,,"world",17,7.810
+,,"axis",6,7.690
+,,"purchasing",6,7.690
+,,"veto",6,7.670
+,,"imperial",6,7.640
+,,"real",13,7.610
+,,"ultimate",6,7.560
+,,"legislative",6,7.550
+,,"less",8,7.500
+,,"people",7,7.420
+,,"colonial",5,7.400
+,,"democratic",8,7.340
+,,"land",6,7.310
+,,"absolute",5,7.230
+,,"coal-fired",4,7.110
+,,"enough",5,7.070
+,,"wind",4,7.070
+,,"combined",4,7.030
+,,"statistical",4,7.010
+,,"executive",4,6.970
+,,"european",22,6.900
+,,"regulatory",4,6.900
+,,"emergency",4,6.900
+,,"global",11,6.870
+,,"western",4,6.760
+,,"major",7,6.730
+,,"such",6,6.690
+,,"significant",5,6.660
+,,"great",5,6.630
+,,"state",4,6.550
+,,"economic",12,6.540
+,,"new",13,6.490
+,,"former",6,6.460
+,,"little",5,6.440
+,,"foreign",5,6.350
+,,"full",4,6.310
+,,"strong",5,6.220
+,,"other",9,5.710
+,,"trade",5,5.700
+,,"eu",16,4.970
+,,"british",5,4.630
+power,"nouns and verbs modified by X",,278,12.810
+,,"plant",24,10.680
+,,"grab",11,10.240
+,,"struggle",10,9.810
+,,"grid",7,9.530
+,,"pose",6,9.300
+,,"station",14,9.220
+,,"base",7,8.780
+,,"structure",6,8.590
+,,"broker",4,8.350
+,,"couple",4,8.290
+,,"politics",8,7.930
+,,"bloc",4,7.510
+,,"company",5,6.340
+,,"system",5,6.250
+power,"verbs with X as object",,779,35.900
+,,"hand",19,9.420
+,,"return",14,8.980
+,,"gain",19,8.930
+,,"transfer",11,8.740
+,,"give",47,8.700
+,,"have",154,8.440
+,,"undermine",10,8.410
+,,"exercise",9,8.400
+,,"cede",7,8.130
+,,"hold",15,8.000
+,,"centralize",6,7.960
+,,"leverage",6,7.940
+,,"lose",16,7.830
+,,"like",8,7.780
+,,"grow",8,7.670
+,,"devolve",5,7.650
+,,"want",16,7.610
+,,"limit",6,7.600
+,,"reduce",9,7.590
+,,"seize",5,7.580
+,,"lack",5,7.530
+,,"prove",5,7.460
+,,"take",33,7.420
+,,"wield",4,7.360
+,,"accumulate",4,7.350
+,,"amplify",4,7.350
+,,"remove",5,7.330
+,,"centralise",4,7.320
+,,"bring",7,7.250
+,,"emerge",4,7.130
+,,"retain",4,7.110
+,,"mean",7,6.970
+,,"increase",6,6.940
+,,"deliver",4,6.830
+,,"keep",7,6.820
+,,"become",7,6.810
+,,"use",10,6.630
+,,"negotiate",4,6.610
+,,"share",4,6.590
+,,"lead",5,6.350
+,,"vote",4,5.950
+,,"get",8,5.870
+,,"put",4,5.820
+,,"see",5,5.230
+,,"be",48,5.100
+,,"do",5,5.070
+,,"make",7,4.940
+power,"verbs with X as subject",,267,12.300
+,,"grab",5,9.140
+,,"pull",5,8.580
+,,"lie",6,8.100
+,,"get",5,6.280
+,,"be",112,5.750
+,,"do",9,5.510
+,,"have",25,5.020
+power,"X and/or ...",,194,8.940
+,,"influence",11,10.370
+,,"money",14,9.980
+,,"wealth",5,9.310
+,,"rich",4,9.240
+,,"authority",4,8.910
+,,"control",6,8.890
+power,"prepositional phrases",,1081,0.000
+,,"... of ""%w""",246,11.340
+,,"""%w"" of ...",154,7.100
+,,"""%w"" to ...",110,5.070
+,,"... in ""%w""",106,4.880
+,,"""%w"" in ...",84,3.870
+,,"... to ""%w""",46,2.120
+,,"""%w"" from ...",32,1.470
+,,"... with ""%w""",29,1.340
+,,"... for ""%w""",25,1.150
+,,"""%w"" for ...",22,1.010
+,,"""%w"" as ...",19,0.880
+,,"""%w"" at ...",17,0.780
+,,"""%w"" over ...",15,0.690
+,,"""%w"" with ...",14,0.650
+,,"... from ""%w""",13,0.600
+,,"... into ""%w""",13,0.600
+,,"""%w"" on ...",13,0.600
+,,"... as ""%w""",12,0.550
+,,"... on ""%w""",12,0.550
+,,"... by ""%w""",11,0.510
+,,"... against ""%w""",9,0.410
+,,"... about ""%w""",7,0.320
+,,"""%w"" into ...",6,0.280
+,,"""%w"" within ...",6,0.280
+,,"""%w"" by ...",4,0.180
+,,"... between ""%w""",4,0.180
+,,"""%w"" than ...",4,0.180
+,,"... over ""%w""",4,0.180
+,,"... within ""%w""",4,0.180
+power,"adjective predicates of X",,26,1.200
+,,"hungry",4,11.990
+power,"X''s ...",,9,0.410
+,,"influence",6,11.390
+power,"possessors of X",,44,2.030
+,,"britain",7,6.940
+power,"... of X",,246,11.340
+,,"balance",34,11.800
+,,"transfer",14,10.610
+,,"position",9,9.750
+,,"ambition",6,9.560
+,,"concentration",5,9.300
+,,"centralisation",4,9.030
+,,"abuse",4,8.930
+,,"term",4,7.640
+power,"X of ...",,154,7.100
+,,"veto",6,10.210
+,,"plan",6,9.800
+,,"bank",8,9.500
+,,"court",4,9.290
+,,"politics",5,8.850
+,,"parliament",5,8.310
+,,"country",4,7.260
+power,"X to ...",,110,5.070
+,,"brussels",16,11.090
+,,"employer",6,10.680
+,,"parliament",4,9.490
+,,"people",6,8.850
+,,"eu",10,8.480
+power,"... in X",,106,4.880
+,,"everything",11,11.250
+,,"tory",4,9.910
+,,"be",37,8.420
+,,"believe",4,8.240
+,,"people",4,7.640
+,,"stay",5,6.520
+power,"X in ...",,84,3.870
+,,"hand",5,9.640
+,,"brussels",5,8.300
+,,"europe",10,7.660
+,,"world",4,7.230
+,,"eu",8,6.210
+,,"uk",4,6.100
+power,"... to X",,46,2.120
+,,"truth",4,11.240
+,,"come",14,8.920
+power,"X from ...",,32,1.470
+,,"westminster",5,11.670
+,,"elite",4,11.500
+power,"... for X",,25,1.150
+,,"plan",8,9.910
+power,"X as ...",,19,0.880
+,,"kingdom",7,12.850
+power,"... into X",,13,0.600
+,,"get",4,10.030
+power,"verbs with particle ""up"" and X as object",,11,0.510
+,,"give",10,11.400

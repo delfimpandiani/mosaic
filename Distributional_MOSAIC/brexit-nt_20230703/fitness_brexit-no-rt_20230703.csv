@@ -1,0 +1,49 @@
+﻿"corpus","preloaded/brexit_dedup"
+"subcorpus","-"
+Keyword,Gramrel,Collocate,Freq,Score
+fitness,"modifiers of X",,3,14.290
+,,"spa",1,11.990
+,,"planet",1,9.950
+,,"full",1,5.510
+fitness,"nouns and verbs modified by X",,8,38.100
+,,"wellness",1,11.830
+,,"wear",1,11.540
+,,"slip",1,9.570
+,,"exercise",1,9.160
+,,"wave",1,7.940
+,,"lot",1,7.180
+,,"class",1,6.000
+,,"term",1,5.030
+fitness,"verbs with X as object",,5,23.810
+,,"push",1,6.620
+,,"keep",3,6.290
+,,"leave",1,1.710
+fitness,"X and/or ...",,7,33.330
+,,"wellness",1,11.990
+,,"wear",1,11.990
+,,"merchantability",1,11.830
+,,"spa",1,11.190
+,,"well-being",1,10.680
+,,"status",2,10.160
+fitness,"prepositional phrases",,10,0.000
+,,"""%w"" in ...",3,14.290
+,,"... as ""%w""",2,9.520
+,,"""%w"" for ...",2,9.520
+,,"... to ""%w""",1,4.760
+,,"... of ""%w""",1,4.760
+,,"... around ""%w""",1,4.760
+fitness,"possessors of X",,2,9.520
+,,"broad",2,13.990
+fitness,"X in ...",,3,14.290
+,,"family",3,11.370
+fitness,"... as X",,2,9.520
+,,"such",2,6.050
+fitness,"X for ...",,2,9.520
+,,"office",1,11.190
+,,"purpose",1,7.760
+fitness,"... to X",,1,4.760
+,,"return",1,7.150
+fitness,"... of X",,1,4.760
+,,"icon",1,13.410
+fitness,"... around X",,1,4.760
+,,"topic",1,13.990
