@@ -1,0 +1,2382 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/musco"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/musco"
+     versionIRI="https://w3id.org/musco/mosaic">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Delfina Sol Martinez Pandiani, Valentina Presutti.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is the ontological module underlying the Multimodal Descriptions of Social Concepts (MUSCO) project, which aims to investigate, model, and experiment with how and why social concepts (such as violence, power, peace, or destruction) are modeled and detected by humans and machines in images. It specifically focuses on the detection of social concepts referring to non-physical objects in (visual) art images. It implements some Ontology Design Patterns such as Descriptions and Situations (DnS) in a modular way. It is furthermore aligned to DUL - Dolce Ultralight foundational Ontology and imports synset and frame evocation classes from the Framester hub.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>This is the annotation situation module that describes annotation situations specifically related to abstract social concepts.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/schema/Frame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/framester/schema/Synset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractConceptCluster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbstractSocialConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Affiliation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Annotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnotationDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnotationRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnotationSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Annotator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnotatorCommunity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollectiveAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollocationAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollocationAnnotationDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollocationRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollocationSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConceptualFrame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageAnnotationDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageAnnotationRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageAnnotationSituation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndigenousAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualAnnotator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LexicalEntry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReligiousAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemunerationScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpaceRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WnSynsetFrame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aboutAnnotatedEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#annotationTypedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#annotationWithLexicalEntry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#classifies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotationPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotationSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotationTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAnnotationTypedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClusterConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCollocateTypedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndigenousAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLabelTypedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPoliticalAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReligiousAffiliation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesAnnotatedEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesAnnotator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesDataset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesRemunerationScheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAffiliationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnnotatedWithLexicalEntry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnnotationPlaceOfSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnnotationSituationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnnotationTimeOfSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnnotatorInvolvedInSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCauseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isClassifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConceptUsedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDatasetInvolvedInSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDefinedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIndigenousAffiliationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInvolvedInAnnotationSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLexicalEntryOfAnnotationFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPoliticalAffiliationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProvokedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReligiousAffiliationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRemunerationSchemeOfSituation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSettingFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lexicalEntryForAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provokes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#realizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#satisfies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typesAnnotation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typesAnnotationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typesCollocateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#typesLabelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesConcept"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2004/02/skos/core#notation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAnnotationStrength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCoverage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDataValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRegionDataValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasXCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYCoordinate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isDateOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#notation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rgbCoordinateBlue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rgbCoordinateGreen"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rgbCoordinateRed"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <Class IRI="#Concept"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+        <Class IRI="#Description"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+        <Class IRI="#Entity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity"/>
+        <Class IRI="#InformationEntity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <Class IRI="#InformationObject"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <Class IRI="#Object"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Region"/>
+        <Class IRI="#Region"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role"/>
+        <Class IRI="#Role"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <Class IRI="#Situation"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialObject"/>
+        <Class IRI="#SocialObject"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SpaceRegion"/>
+        <Class IRI="#SpaceRegion"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+        <Class IRI="#LexicalEntry"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <Class IRI="#ConceptualFrame"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://w3id.org/framester/schema/Synset"/>
+        <Class IRI="#WnSynsetFrame"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/framester/schema/ConceptualFrame"/>
+        <Class IRI="https://w3id.org/framester/schema/Frame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbstractConceptCluster"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbstractSocialConcept"/>
+        <Class IRI="#SocialConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Affiliation"/>
+        <Class IRI="#SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Annotation"/>
+        <Class IRI="#SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnnotationDescription"/>
+        <Class IRI="#Description"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnnotationRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnnotationSituation"/>
+        <Class IRI="#Situation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Annotator"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnnotatorCommunity"/>
+        <Class IRI="#Annotator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnnotatorCommunity"/>
+        <Class IRI="#CollectiveAgent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollectiveAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollocationAnnotation"/>
+        <Class IRI="#Annotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollocationAnnotationDescription"/>
+        <Class IRI="#AnnotationDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollocationRole"/>
+        <Class IRI="#AnnotationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollocationSituation"/>
+        <Class IRI="#AnnotationSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concept"/>
+        <Class IRI="#SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dataset"/>
+        <Class IRI="#SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Description"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#InformationObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageAnnotation"/>
+        <Class IRI="#Annotation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageAnnotationDescription"/>
+        <Class IRI="#AnnotationDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageAnnotationRole"/>
+        <Class IRI="#AnnotationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageAnnotationSituation"/>
+        <Class IRI="#AnnotationSituation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndigenousAffiliation"/>
+        <Class IRI="#Affiliation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualAnnotator"/>
+        <Class IRI="#Annotator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationEntity"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationObject"/>
+        <Class IRI="#InformationEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LexicalEntry"/>
+        <Class IRI="#SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place"/>
+        <Class IRI="#SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalAffiliation"/>
+        <Class IRI="#Affiliation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReligiousAffiliation"/>
+        <Class IRI="#Affiliation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemunerationScheme"/>
+        <Class IRI="#SocialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Situation"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialConcept"/>
+        <Class IRI="#Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialObject"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#classifies"/>
+        <ObjectProperty IRI="#classifies"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#defines"/>
+        <ObjectProperty IRI="#defines"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRole"/>
+        <ObjectProperty IRI="#hasRole"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasSetting"/>
+        <ObjectProperty IRI="#hasSetting"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isClassifiedBy"/>
+        <ObjectProperty IRI="#isClassifiedBy"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptUsedIn"/>
+        <ObjectProperty IRI="#isConceptUsedIn"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isDefinedIn"/>
+        <ObjectProperty IRI="#isDefinedIn"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isRoleOf"/>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isSettingFor"/>
+        <ObjectProperty IRI="#isSettingFor"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#satisfies"/>
+        <ObjectProperty IRI="#satisfies"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#usesConcept"/>
+        <ObjectProperty IRI="#usesConcept"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#aboutAnnotatedEntity"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#annotationTypedBy"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#annotationWithLexicalEntry"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#classifies"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#defines"/>
+        <ObjectProperty IRI="#usesConcept"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAffiliation"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAnnotation"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAnnotationPlace"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAnnotationSituation"/>
+        <ObjectProperty IRI="#hasSetting"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAnnotationTime"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAnnotationTypedBy"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCause"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasClusterConcept"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCollocateTypedBy"/>
+        <ObjectProperty IRI="#hasAnnotationTypedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIndigenousAffiliation"/>
+        <ObjectProperty IRI="#hasAffiliation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLabelTypedBy"/>
+        <ObjectProperty IRI="#hasAnnotationTypedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPoliticalAffiliation"/>
+        <ObjectProperty IRI="#hasAffiliation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasReligiousAffiliation"/>
+        <ObjectProperty IRI="#hasAffiliation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty IRI="#isClassifiedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSetting"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#involves"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#involvesAnnotatedEntity"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#involvesAnnotator"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#involvesDataset"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#involvesRemunerationScheme"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAffiliationOf"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAnnotatedWithLexicalEntry"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAnnotationPlaceOfSituation"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAnnotationSituationOf"/>
+        <ObjectProperty IRI="#isSettingFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAnnotationTimeOfSituation"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAnnotatorInvolvedInSituation"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCauseOf"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isClassifiedBy"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isConceptUsedIn"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDatasetInvolvedInSituation"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isDefinedIn"/>
+        <ObjectProperty IRI="#isConceptUsedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isIndigenousAffiliationOf"/>
+        <ObjectProperty IRI="#isAffiliationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInvolvedInAnnotationSituation"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLexicalEntryOfAnnotationFor"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPoliticalAffiliationOf"/>
+        <ObjectProperty IRI="#isAffiliationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProvokedBy"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isReligiousAffiliationOf"/>
+        <ObjectProperty IRI="#isAffiliationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRemunerationSchemeOfSituation"/>
+        <ObjectProperty IRI="#involves"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRoleOf"/>
+        <ObjectProperty IRI="#classifies"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSettingFor"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#lexicalEntryForAnnotation"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#provokes"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#realizes"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#satisfies"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typesAnnotation"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typesAnnotationOf"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typesCollocateOf"/>
+        <ObjectProperty IRI="#typesAnnotationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#typesLabelOf"/>
+        <ObjectProperty IRI="#typesAnnotationOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usesConcept"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aboutAnnotatedEntity"/>
+        <ObjectProperty IRI="#hasAnnotation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#annotationTypedBy"/>
+        <ObjectProperty IRI="#typesAnnotation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#annotationWithLexicalEntry"/>
+        <ObjectProperty IRI="#lexicalEntryForAnnotation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#associatedWith"/>
+        <ObjectProperty IRI="#associatedWith"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#classifies"/>
+        <ObjectProperty IRI="#isClassifiedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAffiliation"/>
+        <ObjectProperty IRI="#isAffiliationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAnnotationSituation"/>
+        <ObjectProperty IRI="#isAnnotationSituationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAnnotationTime"/>
+        <ObjectProperty IRI="#isAnnotationTimeOfSituation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAnnotationTypedBy"/>
+        <ObjectProperty IRI="#typesAnnotationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCause"/>
+        <ObjectProperty IRI="#isCauseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCollocateTypedBy"/>
+        <ObjectProperty IRI="#typesCollocateOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIndigenousAffiliation"/>
+        <ObjectProperty IRI="#isIndigenousAffiliationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLabelTypedBy"/>
+        <ObjectProperty IRI="#typesLabelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPoliticalAffiliation"/>
+        <ObjectProperty IRI="#isPoliticalAffiliationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasReligiousAffiliation"/>
+        <ObjectProperty IRI="#isReligiousAffiliationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty IRI="#isRoleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#involvesAnnotatedEntity"/>
+        <ObjectProperty IRI="#isInvolvedInAnnotationSituation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#involvesAnnotator"/>
+        <ObjectProperty IRI="#isAnnotatorInvolvedInSituation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#involvesDataset"/>
+        <ObjectProperty IRI="#isDatasetInvolvedInSituation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#involvesRemunerationScheme"/>
+        <ObjectProperty IRI="#isRemunerationSchemeOfSituation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAnnotatedWithLexicalEntry"/>
+        <ObjectProperty IRI="#isLexicalEntryOfAnnotationFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isProvokedBy"/>
+        <ObjectProperty IRI="#provokes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <ObjectProperty IRI="#satisfies"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#associatedWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRelatedConcept"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#associatedWith"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aboutAnnotatedEntity"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#annotationTypedBy"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#annotationWithLexicalEntry"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedWith"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#classifies"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAffiliation"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnnotationTime"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAnnotationTypedBy"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClusterConcept"/>
+        <Class IRI="#AbstractConceptCluster"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLabelTypedBy"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedConcept"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAnnotatedEntity"/>
+        <Class IRI="#AnnotationSituation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAnnotator"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesDataset"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesRemunerationScheme"/>
+        <Class IRI="#Situation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAnnotatedWithLexicalEntry"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAnnotationTimeOfSituation"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCauseOf"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDefinedIn"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLexicalEntryOfAnnotationFor"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPoliticalAffiliationOf"/>
+        <Class IRI="#PoliticalAffiliation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRoleOf"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <Class IRI="#Description"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#provokes"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typesCollocateOf"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typesLabelOf"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aboutAnnotatedEntity"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#annotationTypedBy"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#annotationWithLexicalEntry"/>
+        <Class IRI="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedWith"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#classifies"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAffiliation"/>
+        <Class IRI="#Affiliation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAnnotationSituation"/>
+        <Class IRI="#AnnotationSituation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAnnotationTypedBy"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClusterConcept"/>
+        <Class IRI="#AbstractSocialConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLabelTypedBy"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedConcept"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesAnnotatedEntity"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesAnnotator"/>
+        <Class IRI="#Annotator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesDataset"/>
+        <Class IRI="#Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesRemunerationScheme"/>
+        <Class IRI="#RemunerationScheme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAnnotatedWithLexicalEntry"/>
+        <Class IRI="#LexicalEntry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCauseOf"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDefinedIn"/>
+        <Class IRI="#Description"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLexicalEntryOfAnnotationFor"/>
+        <Class IRI="#LexicalEntry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPoliticalAffiliationOf"/>
+        <Class IRI="#Annotator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRoleOf"/>
+        <Class IRI="#Annotation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#provokes"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typesCollocateOf"/>
+        <Class IRI="#Concept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#typesLabelOf"/>
+        <Class IRI="#Image"/>
+    </ObjectPropertyRange>
+    <EquivalentDataProperties>
+        <DataProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasRegionDataValue"/>
+        <DataProperty IRI="#hasRegionDataValue"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="http://www.w3.org/2004/02/skos/core#notation"/>
+        <DataProperty IRI="#notation"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCoverage"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHeight"/>
+        <DataProperty IRI="#hasRegionDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasRegionDataValue"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWidth"/>
+        <DataProperty IRI="#hasRegionDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasXCoordinate"/>
+        <DataProperty IRI="#hasRegionDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasYCoordinate"/>
+        <DataProperty IRI="#hasRegionDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rgbCoordinateBlue"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rgbCoordinateGreen"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rgbCoordinateRed"/>
+        <DataProperty IRI="#hasDataValue"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAnnotationStrength"/>
+        <Class IRI="#Annotation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isDateOf"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAnnotationStrength"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCoverage"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeight"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasXCoordinate"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYCoordinate"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rgbCoordinateBlue"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rgbCoordinateGreen"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rgbCoordinateRed"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbstractConceptCluster</IRI>
+        <Literal>A cluster of abstract concepts that tend to be evoked together, as defined in the ADVISE dataset [Ye and Kovashka 2018].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbstractConceptCluster</IRI>
+        <Literal>Abstract Concept Cluster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AbstractSocialConcept</IRI>
+        <Literal>An abstract social concept that forms part of an AbstractConceptCluster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AbstractSocialConcept</IRI>
+        <Literal>Abstract Social Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Affiliation</IRI>
+        <Literal>An affiliation group, whether it is political, religious, indigenous, etc. An Agent can have an affiliation to it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Affiliation</IRI>
+        <Literal>Affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent</IRI>
+        <Literal>An agent that can perform actions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Agent</IRI>
+        <Literal>Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Annotation</IRI>
+        <Literal>A single annotation made about a certain Entity with a LexicalEntry. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Annotation</IRI>
+        <Literal>Annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnnotationDescription</IRI>
+        <Literal>A description of an annotation, which can be satisfied by annotation situations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnnotationDescription</IRI>
+        <Literal>Annotation Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnnotationRole</IRI>
+        <Literal>A role associated with an annotation type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnnotationRole</IRI>
+        <Literal>Annotation Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnnotationSituation</IRI>
+        <Literal>An annotation situation is the state of affairs within which an Annotation takes place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnnotationSituation</IRI>
+        <Literal>Annotation Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Annotator</IRI>
+        <Literal>An annotator who creates annotations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Annotator</IRI>
+        <Literal>Annotator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnnotatorCommunity</IRI>
+        <Literal>A collection of Agents that function together as an Annotator. It serves to represent Annotator data when it is aggregated and not about single Agents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnnotatorCommunity</IRI>
+        <Literal>Annotator Community</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CollectiveAgent</IRI>
+        <Literal>A collective agent that acts as a group.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CollectiveAgent</IRI>
+        <Literal>Collective Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CollocationAnnotation</IRI>
+        <Literal>An annotation referring to a collocation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CollocationAnnotation</IRI>
+        <Literal>Collocation Annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CollocationAnnotationDescription</IRI>
+        <Literal>A description of a collocation annotation, satisfied by a CollocationAnnotationSituation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CollocationAnnotationDescription</IRI>
+        <Literal>Collocation Annotation Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CollocationRole</IRI>
+        <Literal>A role associated with collocation annotations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CollocationRole</IRI>
+        <Literal>Collocation Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CollocationSituation</IRI>
+        <Literal>A situation in which collocation annotation occurs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CollocationSituation</IRI>
+        <Literal>Collocation Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Concept</IRI>
+        <Literal>A concept or idea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Concept</IRI>
+        <Literal>Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal>A country or nation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Country</IRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Dataset</IRI>
+        <Literal>A dataset or collection of data, such as image datasets and lexical corpora.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dataset</IRI>
+        <Literal>Dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Description</IRI>
+        <Literal>A description or representation of an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Description</IRI>
+        <Literal>Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Entity</IRI>
+        <Literal>An entity or object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Entity</IRI>
+        <Literal>Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image</IRI>
+        <Literal>An image or picture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Image</IRI>
+        <Literal>Image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageAnnotation</IRI>
+        <Literal>An annotation made on an image with a LexicalEntry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageAnnotation</IRI>
+        <Literal>Image Annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageAnnotationDescription</IRI>
+        <Literal>A description of an image annotation, satisfied by an ImageAnnotationSituation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageAnnotationDescription</IRI>
+        <Literal>Image Annotation Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageAnnotationRole</IRI>
+        <Literal>A role associated with an image annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageAnnotationRole</IRI>
+        <Literal>Image Annotation Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageAnnotationSituation</IRI>
+        <Literal>A situation in which an image annotation occurs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageAnnotationSituation</IRI>
+        <Literal>Image Annotation Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndigenousAffiliation</IRI>
+        <Literal>An affiliation group related to indigenous identities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndigenousAffiliation</IRI>
+        <Literal>Indigenous Affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndividualAnnotator</IRI>
+        <Literal>An individual annotator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndividualAnnotator</IRI>
+        <Literal>Individual Annotator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InformationEntity</IRI>
+        <Literal>An entity that contains information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InformationEntity</IRI>
+        <Literal>Information Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InformationObject</IRI>
+        <Literal>An object that contains information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InformationObject</IRI>
+        <Literal>Information Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LexicalEntry</IRI>
+        <Literal>A lexical entry represents a unit of analysis of the lexicon that consists of a set of forms that are grammatically related and a set of base meanings that are associated with all of these forms. Thus, a lexical entry is a word, multiword expression or affix with a single part-of-speech, morphological pattern, etymology and set of senses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LexicalEntry</IRI>
+        <Literal>Lexical Entry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Object</IRI>
+        <Literal>An object or entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Object</IRI>
+        <Literal>Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Place</IRI>
+        <Literal>A place or location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Place</IRI>
+        <Literal>Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PoliticalAffiliation</IRI>
+        <Literal>An affiliation group related to political identities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PoliticalAffiliation</IRI>
+        <Literal>Political Affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReligiousAffiliation</IRI>
+        <Literal>An affiliation group related to religious identities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ReligiousAffiliation</IRI>
+        <Literal>Religious Affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RemunerationScheme</IRI>
+        <Literal>A scheme or system for remuneration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RemunerationScheme</IRI>
+        <Literal>Remuneration Scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal>A role or position.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Role</IRI>
+        <Literal>Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Situation</IRI>
+        <Literal>A situation or context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Situation</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialConcept</IRI>
+        <Literal>A social concept or idea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialConcept</IRI>
+        <Literal>Social Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialObject</IRI>
+        <Literal>A social object or entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialObject</IRI>
+        <Literal>Social Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aboutAnnotatedEntity</IRI>
+        <Literal>Annotates an entity with additional information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#aboutAnnotatedEntity</IRI>
+        <Literal>about annotated entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#annotationTypedBy</IRI>
+        <Literal>Associates an annotation with a specific concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#annotationTypedBy</IRI>
+        <Literal>annotation typed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#annotationWithLexicalEntry</IRI>
+        <Literal>Associates an annotation with a lexical entry.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#annotationWithLexicalEntry</IRI>
+        <Literal>annotation with lexical entry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#associatedWith</IRI>
+        <Literal>Equivalent to dul:associatedWith.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#associatedWith</IRI>
+        <Literal>Relates two entities that are associated with each other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#associatedWith</IRI>
+        <Literal>associated with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#classifies</IRI>
+        <Literal>Equivalent to dul:classifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#classifies</IRI>
+        <Literal>Specifies the classification relationship between two entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#classifies</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#classifies</IRI>
+        <Literal>classifies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#defines</IRI>
+        <Literal>Specifies a concept&apos;s definition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#defines</IRI>
+        <Literal>defines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAffiliation</IRI>
+        <Literal>Specifies the affiliation relationship between an agent and an affiliation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAffiliation</IRI>
+        <Literal>has affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnnotation</IRI>
+        <Literal>Specifies the annotation relationship between two entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotation</IRI>
+        <Literal>has annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnnotationPlace</IRI>
+        <Literal>Specifies the place in which an annotation situation took place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotationPlace</IRI>
+        <Literal>has annotation place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnnotationSituation</IRI>
+        <Literal>Relates an entity with the annotation situation it belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotationSituation</IRI>
+        <Literal>has annotation situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnnotationTime</IRI>
+        <Literal>Relates a situation with the time interval of its annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotationTime</IRI>
+        <Literal>has annotation time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAnnotationTypedBy</IRI>
+        <Literal>Relates an entity with the concept that is used for its annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAnnotationTypedBy</IRI>
+        <Literal>has annotation typed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCause</IRI>
+        <Literal>According to the Framester hub and the Quokka tool, the relation between a concept and another concept that causes it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCause</IRI>
+        <Literal>has cause</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasClusterConcept</IRI>
+        <Literal>Relates an abstract concept cluster with an abstract social concept.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasClusterConcept</IRI>
+        <Literal>has cluster concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCollocateTypedBy</IRI>
+        <Literal>Relates an annotation with the type of collocate used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCollocateTypedBy</IRI>
+        <Literal>has collocate typed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDataValue</IRI>
+        <Literal>has data value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasHeight</IRI>
+        <Literal>has height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasIndigenousAffiliation</IRI>
+        <Literal>Relates an agent with its indigenous affiliation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasIndigenousAffiliation</IRI>
+        <Literal>has indigenous affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLabelTypedBy</IRI>
+        <Literal>Relates an image with the type of label used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLabelTypedBy</IRI>
+        <Literal>has label typed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPoliticalAffiliation</IRI>
+        <Literal>Relates an agent with its political affiliation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPoliticalAffiliation</IRI>
+        <Literal>has political affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRegionDataValue</IRI>
+        <Literal>A datatype property that encodes values for a Region, e.g. a float for the Region Height.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasRegionDataValue</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRegionDataValue</IRI>
+        <Literal xml:lang="en">has region data value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRegionDataValue</IRI>
+        <Literal xml:lang="it">regione ha valore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRelatedConcept</IRI>
+        <Literal>An AbstractConceptCluster is related to some Concept (usually via one of its cluster concepts in the Framester hub)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelatedConcept</IRI>
+        <Literal>has related concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasReligiousAffiliation</IRI>
+        <Literal>Relates an agent with its religious affiliation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasReligiousAffiliation</IRI>
+        <Literal>has religious affiliation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRole</IRI>
+        <Literal>Relates an entity with the role it plays.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRole</IRI>
+        <Literal>has role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSetting</IRI>
+        <Literal>Relates an entity with its setting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSetting</IRI>
+        <Literal>has setting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasWidth</IRI>
+        <Literal>has width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasXCoordinate</IRI>
+        <Literal>has x coordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasYCoordinate</IRI>
+        <Literal>has y coordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involves</IRI>
+        <Literal>Relates entities that are involved with each other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#involves</IRI>
+        <Literal>involves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesAnnotatedEntity</IRI>
+        <Literal>Relates an annotation situation with the annotated entity involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#involvesAnnotatedEntity</IRI>
+        <Literal>involves annotated entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesAnnotator</IRI>
+        <Literal>Relates a situation with the annotator involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#involvesAnnotator</IRI>
+        <Literal>involves annotator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesDataset</IRI>
+        <Literal>Relates a situation with the dataset involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#involvesDataset</IRI>
+        <Literal>involves dataset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#involvesRemunerationScheme</IRI>
+        <Literal>Relates a situation with the remuneration scheme involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#involvesRemunerationScheme</IRI>
+        <Literal>involves remuneration scheme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAffiliationOf</IRI>
+        <Literal>Relates an entity with its affiliation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAffiliationOf</IRI>
+        <Literal>is affiliation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAnnotatedWithLexicalEntry</IRI>
+        <Literal>Relates an entity with the lexical entry used for annotation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAnnotatedWithLexicalEntry</IRI>
+        <Literal>is annotated with lexical entry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAnnotationPlaceOfSituation</IRI>
+        <Literal>Relates an annotation place with the situation it is associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAnnotationPlaceOfSituation</IRI>
+        <Literal>is annotation place of situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAnnotationSituationOf</IRI>
+        <Literal>Relates a setting with the annotation situation it is associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAnnotationSituationOf</IRI>
+        <Literal>is annotation situation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAnnotationTimeOfSituation</IRI>
+        <Literal>Relates a situation with the annotation time associated with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAnnotationTimeOfSituation</IRI>
+        <Literal>is annotation time of situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAnnotatorInvolvedInSituation</IRI>
+        <Literal>Relates an annotator with the situation they are involved in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAnnotatorInvolvedInSituation</IRI>
+        <Literal>is annotator involved in situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isClassifiedBy</IRI>
+        <Literal>Equivalent to DUL:isClassifiedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isClassifiedBy</IRI>
+        <Literal>Relates an entity with the classification applied to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isClassifiedBy</IRI>
+        <Literal>is classified by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isConceptUsedIn</IRI>
+        <Literal>Relates a concept with the entities it is used in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isConceptUsedIn</IRI>
+        <Literal>is concept used in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDatasetInvolvedInSituation</IRI>
+        <Literal>Relates a dataset with the situation it is involved in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isDatasetInvolvedInSituation</IRI>
+        <Literal>is dataset involved in situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDateOf</IRI>
+        <Literal>The date in which something takes place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isDateOf</IRI>
+        <Literal>is date of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isDefinedIn</IRI>
+        <Literal>Relates a role with the description defining it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isDefinedIn</IRI>
+        <Literal>is defined in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isIndigenousAffiliationOf</IRI>
+        <Literal>Relates an affiliation with the indigenous entity it is associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isIndigenousAffiliationOf</IRI>
+        <Literal>is indigenous affiliation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isInvolvedInAnnotationSituation</IRI>
+        <Literal>Relates an entity with the annotation situation it is involved in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInvolvedInAnnotationSituation</IRI>
+        <Literal>is involved in annotation situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLexicalEntryOfAnnotationFor</IRI>
+        <Literal>Relates a lexical entry with the entity it is used to annotate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isLexicalEntryOfAnnotationFor</IRI>
+        <Literal>is lexical entry of annotation for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPoliticalAffiliationOf</IRI>
+        <Literal>Relates a political affiliation with the annotator it is associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPoliticalAffiliationOf</IRI>
+        <Literal>is political affiliation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isProvokedBy</IRI>
+        <Literal>According to the Framester hub and the Quokka tool, the relation between a concept and another concept that provokes it</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isProvokedBy</IRI>
+        <Literal>is provoked by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isReligiousAffiliationOf</IRI>
+        <Literal>Relates a religious affiliation with the entity it is associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isReligiousAffiliationOf</IRI>
+        <Literal>is religious affiliation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRemunerationSchemeOfSituation</IRI>
+        <Literal>Relates a situation with the remuneration scheme involved in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRemunerationSchemeOfSituation</IRI>
+        <Literal>is remuneration scheme of situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRoleOf</IRI>
+        <Literal>Relates a role with the annotation it classifies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRoleOf</IRI>
+        <Literal>is role of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSatisfiedBy</IRI>
+        <Literal>Relates a description with the entity it satisfies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSatisfiedBy</IRI>
+        <Literal>is satisfied by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSettingFor</IRI>
+        <Literal>Relates an entity with the setting it is associated with. Equivalent to dul:isSettingFor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSettingFor</IRI>
+        <Literal>is setting for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lexicalEntryForAnnotation</IRI>
+        <Literal>Relates a lexical entry with the annotation it is associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lexicalEntryForAnnotation</IRI>
+        <Literal>lexical entry for annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#provokes</IRI>
+        <Literal>provokes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#realizes</IRI>
+        <Literal>Relates an entity with the realization it is associated with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#realizes</IRI>
+        <Literal>realizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#satisfies</IRI>
+        <Literal>Relates a description with the entity it satisfies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#satisfies</IRI>
+        <Literal>satisfies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#typesAnnotation</IRI>
+        <Literal>Relates a concept with the annotation it types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#typesAnnotation</IRI>
+        <Literal>types annotation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#typesAnnotationOf</IRI>
+        <Literal>Relates an annotation with the entity it types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#typesAnnotationOf</IRI>
+        <Literal>types annotation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#typesCollocateOf</IRI>
+        <Literal>Relates a concept with another concept that it collocates with.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#typesCollocateOf</IRI>
+        <Literal>types collocate of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#typesLabelOf</IRI>
+        <Literal>Relates a concept with the image that represents its label.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#typesLabelOf</IRI>
+        <Literal>types label of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#usesConcept</IRI>
+        <Literal>Relates an entity with the concept it uses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usesConcept</IRI>
+        <Literal>uses concept</Literal>
+    </AnnotationAssertion>
+</Ontology>
