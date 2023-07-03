@@ -154,7 +154,7 @@ def translate_corpus_csv(output_paths, corpus_lan):
             translated_word = str(download_date + "/danger")
         else:
             translated_word = translator.translate(base_name_parts[1], src=corpus_lan, dest='en').text.lower()
-            translated_word = translated_word.replace(" ", "")
+        translated_word = translated_word.replace(" ", "").replace("'", "")
 
         print(base_name_parts[1], "is translated to ", translated_word)
 
@@ -189,6 +189,7 @@ def translate_corpus_csv(output_paths, corpus_lan):
 
                 if len(translated_word_parts) > 1:
                     translated_word = '-'.join(translated_word_parts)
+                translated_word = translated_word.replace(" ", "").replace("'", "")
 
                 translated_line = [line[0], translated_word] + line[2:]
                 translated_lines.append(translated_line)
