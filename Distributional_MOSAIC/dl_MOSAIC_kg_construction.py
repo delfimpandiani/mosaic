@@ -148,6 +148,10 @@ def translate_corpus_csv(output_paths, corpus_lan):
             translated_word = str(download_date + "/freedom")
         elif base_name_parts[1] == str(download_date + "/seguridad"):
             translated_word = str(download_date + "/safety")
+        elif base_name_parts[1] == str(download_date + "/ailewu"):
+            translated_word = str(download_date + "/safety")
+        elif base_name_parts[1] == str(download_date + "/lewu"):
+            translated_word = str(download_date + "/danger")
         else:
             translated_word = translator.translate(base_name_parts[1], src=corpus_lan, dest='en').text.lower()
             translated_word = translated_word.replace(" ", "")
