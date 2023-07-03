@@ -61,7 +61,7 @@ def generate_situation_triples(corpus_name, download_date, annotator):
         ## Object property declarations
         f"{collocation_sit} {rdf_prefix}:satisfies {collocation_desc} .",
         f'{collocation_sit} {rdf_prefix}:hasAnnotator {annotator} .',
-        f'{collocation_sit} {rdf_prefix}:involvesDataset "{corpus} .',
+        f'{collocation_sit} {rdf_prefix}:involvesDataset {corpus} .',
 
         ## Data property declarations
         f"{collocation_sit} {rdf_prefix}:hasDate '{download_date}'^^xsd:dateTime .",
