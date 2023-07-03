@@ -150,7 +150,9 @@ def translate_corpus_csv(output_paths, corpus_lan):
             translated_word = str(download_date + "/safety")
         else:
             translated_word = translator.translate(base_name_parts[1], src=corpus_lan, dest='en').text.lower()
-        #print(base_name_parts[1], "is translated to ", translated_word)
+            translated_word = translated_word.replace(" ", "")
+
+        print(base_name_parts[1], "is translated to ", translated_word)
 
         # Replace the specific word with the translated version
         base_name_parts[1] = translated_word
@@ -161,7 +163,7 @@ def translate_corpus_csv(output_paths, corpus_lan):
         # Create the translated output file name
         output_file = f'{translated_base_name}{extension}'
         translated_output_paths.append(output_file)
-        # print("NEW OUTPUT PATH", output_file)
+        print("NEW OUTPUT PATH", output_file)
 
         if os.path.exists(output_file):
             print(f'Translated CSV file "{output_file}" already exists. Skipping translation.')
@@ -306,8 +308,8 @@ def create_collocation_situation_kg(corpus_name, download_date, annotator, corpu
 
 
 # Specifics of a collocation annotation situation
-corpus_name = "film-corpus"
-corpus_lan = "en"
+corpus_name = "yorubaWaC15"
+corpus_lan = "yo"
 download_date = "20230703"
 annotator = "DelfinaSolMartinezPandiani"
 
