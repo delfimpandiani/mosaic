@@ -67,6 +67,7 @@ if __name__ == "__main__":
     accelerator="gpu",
     log_every_n_steps=10,
     logger=wandb_logger,
+    enable_checkpointing=False,
     callbacks=[
       pl.pytorch.callbacks.early_stopping.EarlyStopping(monitor="valid/loss", mode="min")
     ])
