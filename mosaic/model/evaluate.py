@@ -1,14 +1,16 @@
 from typing import Tuple, List
 
-from mosaic.data import ARTstractDataset
-from mosaic.model import Image2KGEProjection
+from mosaic.model.dataset import ARTstractDataset
+from mosaic.model.projection import Image2KGEProjection
 
 from sklearn.metrics.pairwise import cosine_similarity
 
-def evaluate_classification(dataset: ARTstractDataset, model: Image2KGEProjection) -> Tuple[List[str], List[str]]:
+def evaluate_cos_distance_classification(dataset: ARTstractDataset, model: Image2KGEProjection) -> Tuple[List[str], List[str]]:
   """
   Evaluate the classification results on the provided ARTstract dataset using
   the provided model.
+  The classification is obtained by computing the similarity with the embeddings
+  of the different labels and taking the most similar element.
 
   Args:
       dataset (ARTstractDataset): The input dataset

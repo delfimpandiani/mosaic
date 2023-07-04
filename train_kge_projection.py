@@ -8,7 +8,8 @@ import lightning as pl
 import os
 import joblib
 
-from mosaic.model.dataset import ARTstractDataset, evaluate_classification
+from mosaic.model.dataset import ARTstractDataset
+from mosaic.model.evaluate import evaluate_cos_distance_classification
 from mosaic.model.utils import stratified_split
 from mosaic.model.projection import Image2KGEProjection
 from mosaic.embedding import ImageEncoder, KGE
@@ -71,7 +72,7 @@ if __name__ == "__main__":
     ])
   trainer.fit(model=model, train_dataloaders=train_loader, val_dataloaders=valid_loader)
 
-  y, y_pred = evaluate_classification(test_data, model)
+  y, y_pred = evaluate_cos_distance_classification(test_data, model)
 
   report = classification_report(y, y_pred)
   print(report)
