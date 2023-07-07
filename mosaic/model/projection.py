@@ -4,16 +4,14 @@ from torch import nn
 import lightning.pytorch as pl
 from info_nce import InfoNCE
 
-from mosaic.embedding import ImageEncoder, KGE
+from mosaic.embedding import ConvImageEncoder, KGE
 
 class Image2KGEProjection(pl.LightningModule):
   def __init__(self, 
-               img_encoder: ImageEncoder, 
-               kge: KGE, 
-               hidden_dim: int = 200, 
-               hidden_layers: int = 1,
-               margin: float = 1,
-               device: str = "cuda"):
+               img_encoder: ConvImageEncoder, 
+               kge: KGE,  
+               device: str = "cuda",
+               loss: str = "cosine"):
     """
     Initialise the Image to KGE projection method.
 
@@ -21,31 +19,22 @@ class Image2KGEProjection(pl.LightningModule):
         img_encoder (ImageEncoder): Encoder used to extract the features from the image.
         kge (KGE): Knowledge Graph Embedding method used to convert an entity/individual
           to a vectorial representation
-        hidden_dim (int, optional): Hidden size of the projector. Defaults to 200.
-        hidden_layers (int, optional): Number of hidden layers. Defaults to 1.
-        margin (float, optional): Margin used by the loss function. Defaults to 0.7.
         device (str, optional): Device used for the component models. Defaults to "cuda".
+        loss(str, optional): Loss to be used. Defaults to "cosine".
     """
     super().__init__()
     self._device = device
     self.image_encoder = img_encoder
     self.kge = kge
 
-    self.kge_batch_norm = nn.BatchNorm1d(kge.output_shape)
-    self.img_batch_norm = nn.BatchNorm1d(img_encoder.output_shape)
-
-    hiddens = [
-      nn.Linear(img_encoder.output_shape, hidden_dim),
-      nn.ReLU()
-    ]
-    for _ in range(hidden_layers):
-      hiddens.append(nn.Linear(hidden_dim, hidden_dim))
-      hiddens.append(nn.ReLU())
-    hiddens.append(nn.Linear(hidden_dim, kge.output_shape))
-
-    self.projection = nn.Sequential(*hiddens)
-
-    self.margin = margin
+    self.projection = nn.Linear(img_encoder.output_shape, kge.output_shape)
+    
+    self.loss_name = loss
+    if loss == "cosine":
+      self.loss = nn.TripletMarginWithDistanceLoss(
+        distance_function=lambda x, y: 1.0 - nn.functional.cosine_similarity(x, y))
+    elif loss == "infonce":
+      self.loss = InfoNCE(negative_mode="paired")
 
     self.image_encoder.model.to(self._device)
     self.projection.to(self._device)
@@ -62,20 +51,18 @@ class Image2KGEProjection(pl.LightningModule):
         torch.tensor: Projection of the input image to the KGE space.
     """
     image_emb = self.image_encoder(image.squeeze(1))
-
-    if image.shape[0] > 1:
-      image_emb = self.img_batch_norm(image_emb)
-
     image_emb = self.projection(image_emb)
     return image_emb
 
-  def training_step(self, batch: torch.tensor, batch_idx: int) -> torch.optim:
+  def data_step(self, batch: torch.tensor, batch_idx: int, log_name: str = "loss", prog_bar: bool = True) -> torch.optim:
     """
     Perform a training step.
 
     Args:
         batch (torch.tensor): The input batch.
         batch_idx (int): The batch index.
+        log_name (str, optional): The name to log the loss into. Defaults to "loss".
+        prog_bar (bool, optional): Show the loss on the progression bar. Defaults to True.
 
     Returns:
         torch.optim: The optimizer result
@@ -85,47 +72,23 @@ class Image2KGEProjection(pl.LightningModule):
     with torch.autocast(device_type="cuda" if "cuda" in str(self._device) else "cpu", 
                         dtype=torch.float16):
       image_emb = self.project(image)    
-      positive_emb = self.kge_batch_norm(self.kge[label].to(self.device))
-      negative_emb = self.kge_batch_norm(self.kge[negative_label].to(self.device))
+      positive_emb = self.kge[label].to(self.device)
+      negative_emb = self.kge[negative_label].to(self.device)
 
-      loss = nn.functional.triplet_margin_with_distance_loss(
-        image_emb, positive_emb, negative_emb, 
-        swap=True,
-        margin=self.margin,
-        distance_function=lambda x, y: 1.0 - nn.functional.cosine_similarity(x, y))
-      
-    self.log("train/loss", loss, prog_bar=True)
+      if self.loss_name == "infonce":
+        loss = self.loss(image_emb, positive_emb, negative_emb.unsqueeze(1))
+      elif self.loss_name == "cosine":
+        loss = self.loss(image_emb, positive_emb, negative_emb)
+    
+    self.log(log_name, loss, prog_bar=prog_bar)
     
     return loss
+
+  def training_step(self, batch: torch.tensor, batch_idx: int) -> torch.optim:
+    return self.data_step(batch, batch_idx, "train/loss", True)
 
   def validation_step(self, batch: torch.tensor, batch_idx: int) -> torch.optim:
-    """
-    Perform a validation step.
-
-    Args:
-        batch (torch.tensor): The input batch.
-        batch_idx (int): The batch index.
-
-    Returns:
-        torch.optim: The optimizer result
-    """
-    image, label, negative_label = batch
-
-    with torch.autocast(device_type="cuda" if "cuda" in str(self._device) else "cpu", 
-                        dtype=torch.float16):
-      image_emb = self.project(image)    
-      positive_emb = self.kge_batch_norm(self.kge[label].to(self.device))
-      negative_emb = self.kge_batch_norm(self.kge[negative_label].to(self.device))
-
-      loss = nn.functional.triplet_margin_with_distance_loss(
-        image_emb, positive_emb, negative_emb, 
-        swap=True,
-        margin=self.margin,
-        distance_function=lambda x, y: 1.0 - nn.functional.cosine_similarity(x, y))
-      
-    self.log("valid/loss", loss)
-    
-    return loss
+    return self.data_step(batch, batch_idx, "valid/loss", False)
 
   def configure_optimizers(self) -> torch.optim:
     """

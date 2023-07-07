@@ -2,10 +2,11 @@ from typing import Union, List, Callable
 from pathlib import Path
 import torch
 from torchvision.models import vgg16, VGG16_Weights
+from transformers import AutoProcessor, CLIPModel
 from PIL import Image
 
 
-class ImageEncoder:
+class ConvImageEncoder:
   def __init__(self, weights: Path = None, use_classifier: bool = False):
     """
     Initialise the image encoder using a specific model and weight.
@@ -59,4 +60,39 @@ class ImageEncoder:
     Returns:
         torch.tensor: Features extracted from the image encoder
     """
-    return self.model(batch).squeeze(0)
+    return self.model(batch)
+
+class CLIPImageEncoder:
+  def __init__(self):
+    """
+    Initialise the CLIP image encoder.
+    """
+    self.model = CLIPModel.from_pretrained("openai/clip-vit-large-patch14")
+    self.processor = AutoProcessor.from_pretrained("openai/clip-vit-large-patch14")
+    
+  def transform(self, *args, **kwargs) -> Callable:
+    """
+    Returns:
+        Callable: The transform (preprocessing) function defined by a specific model.
+    """
+    return self.processor(images=args[0], return_tensors="pt")["pixel_values"]
+
+  @property
+  def output_shape(self) -> int:
+    """
+    Returns:
+        int: The dimensionality of the vector poduced by the image model.
+    """
+    return self.model.projection_dim
+
+  def __call__(self, batch) -> torch.tensor:
+    """
+    Call the model on the provided batch.
+
+    Args:
+        batch: Input batch.
+
+    Returns:
+        torch.tensor: Features extracted from the image encoder
+    """
+    return self.model.get_image_features(batch)

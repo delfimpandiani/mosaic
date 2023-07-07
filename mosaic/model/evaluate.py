@@ -1,5 +1,7 @@
 from typing import Tuple, List
 
+import torch
+
 from mosaic.model.dataset import ARTstractDataset
 from mosaic.model.projection import Image2KGEProjection
 
@@ -20,7 +22,8 @@ def evaluate_cos_distance_classification(dataset: ARTstractDataset, model: Image
       Tuple[List[str], List[str]]: Tuple containing a list of target labels and their
           corresponding predictions. 
   """
-  labels = list(set(dataset.dataset.img_label))
+  model.cuda()
+  labels = list(set(dataset.img_label))
   assert len(labels) == 8
 
   labels_emb = torch.stack([model.kge[l] for l in labels]).detach().numpy()
@@ -31,7 +34,7 @@ def evaluate_cos_distance_classification(dataset: ARTstractDataset, model: Image
   for sample in dataloader:
     image, label, _ = sample
     y.append(label)
-    proj = model.project(image).cpu().detach().numpy()
+    proj = model.project(image.cuda()).cpu().detach().numpy()
     y_pred.append(labels[cosine_similarity(proj.reshape(1, -1), labels_emb).argmax()])
   
   return y, y_pred
