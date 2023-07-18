@@ -1,2 +1,2 @@
-from mosaic.embedding.image import ConvImageEncoder, CLIPImageEncoder
+from mosaic.embedding.image import ImageEncoder, VGGImageEncoder, ViTImageEncoder
 from mosaic.embedding.kge import KGE

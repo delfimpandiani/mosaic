@@ -1,0 +1,17 @@
+seed: 42
+
+dataset:  
+ train: artstract_splitted/train/
+ valid: artstract_splitted/validation/
+ test: artstract_splitted/test/
+ 
+model:
+  name: vgg_artstract
+  num_classes: 8
+
+output: /home/nicolas/projects/mosaic/output/classifier_vgg_artstract
+
+training:
+  epochs: 100
+  batch_size: 32
+  lr: 0.000001
