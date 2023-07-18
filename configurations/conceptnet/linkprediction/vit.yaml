@@ -1,0 +1,32 @@
+seed: 42
+
+kge:
+  data: models/framester_conceptnet_kg.pickle 
+  weights: models/trans_e_128dim.pt
+
+dataset:  
+  kg: /home/nicolas/projects/mosaic/Commonsense_MOSAIC/Common-sense_MOSAIC.ttl
+  train: artstract_splitted/train/
+  valid: artstract_splitted/validation/
+  test: artstract_splitted/test/
+ 
+encoder:
+  name: vit
+  
+prediction:
+  targets:
+    - https://w3id.org/framester/conceptnet5/data/en/comfort
+    - https://w3id.org/framester/conceptnet5/data/en/danger
+    - https://w3id.org/framester/conceptnet5/data/en/death
+    - https://w3id.org/framester/conceptnet5/data/en/excitement
+    - https://w3id.org/framester/conceptnet5/data/en/fitness
+    - https://w3id.org/framester/conceptnet5/data/en/freedom
+    - https://w3id.org/framester/conceptnet5/data/en/power
+    - https://w3id.org/framester/conceptnet5/data/en/safety 
+
+output: /home/nicolas/projects/mosaic/output/linkprediction_vit
+
+training:
+  epochs: 100
+  batch_size: 32
+  lr: 0.0001
