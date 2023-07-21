@@ -1,0 +1,10 @@
+mosaic/data/Local_structured_dataset/
+wandb/
+lightning_logs/
+__pycache__/
+dataset/
+artstract_splitted/
+artstract_balanced/
+.idea/
+models/
+output/
