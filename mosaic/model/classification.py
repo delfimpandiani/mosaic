@@ -274,7 +274,7 @@ class ProjectedSimPrediction(pl.LightningModule):
 
     self.classifier = nn.Linear(self.kge.output_shape, num_classes)
     
-    self.bce = torch.nn.BCEWithLogitsLoss(reduction="sum")
+    self.bce = torch.nn.BCEWithLogitsLoss()
     self.ce = torch.nn.CrossEntropyLoss()
 
   def data_step(self, batch: torch.tensor, batch_idx: int, log_name: str = "loss", prog_bar: bool = True) -> torch.optim:
@@ -294,6 +294,7 @@ class ProjectedSimPrediction(pl.LightningModule):
     
     image_emb = self.image_encoder(image)
     proj = self.projection(image_emb)
+    norm_proj = torch.nn.functional.normalize(proj)
 
     sims = None
     logits = torch.tensor([], device=proj.device)
@@ -301,7 +302,7 @@ class ProjectedSimPrediction(pl.LightningModule):
     for i in range(proj.shape[0]):
       sample_logits = torch.tensor([], device=proj.device)
       for k, v in self.cluster_map.items():
-        pred = proj[i] @ v.T
+        pred = norm_proj[i] @ torch.nn.functional.normalize(v).T
         logits = torch.cat([logits, pred])
         targets = torch.cat([targets, torch.ones(v.shape[0], dtype=torch.float, device=pred.device)])
         sample_logits = torch.cat([sample_logits, torch.mean(pred).reshape(1)])
@@ -409,6 +410,7 @@ class ProjectedPerceptionSimPrediction(pl.LightningModule):
     
     image_emb = self.image_encoder(image)
     proj = self.projection(image_emb)
+    norm_proj = torch.nn.functional.normalize(proj)
 
     sims = None
     logits = torch.tensor([], device=proj.device)
@@ -416,7 +418,7 @@ class ProjectedPerceptionSimPrediction(pl.LightningModule):
     for i in range(proj.shape[0]):
       sample_logits = torch.tensor([], device=proj.device)
       for k, v in self.cluster_map.items():
-        pred = proj[i] @ v.T
+        pred = norm_proj[i] @ torch.nn.functional.normalize(v).T
         logits = torch.cat([logits, pred])
         targets = torch.cat([targets, torch.ones(v.shape[0], dtype=torch.float, device=pred.device)])
         sample_logits = torch.cat([sample_logits, torch.mean(pred).reshape(1)])
@@ -430,7 +432,7 @@ class ProjectedPerceptionSimPrediction(pl.LightningModule):
     perc_logits = torch.tensor([], device=proj.device)
     for i in range(proj.shape[0]):
       perc_embs = torch.stack([self.kge[n] for n in perception_nodes[i] if n in self.kge]).to(proj.device)
-      pred = proj[i] @ perc_embs.T
+      pred = norm_proj[i] @ torch.nn.functional.normalize(perc_embs).T
       perc_logits = torch.cat([perc_logits, pred])
       
     loss += self.bce(perc_logits, torch.ones_like(perc_logits, device=logits.device)) 
