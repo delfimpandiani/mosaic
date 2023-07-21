@@ -6,7 +6,7 @@ import torchvision.transforms as transforms
 import numpy as np
 from sklearn.utils.class_weight import compute_class_weight
 from itertools import chain
-
+import json
 import rdflib
 
 
@@ -147,8 +147,13 @@ class PerceptualARTstractDataset(ClusterARTstractDataset):
     super().__init__(dataset, kg, augment)
 
     # read the JSON from perception Path
+    self.perception = json.load(open(perception_path))
+    self.perception = {
+      k: [FRAMESTER_PREFIX % x.split("conceptnet:")[-1] for x in v]
+      for k, v in self.perception.items()
+    }
+
 
   def __getitem__(self, idx: int) -> Tuple[np.array, str, int]:
-    image, label, label_idx = super().__getitem__(idx)
-    clusters = self.cluster_concept_map[label]
-    return image, label, label_idx, clusters
+    image, label, label_idx, clusters = super().__getitem__(idx)
+    return image, label, label_idx, clusters, self.perception[self.img_path[idx].stem]

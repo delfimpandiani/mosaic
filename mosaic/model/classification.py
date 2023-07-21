@@ -429,7 +429,7 @@ class ProjectedPerceptionSimPrediction(pl.LightningModule):
 
     perc_logits = torch.tensor([], device=proj.device)
     for i in range(proj.shape[0]):
-      perc_embs = torch.stack([self.kge[n] for n in perception_nodes[i] if n in self.kge], device=proj.device)
+      perc_embs = torch.stack([self.kge[n] for n in perception_nodes[i] if n in self.kge]).to(proj.device)
       pred = proj[i] @ perc_embs.T
       perc_logits = torch.cat([perc_logits, pred])
       
