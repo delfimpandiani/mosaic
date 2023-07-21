@@ -9,7 +9,7 @@ model:
   name: vgg_artstract
   num_classes: 7
 
-output: /home/nicolas/projects/mosaic/output/classifier_vgg_artstract
+output: output/classifier_vgg_artstract
 
 training:
   epochs: 100

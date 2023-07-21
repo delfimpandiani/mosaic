@@ -9,7 +9,7 @@ model:
   name: vgg 
   num_classes: 7
 
-output: /home/nicolas/projects/mosaic/output/classifier_vgg
+output: output/classifier_vgg
 
 training:
   epochs: 100

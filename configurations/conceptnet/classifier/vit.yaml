@@ -9,7 +9,7 @@ model:
   name: vit 
   num_classes: 7
 
-output: /home/nicolas/projects/mosaic/output/classifier_vit
+output: output/classifier_vit
 
 training:
   epochs: 100

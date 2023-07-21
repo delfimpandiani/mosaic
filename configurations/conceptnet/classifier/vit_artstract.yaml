@@ -9,7 +9,7 @@ model:
   name: vit_artstract
   num_classes: 7
 
-output: /home/nicolas/projects/mosaic/output/classifier_vit_artstract
+output: output/classifier_vit_artstract
 
 training:
   epochs: 100
