@@ -433,7 +433,7 @@ class ProjectedPerceptionSimPrediction(pl.LightningModule):
       pred = proj[i] @ perc_embs.T
       perc_logits = torch.cat([perc_logits, pred])
       
-    loss += self.bce(logits, torch.ones_like(perc_logits, device=logits.device)) 
+    loss += self.bce(perc_logits, torch.ones_like(perc_logits, device=logits.device)) 
     
     one_hot_labels = torch.nn.functional.one_hot(
       torch.tensor(label_idx.view(-1)), 
