@@ -390,7 +390,7 @@ class ProjectedPerceptionSimPrediction(pl.LightningModule):
 
     self.classifier = nn.Linear(self.kge.output_shape, num_classes)
     
-    self.bce = torch.nn.BCEWithLogitsLoss(reduction="sum")
+    self.bce = torch.nn.BCEWithLogitsLoss()
     self.ce = torch.nn.CrossEntropyLoss()
 
   def data_step(self, batch: torch.tensor, batch_idx: int, log_name: str = "loss", prog_bar: bool = True) -> torch.optim:
