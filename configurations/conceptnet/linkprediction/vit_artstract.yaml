@@ -29,4 +29,4 @@ output: output/linkprediction_vit_artstract
 training:
   epochs: 100
   batch_size: 32
-  lr: 0.00001
+  lr: 0.0001
