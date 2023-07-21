@@ -18,7 +18,7 @@ encoder:
 prediction:
   targets: comfort danger death fitness freedom power safety 
 
-output: output/perception_artstract
+output: output/perception_vgg
 
 training:
   epochs: 100
