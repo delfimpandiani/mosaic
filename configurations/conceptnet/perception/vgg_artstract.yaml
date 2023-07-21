@@ -13,7 +13,7 @@ dataset:
  
 encoder:
   name: vgg_artstract
-  weights: /home/nicolas/projects/mosaic/output/classifier_vgg_artstract/model.ckpt
+  weights: output/classifier_vgg_artstract/model.ckpt
   
 prediction:
   targets:

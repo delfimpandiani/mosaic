@@ -5,7 +5,7 @@ kge:
   weights: models/trans_e_128dim.pt
 
 dataset:  
-  kg: /home/nicolas/projects/mosaic/Commonsense_MOSAIC/Common-sense_MOSAIC.ttl
+  kg: Commonsense_MOSAIC/Common-sense_MOSAIC.ttl
   train: artstract_balanced/train/
   valid: artstract_balanced/validation/
   test: artstract_balanced/test/
@@ -23,7 +23,7 @@ prediction:
     - https://w3id.org/framester/conceptnet5/data/en/power
     - https://w3id.org/framester/conceptnet5/data/en/safety 
 
-output: /home/nicolas/projects/mosaic/output/linkprediction_vgg
+output: output/linkprediction_vgg
 
 training:
   epochs: 100

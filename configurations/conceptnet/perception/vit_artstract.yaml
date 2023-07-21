@@ -13,7 +13,7 @@ dataset:
  
 encoder:
   name: vit
-  weights: /home/nicolas/projects/mosaic/output/classifier_vit_artstract/model.ckpt
+  weights: output/classifier_vit_artstract/model.ckpt
   
 prediction:
   targets:
