@@ -92,7 +92,7 @@ if __name__ == "__main__":
                                              num_workers=os.cpu_count(),
                                              collate_fn=collate_fn)
 
-  valid_data = PerceptualARTstractDataset(Path(conf["dataset"]["train"]), 
+  valid_data = PerceptualARTstractDataset(Path(conf["dataset"]["valid"]), 
                                           Path(conf["dataset"]["kg"]), 
                                           Path(conf["dataset"]["perception_json"]), 
                                           augment=False)
