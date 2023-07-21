@@ -6,13 +6,14 @@ kge:
 
 dataset:  
   kg: /home/nicolas/projects/mosaic/Commonsense_MOSAIC/Common-sense_MOSAIC.ttl
+  perception_json: ...
   train: artstract_balanced/train/
   valid: artstract_balanced/validation/
   test: artstract_balanced/test/
  
 encoder:
-  name: vit
-  weights: /home/nicolas/projects/mosaic/output/classifier_vit_artstract/model.ckpt
+  name: vgg_artstract
+  weights: /home/nicolas/projects/mosaic/output/classifier_vgg_artstract/model.ckpt
   
 prediction:
   targets:
@@ -24,7 +25,7 @@ prediction:
     - https://w3id.org/framester/conceptnet5/data/en/power
     - https://w3id.org/framester/conceptnet5/data/en/safety 
 
-output: /home/nicolas/projects/mosaic/output/linkprediction_vit_artstract
+output: /home/nicolas/projects/mosaic/output/linkprediction_vgg_artstract
 
 training:
   epochs: 100

@@ -1,13 +1,13 @@
 seed: 42
 
 dataset:  
- train: artstract_splitted/train/
- valid: artstract_splitted/validation/
- test: artstract_splitted/test/
+  train: artstract_balanced/train/
+  valid: artstract_balanced/validation/
+  test: artstract_balanced/test/
  
 model:
   name: vit 
-  num_classes: 8
+  num_classes: 7
 
 output: /home/nicolas/projects/mosaic/output/classifier_vit
 

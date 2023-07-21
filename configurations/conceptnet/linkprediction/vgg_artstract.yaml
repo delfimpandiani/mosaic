@@ -6,20 +6,19 @@ kge:
 
 dataset:  
   kg: /home/nicolas/projects/mosaic/Commonsense_MOSAIC/Common-sense_MOSAIC.ttl
-  train: artstract_splitted/train/
-  valid: artstract_splitted/validation/
-  test: artstract_splitted/test/
+  train: artstract_balanced/train/
+  valid: artstract_balanced/validation/
+  test: artstract_balanced/test/
  
 encoder:
   name: vgg_artstract
-  weights: /home/nicolas/projects/mosaic/output/classifier_vgg_artstract/epoch=60-step=24705.ckpt
+  weights: /home/nicolas/projects/mosaic/output/classifier_vgg_artstract/model.ckpt
   
 prediction:
   targets:
     - https://w3id.org/framester/conceptnet5/data/en/comfort
     - https://w3id.org/framester/conceptnet5/data/en/danger
     - https://w3id.org/framester/conceptnet5/data/en/death
-    - https://w3id.org/framester/conceptnet5/data/en/excitement
     - https://w3id.org/framester/conceptnet5/data/en/fitness
     - https://w3id.org/framester/conceptnet5/data/en/freedom
     - https://w3id.org/framester/conceptnet5/data/en/power
@@ -30,4 +29,4 @@ output: /home/nicolas/projects/mosaic/output/linkprediction_vgg_artstract
 training:
   epochs: 100
   batch_size: 32
-  lr: 0.00001
+  lr: 0.001
