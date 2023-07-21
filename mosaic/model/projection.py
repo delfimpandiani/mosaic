@@ -4,11 +4,11 @@ from torch import nn
 import lightning.pytorch as pl
 from info_nce import InfoNCE
 
-from mosaic.embedding import ConvImageEncoder, KGE
+from mosaic.embedding import ImageEncoder, KGE
 
 class Image2KGEProjection(pl.LightningModule):
   def __init__(self, 
-               img_encoder: ConvImageEncoder, 
+               img_encoder: ImageEncoder, 
                kge: KGE,  
                device: str = "cuda",
                loss: str = "cosine"):
@@ -38,6 +38,14 @@ class Image2KGEProjection(pl.LightningModule):
 
     self.image_encoder.model.to(self._device)
     self.projection.to(self._device)
+
+  @property
+  def embedding_dim(self) -> int:
+    """
+    Returns:
+        int: The embedding dimension of the projection
+    """
+    return self.kge.output_shape
 
   def project(self, image: torch.tensor) -> torch.tensor:
     """

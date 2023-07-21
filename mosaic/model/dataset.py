@@ -4,12 +4,23 @@ import torch
 from PIL import Image
 import torchvision.transforms as transforms
 import numpy as np
+from sklearn.utils.class_weight import compute_class_weight
+from itertools import chain
 
 import rdflib
 
 
 FRAMESTER_PREFIX = "https://w3id.org/framester/conceptnet5/data/en/%s"
 MUSCO = rdflib.Namespace("https://w3id.org/musco#")
+
+
+def transform(image):
+  t = transforms.Compose([
+    transforms.Resize((224, 224)),
+    transforms.ToTensor(),
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+  ])
+  return t(image)
 
 
 class ARTstractDataset(torch.utils.data.Dataset):
@@ -38,6 +49,11 @@ class ARTstractDataset(torch.utils.data.Dataset):
 
     self.targets = np.unique(self.img_label)
     self.targets.sort()
+
+    self.class_weight = compute_class_weight(
+      class_weight="balanced", 
+      classes=self.targets, 
+      y=self.img_label)
 
     if augment:
       self.transform = transforms.Compose([
@@ -80,7 +96,7 @@ class ARTstractDataset(torch.utils.data.Dataset):
     image = self.transform(image)
 
     label = self.img_label[idx]
-    label_idx = np.argwhere(self.targets == label).reshape(-1)
+    label_idx = torch.tensor(np.argwhere(self.targets == label).reshape(-1))
 
     return image, label, label_idx
 
@@ -101,8 +117,38 @@ class ClusterARTstractDataset(ARTstractDataset):
     graph = rdflib.Graph().parse(str(kg))
     
     # get all the concepts for each cluster
-    self.cluster_concepts = [
-      f"{FRAMESTER_PREFIX % str(x).split('/')[-1]}"
+    self.cluster_concept_map = {
+      t: [
+        f"{FRAMESTER_PREFIX % str(x).split('/')[-1]}" 
+        for _, _, x in graph.triples((MUSCO[f"{t.split('/')[-1]}_cluster"], MUSCO["RelatedConcept"], None))
+      ]
       for t in self.targets
-      for _, _, x in graph.triples((MUSCO[f"{t.split('/')[-1]}_cluster"], MUSCO["RelatedConcept"], None))
-    ]
+    }
+    
+    self.cluster_concepts = np.unique(list(chain(*self.cluster_concept_map.values())))
+
+  def __getitem__(self, idx: int) -> Tuple[np.array, str, int]:
+    image, label, label_idx = super().__getitem__(idx)
+    clusters = self.cluster_concept_map[label]
+    return image, label, label_idx, clusters
+
+
+class PerceptualARTstractDataset(ClusterARTstractDataset):
+  def __init__(self, dataset: Path, kg: Path, perception_path: Path, augment: bool = True):
+    """
+    ARTstract dataset where for each label the corresponding cluster concepts are
+    provided.
+
+    Args:
+        dataset (Path): Path to ARTstract dataset. The path should point
+          to a folder containing a folder for each cluster.
+        augment (bool, optional): Wether to augment the data or not. Defaults to True.
+    """
+    super().__init__(dataset, kg, augment)
+
+    # read the JSON from perception Path
+
+  def __getitem__(self, idx: int) -> Tuple[np.array, str, int]:
+    image, label, label_idx = super().__getitem__(idx)
+    clusters = self.cluster_concept_map[label]
+    return image, label, label_idx, clusters

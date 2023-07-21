@@ -41,29 +41,6 @@ if __name__ == "__main__":
   
   pl.seed_everything(conf.get("seed", 42))
 
-  if conf["model"]["name"] == "vit":
-    model = ViTImageClassifier(
-      int(conf["model"]["num_classes"]),
-      only_head=True,
-      lr=float(conf["training"]["lr"]))
-  elif conf["model"]["name"] == "vit_artstract":
-    model = ViTImageClassifier(
-      int(conf["model"]["num_classes"]),
-      only_head=False,
-      lr=float(conf["training"]["lr"]))
-  elif conf["model"]["name"] == "vgg":
-    # Train using image net pretrained features
-    model = ConvImageClassifier(
-      int(conf["model"]["num_classes"]),
-      only_head=True,
-      lr=float(conf["training"]["lr"]))
-  elif conf["model"]["name"] == "vgg_artstract":
-    # Train the whole convnet
-    model = ConvImageClassifier(
-      int(conf["model"]["num_classes"]),
-      only_head=False,
-      lr=float(conf["training"]["lr"]))
-
   train_data = ARTstractDataset(Path(conf["dataset"]["train"]), 
                                 augment=True)
   train_loader = torch.utils.data.DataLoader(train_data, 
@@ -77,6 +54,33 @@ if __name__ == "__main__":
                                              batch_size=conf["training"]["batch_size"],
                                              num_workers=os.cpu_count())
 
+  if conf["model"]["name"] == "vit":
+    model = ViTImageClassifier(
+      int(conf["model"]["num_classes"]),
+      only_head=True,
+      lr=float(conf["training"]["lr"]),
+      weights=train_data.class_weight)
+  elif conf["model"]["name"] == "vit_artstract":
+    model = ViTImageClassifier(
+      int(conf["model"]["num_classes"]),
+      only_head=False,
+      lr=float(conf["training"]["lr"]),
+      weights=train_data.class_weight)
+  elif conf["model"]["name"] == "vgg":
+    # Train using image net pretrained features
+    model = ConvImageClassifier(
+      int(conf["model"]["num_classes"]),
+      only_head=True,
+      lr=float(conf["training"]["lr"]),
+      weights=train_data.class_weight)
+  elif conf["model"]["name"] == "vgg_artstract":
+    # Train the whole convnet
+    model = ConvImageClassifier(
+      int(conf["model"]["num_classes"]),
+      only_head=False,
+      lr=float(conf["training"]["lr"]),
+      weights=train_data.class_weight)
+
   wandb_logger = pl.pytorch.loggers.WandbLogger(project="mosaic", name=conf["output"].split("/")[-1])
   wandb_logger.experiment.config.update(conf)
 
@@ -84,13 +88,15 @@ if __name__ == "__main__":
     shutil.rmtree(conf["output"])
   Path(conf["output"]).mkdir()
   
-  callbacks = []
-  callbacks.append(pl.pytorch.callbacks.ModelCheckpoint(
-    dirpath=conf["output"],
-    save_top_k=1,
-    monitor="valid/accuracy",
-    mode="max"
-  ))
+  callbacks = [
+    pl.pytorch.callbacks.ModelCheckpoint(
+      dirpath=conf["output"],
+      save_top_k=1,
+      monitor="valid/accuracy",
+      mode="max",
+      filename="model"),
+    pl.pytorch.callbacks.StochasticWeightAveraging(swa_lrs=1e-2),
+  ]
 
   trainer = pl.Trainer(
     max_epochs=conf["training"]["epochs"],

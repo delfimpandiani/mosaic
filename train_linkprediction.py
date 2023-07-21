@@ -14,7 +14,7 @@ from mosaic.model.evaluate import evaluate_cos_distance_classification
 from mosaic.model.utils import stratified_split
 from mosaic.model.projection import Image2KGEProjection
 from mosaic.embedding import KGE, VGGImageEncoder, ViTImageEncoder
-from mosaic.model.classification import ProjectedEncoderLinkPrediction
+from mosaic.model.classification import ProjectedSimPrediction
 
 import yaml
 from pathlib import Path
@@ -76,21 +76,28 @@ if __name__ == "__main__":
     image_encoder = ViTImageEncoder()
   elif conf["encoder"]["name"] == "vit_artstract":
     image_encoder = ViTImageEncoder(Path(conf["encoder"]["weights"]))
+
+  def collate_fn(batch):
+    image, label, label_idx, clusters = zip(*batch)
+    return torch.stack(image), label, torch.stack(label_idx), clusters
   
   train_data = ClusterARTstractDataset(Path(conf["dataset"]["train"]), Path(conf["dataset"]["kg"]), augment=True)
   train_loader = torch.utils.data.DataLoader(train_data, 
                                              batch_size=conf["training"]["batch_size"], 
                                              shuffle=True, 
-                                             num_workers=os.cpu_count())
+                                             num_workers=os.cpu_count(),
+                                             collate_fn=collate_fn)
 
   valid_data = ClusterARTstractDataset(Path(conf["dataset"]["valid"]), Path(conf["dataset"]["kg"]), augment=False)
   valid_loader = torch.utils.data.DataLoader(valid_data, 
                                              batch_size=conf["training"]["batch_size"],
-                                             num_workers=os.cpu_count())
+                                             num_workers=os.cpu_count(),
+                                             collate_fn=collate_fn)
 
-  model = ProjectedEncoderLinkPrediction(
-    kge, image_encoder, len(train_data.targets), train_data.cluster_concepts,
-    lr=float(conf["training"]["lr"]))
+  model = ProjectedSimPrediction(
+    kge, image_encoder, len(train_data.targets), train_data.cluster_concept_map,
+    lr=float(conf["training"]["lr"]),
+    weights=train_data.class_weight)
 
   wandb_logger = pl.pytorch.loggers.WandbLogger(project="mosaic", name=conf["output"].split("/")[-1])
   wandb_logger.experiment.config.update(conf)
@@ -99,13 +106,15 @@ if __name__ == "__main__":
     shutil.rmtree(conf["output"])
   Path(conf["output"]).mkdir()
   
-  callbacks = []
-  callbacks.append(pl.pytorch.callbacks.ModelCheckpoint(
-    dirpath=conf["output"],
-    save_top_k=1,
-    monitor="valid/accuracy",
-    mode="max"
-  ))
+  callbacks = [
+    pl.pytorch.callbacks.ModelCheckpoint(
+      dirpath=conf["output"],
+      save_top_k=1,
+      monitor="valid/accuracy",
+      mode="max",
+      filename="model"),
+    pl.pytorch.callbacks.StochasticWeightAveraging(swa_lrs=1e-2),
+  ]
 
   trainer = pl.Trainer(
     max_epochs=conf["training"]["epochs"],
