@@ -346,7 +346,7 @@ class ProjectedSimPrediction(pl.LightningModule):
         torch.optim: Create the optimizer for the neural network
     """
     optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=10, factor=0.5)
     return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "epoch", "monitor": "valid/loss"}}
 
 
@@ -468,7 +468,7 @@ class ProjectedPerceptionSimPrediction(pl.LightningModule):
         torch.optim: Create the optimizer for the neural network
     """
     optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=10, factor=0.5)
     return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "epoch", "monitor": "valid/loss"}}
 
 
@@ -573,7 +573,7 @@ class ConvImageClassifier(pl.LightningModule):
         torch.optim: Create the optimizer for the neural network
     """
     optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=10, factor=0.5)
     return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "epoch", "monitor": "valid/loss"}}
 
 
@@ -665,5 +665,5 @@ class ViTImageClassifier(pl.LightningModule):
         torch.optim: Create the optimizer for the neural network
     """
     optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=10, factor=0.5)
     return {"optimizer": optimizer, "lr_scheduler": {"scheduler": scheduler, "interval": "epoch", "monitor": "valid/loss"}}
